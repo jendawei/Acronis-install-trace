@@ -1,0 +1,1346 @@
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Jul  9 20:19:30 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7fc9d487f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7619)
+spawned uWSGI worker 1 (pid: 7622, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fc9d487f280 pid: 7622 (default app)
+*** running gevent loop engine [addr:0x7fc9d583ed90] ***
+gc: collecting generation 0...
+gc: objects in each generation: 11137 0 147032
+gc: objects in permanent generation: 0
+gc: done, 9066 unreachable, 0 uncollectable, 0.0019s elapsed
+Thu Jul 10 04:22:31 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 7622)...
+Thu Jul 10 04:22:31 2025 - stopping gevent signals watchers for worker 1 (pid: 7622)...
+Thu Jul 10 04:22:31 2025 - stopping gevent sockets watchers for worker 1 (pid: 7622)...
+Thu Jul 10 04:22:31 2025 - main gevent watchers stopped for worker 1 (pid: 7622)...
+goodbye to the gevent Hub on worker 1 (pid: 7622)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 04:24:01 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7fe5a5a7f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8505)
+spawned uWSGI worker 1 (pid: 8517, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7fe5a5a7f280 pid: 8517 (default app)
+*** running gevent loop engine [addr:0x7fe5a6a58d90] ***
+Thu Jul 10 04:27:02 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 8517)...
+Thu Jul 10 04:27:02 2025 - stopping gevent signals watchers for worker 1 (pid: 8517)...
+Thu Jul 10 04:27:02 2025 - stopping gevent sockets watchers for worker 1 (pid: 8517)...
+Thu Jul 10 04:27:02 2025 - main gevent watchers stopped for worker 1 (pid: 8517)...
+goodbye to the gevent Hub on worker 1 (pid: 8517)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 04:28:32 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f6f04e7f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9344)
+spawned uWSGI worker 1 (pid: 9345, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f6f04e7f280 pid: 9345 (default app)
+*** running gevent loop engine [addr:0x7f6f05872d90] ***
+Thu Jul 10 04:31:32 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 9345)...
+Thu Jul 10 04:31:32 2025 - stopping gevent signals watchers for worker 1 (pid: 9345)...
+Thu Jul 10 04:31:32 2025 - stopping gevent sockets watchers for worker 1 (pid: 9345)...
+Thu Jul 10 04:31:32 2025 - main gevent watchers stopped for worker 1 (pid: 9345)...
+goodbye to the gevent Hub on worker 1 (pid: 9345)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 04:33:03 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7ff72f27f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10104)
+spawned uWSGI worker 1 (pid: 10105, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7ff72f27f280 pid: 10105 (default app)
+*** running gevent loop engine [addr:0x7ff7302bed90] ***
+Thu Jul 10 04:36:03 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 10105)...
+Thu Jul 10 04:36:03 2025 - stopping gevent signals watchers for worker 1 (pid: 10105)...
+Thu Jul 10 04:36:03 2025 - stopping gevent sockets watchers for worker 1 (pid: 10105)...
+Thu Jul 10 04:36:03 2025 - main gevent watchers stopped for worker 1 (pid: 10105)...
+goodbye to the gevent Hub on worker 1 (pid: 10105)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 04:37:34 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f5b7ca7f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10882)
+spawned uWSGI worker 1 (pid: 10884, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7f5b7ca7f280 pid: 10884 (default app)
+*** running gevent loop engine [addr:0x7f5b7dacfd90] ***
+Thu Jul 10 04:40:34 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 10884)...
+Thu Jul 10 04:40:34 2025 - stopping gevent signals watchers for worker 1 (pid: 10884)...
+Thu Jul 10 04:40:34 2025 - stopping gevent sockets watchers for worker 1 (pid: 10884)...
+Thu Jul 10 04:40:34 2025 - main gevent watchers stopped for worker 1 (pid: 10884)...
+goodbye to the gevent Hub on worker 1 (pid: 10884)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 04:42:04 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7fad0587f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 11653)
+spawned uWSGI worker 1 (pid: 11654, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fad0587f280 pid: 11654 (default app)
+*** running gevent loop engine [addr:0x7fad06839d90] ***
+Thu Jul 10 04:45:05 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 11654)...
+Thu Jul 10 04:45:05 2025 - stopping gevent signals watchers for worker 1 (pid: 11654)...
+Thu Jul 10 04:45:05 2025 - stopping gevent sockets watchers for worker 1 (pid: 11654)...
+Thu Jul 10 04:45:05 2025 - main gevent watchers stopped for worker 1 (pid: 11654)...
+goodbye to the gevent Hub on worker 1 (pid: 11654)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 04:46:35 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7faba5e7f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12481)
+spawned uWSGI worker 1 (pid: 12482, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7faba5e7f280 pid: 12482 (default app)
+*** running gevent loop engine [addr:0x7faba6ee4d90] ***
+Thu Jul 10 04:49:35 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 12482)...
+Thu Jul 10 04:49:35 2025 - stopping gevent signals watchers for worker 1 (pid: 12482)...
+Thu Jul 10 04:49:35 2025 - stopping gevent sockets watchers for worker 1 (pid: 12482)...
+Thu Jul 10 04:49:35 2025 - main gevent watchers stopped for worker 1 (pid: 12482)...
+goodbye to the gevent Hub on worker 1 (pid: 12482)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 04:51:06 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f3b7da7f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 13286)
+spawned uWSGI worker 1 (pid: 13287, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f3b7da7f280 pid: 13287 (default app)
+*** running gevent loop engine [addr:0x7f3b7eb0ed90] ***
+Thu Jul 10 04:54:06 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 13287)...
+Thu Jul 10 04:54:06 2025 - stopping gevent signals watchers for worker 1 (pid: 13287)...
+Thu Jul 10 04:54:06 2025 - stopping gevent sockets watchers for worker 1 (pid: 13287)...
+Thu Jul 10 04:54:06 2025 - main gevent watchers stopped for worker 1 (pid: 13287)...
+goodbye to the gevent Hub on worker 1 (pid: 13287)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 04:55:37 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f9a9547f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14063)
+spawned uWSGI worker 1 (pid: 14064, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7f9a9547f280 pid: 14064 (default app)
+*** running gevent loop engine [addr:0x7f9a9643ad90] ***
+Thu Jul 10 04:58:37 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 14064)...
+Thu Jul 10 04:58:37 2025 - stopping gevent signals watchers for worker 1 (pid: 14064)...
+Thu Jul 10 04:58:37 2025 - stopping gevent sockets watchers for worker 1 (pid: 14064)...
+Thu Jul 10 04:58:37 2025 - main gevent watchers stopped for worker 1 (pid: 14064)...
+goodbye to the gevent Hub on worker 1 (pid: 14064)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 05:00:07 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f410da7f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14834)
+spawned uWSGI worker 1 (pid: 14836, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f410da7f280 pid: 14836 (default app)
+*** running gevent loop engine [addr:0x7f410ea3cd90] ***
+Thu Jul 10 05:03:08 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 14836)...
+Thu Jul 10 05:03:08 2025 - stopping gevent signals watchers for worker 1 (pid: 14836)...
+Thu Jul 10 05:03:08 2025 - stopping gevent sockets watchers for worker 1 (pid: 14836)...
+Thu Jul 10 05:03:08 2025 - main gevent watchers stopped for worker 1 (pid: 14836)...
+goodbye to the gevent Hub on worker 1 (pid: 14836)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 05:04:38 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f434a07f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 15602)
+spawned uWSGI worker 1 (pid: 15603, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f434a07f280 pid: 15603 (default app)
+*** running gevent loop engine [addr:0x7f434b15fd90] ***
+Thu Jul 10 05:07:38 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 15603)...
+Thu Jul 10 05:07:38 2025 - stopping gevent signals watchers for worker 1 (pid: 15603)...
+Thu Jul 10 05:07:38 2025 - stopping gevent sockets watchers for worker 1 (pid: 15603)...
+Thu Jul 10 05:07:38 2025 - main gevent watchers stopped for worker 1 (pid: 15603)...
+goodbye to the gevent Hub on worker 1 (pid: 15603)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 05:09:09 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f878f87f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 16355)
+spawned uWSGI worker 1 (pid: 16357, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f878f87f280 pid: 16357 (default app)
+*** running gevent loop engine [addr:0x7f87908ebd90] ***
+Thu Jul 10 05:12:09 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 16357)...
+Thu Jul 10 05:12:09 2025 - stopping gevent signals watchers for worker 1 (pid: 16357)...
+Thu Jul 10 05:12:09 2025 - stopping gevent sockets watchers for worker 1 (pid: 16357)...
+Thu Jul 10 05:12:09 2025 - main gevent watchers stopped for worker 1 (pid: 16357)...
+goodbye to the gevent Hub on worker 1 (pid: 16357)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 05:13:40 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f1162e7f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17119)
+spawned uWSGI worker 1 (pid: 17120, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7f1162e7f280 pid: 17120 (default app)
+*** running gevent loop engine [addr:0x7f1163ed4d90] ***
+Thu Jul 10 05:16:40 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 17120)...
+Thu Jul 10 05:16:40 2025 - stopping gevent signals watchers for worker 1 (pid: 17120)...
+Thu Jul 10 05:16:40 2025 - stopping gevent sockets watchers for worker 1 (pid: 17120)...
+Thu Jul 10 05:16:40 2025 - main gevent watchers stopped for worker 1 (pid: 17120)...
+goodbye to the gevent Hub on worker 1 (pid: 17120)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 05:18:10 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7ffb4487f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17886)
+spawned uWSGI worker 1 (pid: 17887, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7ffb4487f280 pid: 17887 (default app)
+*** running gevent loop engine [addr:0x7ffb45907d90] ***
+Thu Jul 10 05:21:11 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 17887)...
+Thu Jul 10 05:21:11 2025 - stopping gevent signals watchers for worker 1 (pid: 17887)...
+Thu Jul 10 05:21:11 2025 - stopping gevent sockets watchers for worker 1 (pid: 17887)...
+Thu Jul 10 05:21:11 2025 - main gevent watchers stopped for worker 1 (pid: 17887)...
+goodbye to the gevent Hub on worker 1 (pid: 17887)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 05:22:41 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7ff7bfc7f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 18665)
+spawned uWSGI worker 1 (pid: 18666, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7ff7bfc7f280 pid: 18666 (default app)
+*** running gevent loop engine [addr:0x7ff7c0ccfd90] ***
+Thu Jul 10 05:25:41 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 18666)...
+Thu Jul 10 05:25:41 2025 - stopping gevent signals watchers for worker 1 (pid: 18666)...
+Thu Jul 10 05:25:41 2025 - stopping gevent sockets watchers for worker 1 (pid: 18666)...
+Thu Jul 10 05:25:41 2025 - main gevent watchers stopped for worker 1 (pid: 18666)...
+goodbye to the gevent Hub on worker 1 (pid: 18666)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 05:27:12 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f4a10a7f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19422)
+spawned uWSGI worker 1 (pid: 19424, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f4a10a7f280 pid: 19424 (default app)
+*** running gevent loop engine [addr:0x7f4a11a86d90] ***
+Thu Jul 10 05:30:12 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 19424)...
+Thu Jul 10 05:30:12 2025 - stopping gevent signals watchers for worker 1 (pid: 19424)...
+Thu Jul 10 05:30:12 2025 - stopping gevent sockets watchers for worker 1 (pid: 19424)...
+Thu Jul 10 05:30:12 2025 - main gevent watchers stopped for worker 1 (pid: 19424)...
+goodbye to the gevent Hub on worker 1 (pid: 19424)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 05:31:43 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7fb38e07f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20178)
+spawned uWSGI worker 1 (pid: 20179, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7fb38e07f280 pid: 20179 (default app)
+*** running gevent loop engine [addr:0x7fb38ea72d90] ***
+Thu Jul 10 05:34:43 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 20179)...
+Thu Jul 10 05:34:43 2025 - stopping gevent signals watchers for worker 1 (pid: 20179)...
+Thu Jul 10 05:34:43 2025 - stopping gevent sockets watchers for worker 1 (pid: 20179)...
+Thu Jul 10 05:34:43 2025 - main gevent watchers stopped for worker 1 (pid: 20179)...
+goodbye to the gevent Hub on worker 1 (pid: 20179)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 05:36:13 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f1e44c7f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20949)
+spawned uWSGI worker 1 (pid: 20950, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f1e44c7f280 pid: 20950 (default app)
+*** running gevent loop engine [addr:0x7f1e45c35d90] ***
+Thu Jul 10 05:39:14 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 20950)...
+Thu Jul 10 05:39:14 2025 - stopping gevent signals watchers for worker 1 (pid: 20950)...
+Thu Jul 10 05:39:14 2025 - stopping gevent sockets watchers for worker 1 (pid: 20950)...
+Thu Jul 10 05:39:14 2025 - main gevent watchers stopped for worker 1 (pid: 20950)...
+goodbye to the gevent Hub on worker 1 (pid: 20950)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 05:40:44 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7fa14747f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 21708)
+spawned uWSGI worker 1 (pid: 21709, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fa14747f280 pid: 21709 (default app)
+*** running gevent loop engine [addr:0x7fa14843ad90] ***
+Thu Jul 10 05:43:44 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 21709)...
+Thu Jul 10 05:43:44 2025 - stopping gevent signals watchers for worker 1 (pid: 21709)...
+Thu Jul 10 05:43:44 2025 - stopping gevent sockets watchers for worker 1 (pid: 21709)...
+Thu Jul 10 05:43:44 2025 - main gevent watchers stopped for worker 1 (pid: 21709)...
+goodbye to the gevent Hub on worker 1 (pid: 21709)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 05:45:15 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7fdfeb87f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 22464)
+spawned uWSGI worker 1 (pid: 22465, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fdfeb87f280 pid: 22465 (default app)
+*** running gevent loop engine [addr:0x7fdfec83cd90] ***
+Thu Jul 10 05:48:15 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 22465)...
+Thu Jul 10 05:48:15 2025 - stopping gevent signals watchers for worker 1 (pid: 22465)...
+Thu Jul 10 05:48:15 2025 - stopping gevent sockets watchers for worker 1 (pid: 22465)...
+Thu Jul 10 05:48:15 2025 - main gevent watchers stopped for worker 1 (pid: 22465)...
+goodbye to the gevent Hub on worker 1 (pid: 22465)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 05:49:46 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f61dd67f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 23209)
+spawned uWSGI worker 1 (pid: 23210, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7f61dd67f280 pid: 23210 (default app)
+*** running gevent loop engine [addr:0x7f61de6ebd90] ***
+Thu Jul 10 05:52:46 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 23210)...
+Thu Jul 10 05:52:46 2025 - stopping gevent signals watchers for worker 1 (pid: 23210)...
+Thu Jul 10 05:52:46 2025 - stopping gevent sockets watchers for worker 1 (pid: 23210)...
+Thu Jul 10 05:52:46 2025 - main gevent watchers stopped for worker 1 (pid: 23210)...
+goodbye to the gevent Hub on worker 1 (pid: 23210)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 05:54:16 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f8c2b87f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 23986)
+spawned uWSGI worker 1 (pid: 23988, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f8c2b87f280 pid: 23988 (default app)
+*** running gevent loop engine [addr:0x7f8c2c94bd90] ***
+Thu Jul 10 05:57:17 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 23988)...
+Thu Jul 10 05:57:17 2025 - stopping gevent signals watchers for worker 1 (pid: 23988)...
+Thu Jul 10 05:57:17 2025 - stopping gevent sockets watchers for worker 1 (pid: 23988)...
+Thu Jul 10 05:57:17 2025 - main gevent watchers stopped for worker 1 (pid: 23988)...
+goodbye to the gevent Hub on worker 1 (pid: 23988)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 05:58:47 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f6a4b27f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 24783)
+spawned uWSGI worker 1 (pid: 24784, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f6a4b27f280 pid: 24784 (default app)
+*** running gevent loop engine [addr:0x7f6a4c24ad90] ***
+Thu Jul 10 06:01:47 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 24784)...
+Thu Jul 10 06:01:47 2025 - stopping gevent signals watchers for worker 1 (pid: 24784)...
+Thu Jul 10 06:01:47 2025 - stopping gevent sockets watchers for worker 1 (pid: 24784)...
+Thu Jul 10 06:01:47 2025 - main gevent watchers stopped for worker 1 (pid: 24784)...
+goodbye to the gevent Hub on worker 1 (pid: 24784)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 06:03:18 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f56e4e7f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 25555)
+spawned uWSGI worker 1 (pid: 25556, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f56e4e7f280 pid: 25556 (default app)
+*** running gevent loop engine [addr:0x7f56e59cfd90] ***
+Thu Jul 10 06:06:18 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 25556)...
+Thu Jul 10 06:06:18 2025 - stopping gevent signals watchers for worker 1 (pid: 25556)...
+Thu Jul 10 06:06:18 2025 - stopping gevent sockets watchers for worker 1 (pid: 25556)...
+Thu Jul 10 06:06:18 2025 - main gevent watchers stopped for worker 1 (pid: 25556)...
+goodbye to the gevent Hub on worker 1 (pid: 25556)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 06:07:49 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f823b47f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 26313)
+spawned uWSGI worker 1 (pid: 26314, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7f823b47f280 pid: 26314 (default app)
+*** running gevent loop engine [addr:0x7f823c484d90] ***
+Thu Jul 10 06:10:49 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 26314)...
+Thu Jul 10 06:10:49 2025 - stopping gevent signals watchers for worker 1 (pid: 26314)...
+Thu Jul 10 06:10:49 2025 - stopping gevent sockets watchers for worker 1 (pid: 26314)...
+Thu Jul 10 06:10:49 2025 - main gevent watchers stopped for worker 1 (pid: 26314)...
+goodbye to the gevent Hub on worker 1 (pid: 26314)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 06:12:19 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f6db427f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 27088)
+spawned uWSGI worker 1 (pid: 27089, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f6db427f280 pid: 27089 (default app)
+*** running gevent loop engine [addr:0x7f6db4df6d90] ***
+Thu Jul 10 06:15:20 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27089)...
+Thu Jul 10 06:15:20 2025 - stopping gevent signals watchers for worker 1 (pid: 27089)...
+Thu Jul 10 06:15:20 2025 - stopping gevent sockets watchers for worker 1 (pid: 27089)...
+Thu Jul 10 06:15:20 2025 - main gevent watchers stopped for worker 1 (pid: 27089)...
+goodbye to the gevent Hub on worker 1 (pid: 27089)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 06:16:50 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f528007f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 27885)
+spawned uWSGI worker 1 (pid: 27886, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f528007f280 pid: 27886 (default app)
+*** running gevent loop engine [addr:0x7f52810d6d90] ***
+Thu Jul 10 06:19:50 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 27886)...
+Thu Jul 10 06:19:50 2025 - stopping gevent signals watchers for worker 1 (pid: 27886)...
+Thu Jul 10 06:19:50 2025 - stopping gevent sockets watchers for worker 1 (pid: 27886)...
+Thu Jul 10 06:19:50 2025 - main gevent watchers stopped for worker 1 (pid: 27886)...
+goodbye to the gevent Hub on worker 1 (pid: 27886)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 06:21:21 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f508a27f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28668)
+spawned uWSGI worker 1 (pid: 28669, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f508a27f280 pid: 28669 (default app)
+*** running gevent loop engine [addr:0x7f508b239d90] ***
+Thu Jul 10 06:24:21 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 28669)...
+Thu Jul 10 06:24:21 2025 - stopping gevent signals watchers for worker 1 (pid: 28669)...
+Thu Jul 10 06:24:21 2025 - stopping gevent sockets watchers for worker 1 (pid: 28669)...
+Thu Jul 10 06:24:21 2025 - main gevent watchers stopped for worker 1 (pid: 28669)...
+goodbye to the gevent Hub on worker 1 (pid: 28669)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 06:25:52 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f125907f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 29424)
+spawned uWSGI worker 1 (pid: 29425, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7f125907f280 pid: 29425 (default app)
+*** running gevent loop engine [addr:0x7f1259a70d90] ***
+Thu Jul 10 06:28:52 2025 - graceful shutdown triggered...
+Gracefully killing worker 1 (pid: 29425)...
+Thu Jul 10 06:28:52 2025 - stopping gevent signals watchers for worker 1 (pid: 29425)...
+Thu Jul 10 06:28:52 2025 - stopping gevent sockets watchers for worker 1 (pid: 29425)...
+Thu Jul 10 06:28:52 2025 - main gevent watchers stopped for worker 1 (pid: 29425)...
+goodbye to the gevent Hub on worker 1 (pid: 29425)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 06:30:22 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-agent
+detected binary path: /usr/sbin/uwsgi
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+- async cores set to 1000 - fd table size: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/vstorage-ui/uwsgi-agent.sock fd 7
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7fd07567f280
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 21036928 bytes (20543 KB) for 1000 cores
+*** Operational MODE: async ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 30196)
+spawned uWSGI worker 1 (pid: 30197, cores: 1000)
+running "unix_signal:3 gracefully_kill_them_all" (master-start)...
+running "unix_signal:35 uwsgi_log_reopen" (master-start)...
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fd07567f280 pid: 30197 (default app)
+*** running gevent loop engine [addr:0x7fd076ab4d90] ***
