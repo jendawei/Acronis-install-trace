@@ -1,0 +1,381 @@
+[INFO][29112] 2025-07-10 06:47:07,085 *** Start 2025-07-10 06:47:07,084: init-postinstall.sh  ***
+/usr/lib/tmpfiles.d/postgresql.conf:1: Line references path below legacy directory /var/run/, updating /var/run/postgresql → /run/postgresql; please update the tmpfiles.d/ drop-in file accordingly.
+[INFO][29112] 2025-07-10 06:47:07,111 Initializing postgres database cluster ...
+The files belonging to this database system will be owned by user "postgres".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "en_US.UTF-8".
+The default database encoding has accordingly been set to "UTF8".
+The default text search configuration will be set to "english".
+
+Data page checksums are disabled.
+
+fixing permissions on existing directory /var/lib/pgsql/data ... ok
+creating subdirectories ... ok
+selecting default max_connections ... 100
+selecting default shared_buffers ... 128MB
+selecting default timezone ... UTC
+selecting dynamic shared memory implementation ... posix
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+Success. You can now start the database server using:
+
+    /usr/bin/pg_ctl -D /var/lib/pgsql/data -l logfile start
+
+[INFO][29112] 2025-07-10 06:47:07,750 Postgres database cluster has been initialized
+[INFO][29112] 2025-07-10 06:47:07,750 Enabling replication...
+[INFO][29112] 2025-07-10 06:47:07,775 Replication has been enabled
+[INFO][29112] 2025-07-10 06:47:07,775 Update pg_hba.conf
+[INFO][29112] 2025-07-10 06:47:07,777 Update pg_hba.conf has finished
+[INFO][29112] 2025-07-10 06:47:07,778 Clean pg_hba.conf
+[INFO][29112] 2025-07-10 06:47:07,780 cleaning pg_hba.conf finished
+2025-07-10 03:47:07 UTC::@:[29202]: LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2025-07-10 03:47:07 UTC::@:[29202]: LOG:  listening on IPv6 address "::", port 5432
+2025-07-10 03:47:07 UTC::@:[29202]: LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2025-07-10 03:47:07 UTC::@:[29202]: LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-07-10 03:47:07 UTC::@:[29202]: LOG:  redirecting log output to logging collector process
+2025-07-10 03:47:07 UTC::@:[29202]: HINT:  Future log output will appear in directory "log".
+'/run/pgbouncer/.s.PGSQL.6432' -> '../postgresql/.s.PGSQL.5432'
+[INFO][29112] 2025-07-10 06:47:07,911 Configure database...
+[INFO][29112] 2025-07-10 06:47:07,940 Creating postgresql user vstoradmin...
+CREATE ROLE
+[INFO][29112] 2025-07-10 06:47:07,965 Postgresql user vstoradmin has been created
+[INFO][29112] 2025-07-10 06:47:07,965 Create database vstoradmin
+[INFO][29112] 2025-07-10 06:47:07,990 creating postgresql database vstoradmin
+[INFO][29112] 2025-07-10 06:47:08,278 postgresql database vstoradmin has been created
+[INFO][29112] 2025-07-10 06:47:08,278 Database has been configured
+[INFO][29112] 2025-07-10 06:47:08,279 Starting database migration...
+[INFO][29112] 2025-07-10 06:47:16,022 Database migration finished
+[DEBUG][29112] 2025-07-10 06:47:16,022 Disabling oneshot scripts...
+INSERT 0 1
+[INFO][29112] 2025-07-10 06:47:16,062 oneshot-0015-clean-up-mdses-in-order-to-activate-vstorage-target-manager.sh disabled
+INSERT 0 1
+[INFO][29112] 2025-07-10 06:47:16,082 oneshot-0016-update-internal-endpoint-in-keystone.sh disabled
+INSERT 0 1
+[INFO][29112] 2025-07-10 06:47:16,100 oneshot-0017-create-roles-implication-in-keystone.sh disabled
+INSERT 0 1
+[INFO][29112] 2025-07-10 06:47:16,119 oneshot-0018-create-backup-service-user.sh disabled
+INSERT 0 1
+[INFO][29112] 2025-07-10 06:47:16,137 oneshot-0019-create-compute-cert.sh disabled
+INSERT 0 1
+[INFO][29112] 2025-07-10 06:47:16,157 oneshot-0019-enable-postgres-backup.sh disabled
+INSERT 0 1
+[INFO][29112] 2025-07-10 06:47:16,175 oneshot-0020-create-dr-roles-in-keystone.sh disabled
+INSERT 0 1
+[INFO][29112] 2025-07-10 06:47:16,195 oneshot-0020-turn-off-aip-early-access.sh disabled
+INSERT 0 1
+[INFO][29112] 2025-07-10 06:47:16,220 oneshot-0021-enable-russian-language.sh disabled
+INSERT 0 1
+[INFO][29112] 2025-07-10 06:47:16,239 oneshot-0022-reload-keystone.sh disabled
+INSERT 0 1
+[INFO][29112] 2025-07-10 06:47:16,259 oneshot-0023-make-domain_admin-implies_project_admin.sh disabled
+INSERT 0 1
+[INFO][29112] 2025-07-10 06:47:16,284 oneshot-0024-create-quota_manager-role-in-keystone.sh disabled
+INSERT 0 1
+[INFO][29112] 2025-07-10 06:47:16,302 oneshot-0025-create-ha-helper-func.sh disabled
+INSERT 0 1
+[INFO][29112] 2025-07-10 06:47:16,322 oneshot-0026-create-debug-role-in-keystone.sh disabled
+INSERT 0 1
+[INFO][29112] 2025-07-10 06:47:16,349 oneshot-0027-init-software-management-info.sh disabled
+INSERT 0 1
+[INFO][29112] 2025-07-10 06:47:16,366 oneshot-cleanup-wal-archive.sh disabled
+[INFO][29112] 2025-07-10 06:47:16,415 Ensuring roles for user vstoradmin...
+ALTER ROLE
+[INFO][29112] 2025-07-10 06:47:16,440 Roles for postgresql user vstoradmin are granted
+[INFO][29112] 2025-07-10 06:47:16,441 Create database keystone
+[INFO][29112] 2025-07-10 06:47:16,464 creating postgresql database keystone
+[INFO][29112] 2025-07-10 06:47:16,872 postgresql database keystone has been created
+ERROR:  relation "user" does not exist
+LINE 1: delete from "user" u using local_user lu where u.id = lu.use...
+                    ^
+[INFO][29112] 2025-07-10 06:47:16,904 Populate the Identity service database
+[INFO][29112] 2025-07-10 06:47:21,051 Identity service database has been populated
+[INFO][29112] 2025-07-10 06:47:21,052 Initialize Fernet key repositories
+[INFO][29112] 2025-07-10 06:47:23,237 Fernet key repositories have been initialized
+[INFO][29112] 2025-07-10 06:47:23,238 Restart and enable keystone
+[uWSGI] getting INI configuration from /usr/libexec/vstorage-ui-backend/etc/keystone.ini
+[uWSGI] getting INI configuration from /usr/libexec/vstorage-ui-backend/etc/keystone.ini
+The unit files have no installation config (WantedBy=, RequiredBy=, Also=,
+Alias= settings in the [Install] section, and DefaultInstance= for template
+units). This means they are not meant to be enabled or disabled using systemctl.
+ 
+Possible reasons for having this kind of units are:
+• A unit may be statically enabled by being symlinked from another unit's
+  .wants/ or .requires/ directory.
+• A unit's purpose may be to act as a helper for some other unit which has
+  a requirement dependency on it.
+• A unit may be started when needed via activation (socket, path, timer,
+  D-Bus, udev, scripted systemctl call, ...).
+• In case of template units, the unit is meant to be enabled with some
+  instance name specified.
+The unit files have no installation config (WantedBy=, RequiredBy=, Also=,
+Alias= settings in the [Install] section, and DefaultInstance= for template
+units). This means they are not meant to be enabled or disabled using systemctl.
+ 
+Possible reasons for having this kind of units are:
+• A unit may be statically enabled by being symlinked from another unit's
+  .wants/ or .requires/ directory.
+• A unit's purpose may be to act as a helper for some other unit which has
+  a requirement dependency on it.
+• A unit may be started when needed via activation (socket, path, timer,
+  D-Bus, udev, scripted systemctl call, ...).
+• In case of template units, the unit is meant to be enabled with some
+  instance name specified.
+[INFO][29112] 2025-07-10 06:47:23,300 keystone has been restarted and enabled
+[INFO][29112] 2025-07-10 06:47:23,300 Configuring keystone-manage bootstrap
+[INFO][29112] 2025-07-10 06:47:25,033 Waiting for keystone service
++----------------------------------+-----------------------+
+| ID                               | Name                  |
++----------------------------------+-----------------------+
+| ebb2363ce8774c9bb10a9da4fba9627c | vstorage-service-user |
++----------------------------------+-----------------------+
+[INFO][29112] 2025-07-10 06:47:26,955 Creating roles
++-------------+----------------------------------+
+| Field       | Value                            |
++-------------+----------------------------------+
+| description | None                             |
+| domain_id   | None                             |
+| id          | df9c6efb26e34ce58a0f7688e7486623 |
+| name        | abgw                             |
+| options     | {}                               |
++-------------+----------------------------------+
++-------------+----------------------------------+
+| Field       | Value                            |
++-------------+----------------------------------+
+| description | None                             |
+| domain_id   | None                             |
+| id          | 8be36a18fb9b4740b9656fc52d0e283f |
+| name        | cluster                          |
+| options     | {}                               |
++-------------+----------------------------------+
++-------------+----------------------------------+
+| Field       | Value                            |
++-------------+----------------------------------+
+| description | None                             |
+| domain_id   | None                             |
+| id          | 536badaab9994f56a953cff51e6a22d1 |
+| name        | iscsi                            |
+| options     | {}                               |
++-------------+----------------------------------+
++-------------+----------------------------------+
+| Field       | Value                            |
++-------------+----------------------------------+
+| description | None                             |
+| domain_id   | None                             |
+| id          | de7fa2db48a44f8bab88507bfcd77cc2 |
+| name        | network                          |
+| options     | {}                               |
++-------------+----------------------------------+
++-------------+----------------------------------+
+| Field       | Value                            |
++-------------+----------------------------------+
+| description | None                             |
+| domain_id   | None                             |
+| id          | ac8573877f484b3eb8310fcf687ecb88 |
+| name        | nfs                              |
+| options     | {}                               |
++-------------+----------------------------------+
++-------------+----------------------------------+
+| Field       | Value                            |
++-------------+----------------------------------+
+| description | None                             |
+| domain_id   | None                             |
+| id          | bd2016e5e24c401a9b5e491412e07158 |
+| name        | s3                               |
+| options     | {}                               |
++-------------+----------------------------------+
++-------------+----------------------------------+
+| Field       | Value                            |
++-------------+----------------------------------+
+| description | None                             |
+| domain_id   | None                             |
+| id          | 82ebd4009e3e4b008d0ede7d512979ac |
+| name        | ssh                              |
+| options     | {}                               |
++-------------+----------------------------------+
++-------------+----------------------------------+
+| Field       | Value                            |
++-------------+----------------------------------+
+| description | None                             |
+| domain_id   | None                             |
+| id          | bbcf68f2e0e54b59bbd744ce556c1edd |
+| name        | updates                          |
+| options     | {}                               |
++-------------+----------------------------------+
++-------------+----------------------------------+
+| Field       | Value                            |
++-------------+----------------------------------+
+| description | None                             |
+| domain_id   | None                             |
+| id          | a717611207924879ad038cb2ab7def0b |
+| name        | superuser                        |
+| options     | {}                               |
++-------------+----------------------------------+
++-------------+----------------------------------+
+| Field       | Value                            |
++-------------+----------------------------------+
+| description | None                             |
+| domain_id   | None                             |
+| id          | 6f89b9da181049848d9bde7c8d4f9038 |
+| name        | compute                          |
+| options     | {}                               |
++-------------+----------------------------------+
++-------------+----------------------------------+
+| Field       | Value                            |
++-------------+----------------------------------+
+| description | None                             |
+| domain_id   | None                             |
+| id          | 08f515fadba34ef8b82dca0c49c2d670 |
+| name        | viewer                           |
+| options     | {}                               |
++-------------+----------------------------------+
++-------------+----------------------------------+
+| Field       | Value                            |
++-------------+----------------------------------+
+| description | None                             |
+| domain_id   | None                             |
+| id          | 4295e2b790814ebe97dba4ad0d6b757d |
+| name        | domain_admin                     |
+| options     | {}                               |
++-------------+----------------------------------+
++-------------+----------------------------------+
+| Field       | Value                            |
++-------------+----------------------------------+
+| description | None                             |
+| domain_id   | None                             |
+| id          | 82524ff9f805412ea679f5ecf3dec3d9 |
+| name        | project_admin                    |
+| options     | {}                               |
++-------------+----------------------------------+
++-------------+----------------------------------+
+| Field       | Value                            |
++-------------+----------------------------------+
+| description | None                             |
+| domain_id   | None                             |
+| id          | c7b800ba5fa2423db49cb7847af32cd3 |
+| name        | project_user                     |
+| options     | {}                               |
++-------------+----------------------------------+
++-------------+----------------------------------+
+| Field       | Value                            |
++-------------+----------------------------------+
+| description | None                             |
+| domain_id   | None                             |
+| id          | 219bb07e021749dfb9cc703ba9c73c3c |
+| name        | image_upload                     |
+| options     | {}                               |
++-------------+----------------------------------+
++-------------+----------------------------------+
+| Field       | Value                            |
++-------------+----------------------------------+
+| description | None                             |
+| domain_id   | None                             |
+| id          | 8f21b55a76de4fa5a2540a65555673d0 |
+| name        | dr_service_support               |
+| options     | {}                               |
++-------------+----------------------------------+
++-------------+----------------------------------+
+| Field       | Value                            |
++-------------+----------------------------------+
+| description | None                             |
+| domain_id   | None                             |
+| id          | d1751681f0624963970b99d69989c44a |
+| name        | dr_customer_support              |
+| options     | {}                               |
++-------------+----------------------------------+
++-------------+----------------------------------+
+| Field       | Value                            |
++-------------+----------------------------------+
+| description | None                             |
+| domain_id   | None                             |
+| id          | 330b076df12b41a594f0d94a463e8fab |
+| name        | quota_manager                    |
+| options     | {}                               |
++-------------+----------------------------------+
++-------------+----------------------------------+
+| Field       | Value                            |
++-------------+----------------------------------+
+| description | None                             |
+| domain_id   | None                             |
+| id          | 12ef2837a3f6422c9a46782b244481a2 |
+| name        | debug                            |
+| options     | {}                               |
++-------------+----------------------------------+
+[INFO][29112] 2025-07-10 06:47:40,773 Creating roles implication
++-------------+----------------------------------+
+| Field       | Value                            |
++-------------+----------------------------------+
+| description | None                             |
+| domain_id   | None                             |
+| id          | 06621a4011394b2daf45e7f550ebbc22 |
+| name        | member                           |
+| options     | {'immutable': True}              |
++-------------+----------------------------------+
++------------+----------------------------------+
+| Field      | Value                            |
++------------+----------------------------------+
+| implies    | 06621a4011394b2daf45e7f550ebbc22 |
+| prior_role | c7b800ba5fa2423db49cb7847af32cd3 |
++------------+----------------------------------+
++------------+----------------------------------+
+| Field      | Value                            |
++------------+----------------------------------+
+| implies    | c7b800ba5fa2423db49cb7847af32cd3 |
+| prior_role | 82524ff9f805412ea679f5ecf3dec3d9 |
++------------+----------------------------------+
++------------+----------------------------------+
+| Field      | Value                            |
++------------+----------------------------------+
+| implies    | 82524ff9f805412ea679f5ecf3dec3d9 |
+| prior_role | 4295e2b790814ebe97dba4ad0d6b757d |
++------------+----------------------------------+
++------------+----------------------------------+
+| Field      | Value                            |
++------------+----------------------------------+
+| implies    | 4295e2b790814ebe97dba4ad0d6b757d |
+| prior_role | a22e83438d8b448b99e420e163f82fac |
++------------+----------------------------------+
+[INFO][29112] 2025-07-10 06:47:47,394 Setting system tag
+{"user": {"id": "ebb2363ce8774c9bb10a9da4fba9627c", "name": "vstorage-service-user", "domain_id": "default", "enabled": true, "password_expires_at": null, "tags": ["hci.system"], "created_at": "2025-07-10T03:47:24.788487", "extra": {}, "options": {}, "links": {"self": "https://127.0.0.1:35357/v3/users/ebb2363ce8774c9bb10a9da4fba9627c"}}}
+[INFO][29112] 2025-07-10 06:47:50,997 Creating users
+[INFO][29112] 2025-07-10 06:47:51,013 Updating /usr/libexec/vstorage-ui-backend/etc/backend.cfg
+[INFO][29112] 2025-07-10 06:47:51,048 Update pg_hba.conf
+[INFO][29112] 2025-07-10 06:47:51,049 Update pg_hba.conf has finished
+[INFO][29112] 2025-07-10 06:47:51,050 Clean pg_hba.conf
+[INFO][29112] 2025-07-10 06:47:51,052 cleaning pg_hba.conf finished
+Running in chroot, ignoring command 'is-active'
+[INFO][29112] 2025-07-10 06:47:51,054 Reloading postgresql service ...
+Running in chroot, ignoring command 'reload'
+[INFO][29112] 2025-07-10 06:47:51,056 Postgresql service has been reloaded
+Configure coredns database...
+[INFO][29112] 2025-07-10 06:47:51,080 Creating postgresql user coredns...
+CREATE ROLE
+[INFO][29112] 2025-07-10 06:47:51,105 Postgresql user coredns has been created
+[INFO][29112] 2025-07-10 06:47:51,106 Create database coredns
+[INFO][29112] 2025-07-10 06:47:51,130 creating postgresql database coredns
+[INFO][29112] 2025-07-10 06:47:51,423 postgresql database coredns has been created
+Dialect: postgres
+Connect arguments: host=/run/pgbouncer dbname=coredns sslmode=disable binary_parameters=yes
+2025/07/10 06:47:51 [INFO] Run AutoMigrate
+2025/07/10 06:47:51 [INFO] Init DB schema
+2025/07/10 06:47:51 [INFO] Dialect postgres
+2025/07/10 06:47:51 [INFO] Init DB schema did run successfully
+2025/07/10 06:47:51 [INFO] Migration did run successfully
+Successfully configured coredns database
+[INFO][29112] 2025-07-10 06:47:51,486 Load data into coredns database...
+[INFO][29112] 2025-07-10 06:47:51,486 Check existing coredns db schema
+[INFO][29112] 2025-07-10 06:47:51,503 coredns db schema exists
+INSERT 0 1
+INSERT 0 1
+[INFO][29112] 2025-07-10 06:47:51,549 Data have been loaded into coredns database
+[INFO][29112] 2025-07-10 06:47:51,550 Grant permissions to vstoradmin for database coredns
+GRANT
+GRANT
+ALTER DEFAULT PRIVILEGES
+ALTER DEFAULT PRIVILEGES
+[INFO][29112] 2025-07-10 06:47:51,573 Permissions to vstoradmin for database coredns has been granted
+removed '/run/pgbouncer/.s.PGSQL.6432'
+[INFO][29112] 2025-07-10 06:47:51,697 *** Finish 2025-07-10 06:47:51,696: init-postinstall.sh  ***

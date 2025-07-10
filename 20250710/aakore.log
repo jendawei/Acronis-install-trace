@@ -1,0 +1,35 @@
+{"level":"warn","time":"2025-07-10T04:19:05.721+0800","msg":"failed to load roles config: open roles.yaml: no such file or directory","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /api/agent/v1/status registered for GET","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /api/agent/v1/units registered for GET","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /api/agent/v1/units/reload registered for PUT","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /api/agent/v1/units/{name} registered for GET","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /api/agent/v1/units/{name} registered for PUT","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /api/agent/v1/units/{name}/enabled registered for PUT","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /api/agent/v1/units/{name}/disabled registered for PUT","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /api/agent/v1/units/{name}/started registered for PUT","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /api/agent/v1/units/{name}/stopped registered for PUT","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /api/agent/v1/units/attached registered for POST","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /api/agent/v1/commands/settings/pull registered for POST","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /.well-known/openid-configuration registered for GET","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /idp/keys registered for GET","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /idp/token registered for POST","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /idp/authorize registered for GET","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /idp/clients registered for POST","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /api/agent/v1/id registered for GET","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /api/agent/v1/registration registered for GET","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /api/agent/v1/registration registered for PUT","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /api/agent/v1/registration registered for DELETE","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /api/agent/v1/logger registered for POST","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /api/agent/v1/logger/structured registered for POST","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /api/logger/v1/lines registered for POST","source":"aakore"}
+{"level":"debug","time":"2025-07-10T04:19:05.828+0800","msg":"API router: /api/logger/v1/structured registered for POST","source":"aakore"}
+{"level":"info","time":"2025-07-10T04:19:05.834+0800","msg":"update unit configurations","source":"aakore"}
+{"level":"info","time":"2025-07-10T04:19:05.835+0800","msg":"add unit lca","source":"aakore"}
+{"level":"info","time":"2025-07-10T04:19:05.840+0800","msg":"startup unit lca","source":"aakore"}
+{"level":"info","time":"2025-07-10T04:19:05.840+0800","msg":"healtcheck is disabled for external unit lca","source":"aakore"}
+{"level":"info","time":"2025-07-10T04:19:05.840+0800","msg":"update unit configuartions done","source":"aakore"}
+{"level":"info","time":"2025-07-10T04:19:05.840+0800","msg":"unit manager started","source":"aakore"}
+{"level":"info","time":"2025-07-10T04:19:05.840+0800","msg":"listening http on tcp([::]:9877)","source":"aakore"}
+{"level":"info","time":"2025-07-10T04:19:05.840+0800","msg":"listening http on unix(/opt/acronis/var/run/aakore/aakore.sock)","source":"aakore"}
+{"level":"info","time":"2025-07-10T04:19:05.840+0800","msg":"listening apn on apn(ff9225d2-d474-4470-a43f-49ed4e81e709)","source":"aakore"}
+{"level":"info","time":"2025-07-10T04:19:05.842+0800","msg":"server started","source":"aakore"}

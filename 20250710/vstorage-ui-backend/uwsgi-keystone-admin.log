@@ -1,0 +1,267 @@
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 03:47:23 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-backend
+writing pidfile to /run/keystone-uwsgi/keystone-admin.pid
+detected binary path: /usr/sbin/uwsgi
+chdir() to /usr/libexec/vstorage-ui-backend/etc/keystone
+your processes number limit is 513891
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /run/keystone-uwsgi/keystone-admin.socket fd 3
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x9a1cb0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 412508 bytes (402 KB) for 2 cores
+*** Operational MODE: threaded ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 30076)
+spawned uWSGI worker 1 (pid: 30087, cores: 2)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x9a1cb0 pid: 30087 (default app)
+[pid: 30087|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:26 2025] GET /v3 => generated 251 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:26 2025] POST /v3/auth/tokens => generated 1235 bytes in 312 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 679 bytes} [Thu Jul 10 03:47:26 2025] GET /v3/users => generated 405 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 4/4] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:27 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 5/5] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:27 2025] POST /v3/auth/tokens => generated 1235 bytes in 175 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 6/6] 127.0.0.1 () {46 vars in 760 bytes} [Thu Jul 10 03:47:27 2025] POST /v3/roles => generated 212 bytes in 50 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 7/7] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:28 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 8/8] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:28 2025] POST /v3/auth/tokens => generated 1235 bytes in 176 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 9/9] 127.0.0.1 () {46 vars in 760 bytes} [Thu Jul 10 03:47:28 2025] POST /v3/roles => generated 215 bytes in 7 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 10/10] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:28 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 11/11] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:28 2025] POST /v3/auth/tokens => generated 1235 bytes in 174 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 12/12] 127.0.0.1 () {46 vars in 760 bytes} [Thu Jul 10 03:47:29 2025] POST /v3/roles => generated 213 bytes in 8 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 13/13] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:29 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 14/14] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:29 2025] POST /v3/auth/tokens => generated 1235 bytes in 176 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 15/15] 127.0.0.1 () {46 vars in 760 bytes} [Thu Jul 10 03:47:29 2025] POST /v3/roles => generated 215 bytes in 8 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 16/16] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:30 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 17/17] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:30 2025] POST /v3/auth/tokens => generated 1235 bytes in 174 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 18/18] 127.0.0.1 () {46 vars in 760 bytes} [Thu Jul 10 03:47:30 2025] POST /v3/roles => generated 211 bytes in 7 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 19/19] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:31 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 20/20] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:31 2025] POST /v3/auth/tokens => generated 1235 bytes in 176 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 21/21] 127.0.0.1 () {46 vars in 760 bytes} [Thu Jul 10 03:47:31 2025] POST /v3/roles => generated 210 bytes in 8 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 22/22] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:31 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 23/23] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:31 2025] POST /v3/auth/tokens => generated 1235 bytes in 175 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 24/24] 127.0.0.1 () {46 vars in 760 bytes} [Thu Jul 10 03:47:31 2025] POST /v3/roles => generated 211 bytes in 8 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 25/25] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:32 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 26/26] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:32 2025] POST /v3/auth/tokens => generated 1235 bytes in 175 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 27/27] 127.0.0.1 () {46 vars in 760 bytes} [Thu Jul 10 03:47:32 2025] POST /v3/roles => generated 215 bytes in 9 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 28/28] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:33 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 29/29] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:33 2025] POST /v3/auth/tokens => generated 1235 bytes in 175 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 30/30] 127.0.0.1 () {46 vars in 760 bytes} [Thu Jul 10 03:47:33 2025] POST /v3/roles => generated 217 bytes in 8 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 31/31] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:33 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 32/32] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:33 2025] POST /v3/auth/tokens => generated 1235 bytes in 176 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 33/33] 127.0.0.1 () {46 vars in 760 bytes} [Thu Jul 10 03:47:34 2025] POST /v3/roles => generated 215 bytes in 11 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 34/34] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:34 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 35/35] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:34 2025] POST /v3/auth/tokens => generated 1235 bytes in 175 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 36/36] 127.0.0.1 () {46 vars in 760 bytes} [Thu Jul 10 03:47:34 2025] POST /v3/roles => generated 214 bytes in 7 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 37/37] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:35 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 38/38] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:35 2025] POST /v3/auth/tokens => generated 1235 bytes in 174 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 39/39] 127.0.0.1 () {46 vars in 760 bytes} [Thu Jul 10 03:47:35 2025] POST /v3/roles => generated 220 bytes in 9 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 40/40] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:36 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 41/41] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:36 2025] POST /v3/auth/tokens => generated 1235 bytes in 175 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 42/42] 127.0.0.1 () {46 vars in 760 bytes} [Thu Jul 10 03:47:36 2025] POST /v3/roles => generated 221 bytes in 7 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 43/43] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:36 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 44/44] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:36 2025] POST /v3/auth/tokens => generated 1235 bytes in 177 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 45/45] 127.0.0.1 () {46 vars in 760 bytes} [Thu Jul 10 03:47:37 2025] POST /v3/roles => generated 220 bytes in 11 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 46/46] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:37 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 47/47] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:37 2025] POST /v3/auth/tokens => generated 1235 bytes in 176 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 48/48] 127.0.0.1 () {46 vars in 760 bytes} [Thu Jul 10 03:47:37 2025] POST /v3/roles => generated 220 bytes in 8 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 49/49] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:38 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 50/50] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:38 2025] POST /v3/auth/tokens => generated 1235 bytes in 175 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 51/51] 127.0.0.1 () {46 vars in 760 bytes} [Thu Jul 10 03:47:38 2025] POST /v3/roles => generated 226 bytes in 7 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 52/52] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:39 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 53/53] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:39 2025] POST /v3/auth/tokens => generated 1235 bytes in 176 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 54/54] 127.0.0.1 () {46 vars in 760 bytes} [Thu Jul 10 03:47:39 2025] POST /v3/roles => generated 227 bytes in 8 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 55/55] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:39 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 56/56] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:39 2025] POST /v3/auth/tokens => generated 1235 bytes in 175 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 57/57] 127.0.0.1 () {46 vars in 760 bytes} [Thu Jul 10 03:47:39 2025] POST /v3/roles => generated 221 bytes in 9 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 58/58] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:40 2025] GET /v3 => generated 251 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 59/59] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:40 2025] POST /v3/auth/tokens => generated 1235 bytes in 176 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 60/60] 127.0.0.1 () {46 vars in 760 bytes} [Thu Jul 10 03:47:40 2025] POST /v3/roles => generated 213 bytes in 7 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 61/61] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:41 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 62/62] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:41 2025] POST /v3/auth/tokens => generated 1235 bytes in 175 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 63/63] 127.0.0.1 () {46 vars in 760 bytes} [Thu Jul 10 03:47:41 2025] POST /v3/roles => generated 139 bytes in 8 msecs (HTTP/1.1 409) 4 headers in 164 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 64/64] 127.0.0.1 () {42 vars in 693 bytes} [Thu Jul 10 03:47:41 2025] GET /v3/roles/member => generated 84 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 164 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 65/65] 127.0.0.1 () {42 vars in 702 bytes} [Thu Jul 10 03:47:41 2025] GET /v3/roles?name=member => generated 333 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 66/66] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:41 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 67/67] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:41 2025] POST /v3/auth/tokens => generated 1235 bytes in 177 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 68/68] 127.0.0.1 () {42 vars in 699 bytes} [Thu Jul 10 03:47:42 2025] GET /v3/role_inferences => generated 679 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 69/69] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:42 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 70/70] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:42 2025] POST /v3/auth/tokens => generated 1235 bytes in 178 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 71/71] 127.0.0.1 () {42 vars in 679 bytes} [Thu Jul 10 03:47:42 2025] GET /v3/roles => generated 4709 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 159 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 72/72] 127.0.0.1 () {44 vars in 852 bytes} [Thu Jul 10 03:47:42 2025] PUT /v3/roles/c7b800ba5fa2423db49cb7847af32cd3/implies/06621a4011394b2daf45e7f550ebbc22 => generated 481 bytes in 11 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 73/73] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:43 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 74/74] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:43 2025] POST /v3/auth/tokens => generated 1235 bytes in 188 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 75/75] 127.0.0.1 () {42 vars in 699 bytes} [Thu Jul 10 03:47:43 2025] GET /v3/role_inferences => generated 1014 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 159 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 76/76] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:44 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 77/77] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:44 2025] POST /v3/auth/tokens => generated 1235 bytes in 176 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 78/78] 127.0.0.1 () {42 vars in 679 bytes} [Thu Jul 10 03:47:44 2025] GET /v3/roles => generated 4709 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 159 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 79/79] 127.0.0.1 () {44 vars in 852 bytes} [Thu Jul 10 03:47:44 2025] PUT /v3/roles/82524ff9f805412ea679f5ecf3dec3d9/implies/c7b800ba5fa2423db49cb7847af32cd3 => generated 488 bytes in 10 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 80/80] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:44 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 81/81] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:44 2025] POST /v3/auth/tokens => generated 1235 bytes in 187 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 82/82] 127.0.0.1 () {42 vars in 699 bytes} [Thu Jul 10 03:47:45 2025] GET /v3/role_inferences => generated 1356 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 159 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 83/83] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:45 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 84/84] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:45 2025] POST /v3/auth/tokens => generated 1235 bytes in 175 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 85/85] 127.0.0.1 () {42 vars in 679 bytes} [Thu Jul 10 03:47:45 2025] GET /v3/roles => generated 4709 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 159 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 86/86] 127.0.0.1 () {44 vars in 852 bytes} [Thu Jul 10 03:47:45 2025] PUT /v3/roles/4295e2b790814ebe97dba4ad0d6b757d/implies/82524ff9f805412ea679f5ecf3dec3d9 => generated 488 bytes in 9 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 87/87] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:46 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 88/88] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:46 2025] POST /v3/auth/tokens => generated 1235 bytes in 187 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 89/89] 127.0.0.1 () {42 vars in 699 bytes} [Thu Jul 10 03:47:46 2025] GET /v3/role_inferences => generated 1698 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 159 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 90/90] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:47 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 91/91] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:47 2025] POST /v3/auth/tokens => generated 1235 bytes in 174 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 92/92] 127.0.0.1 () {42 vars in 679 bytes} [Thu Jul 10 03:47:47 2025] GET /v3/roles => generated 4709 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 159 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 93/93] 127.0.0.1 () {44 vars in 852 bytes} [Thu Jul 10 03:47:47 2025] PUT /v3/roles/a22e83438d8b448b99e420e163f82fac/implies/4295e2b790814ebe97dba4ad0d6b757d => generated 480 bytes in 8 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 94/94] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:48 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 95/95] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:48 2025] POST /v3/auth/tokens => generated 1440 bytes in 189 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 96/96] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:48 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 97/97] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:48 2025] POST /v3/auth/tokens => generated 1440 bytes in 176 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 98/98] 127.0.0.1 () {44 vars in 898 bytes} [Thu Jul 10 03:47:49 2025] GET /v3/auth/tokens => generated 1440 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 361 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 99/99] 127.0.0.1 () {42 vars in 745 bytes} [Thu Jul 10 03:47:49 2025] GET /v3/users/ebb2363ce8774c9bb10a9da4fba9627c => generated 315 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 100/100] 127.0.0.1 () {42 vars in 738 bytes} [Thu Jul 10 03:47:49 2025] PATCH /v3/users/ebb2363ce8774c9bb10a9da4fba9627c => generated 340 bytes in 190 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 101/101] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:49 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 102/102] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:49 2025] POST /v3/auth/tokens => generated 1440 bytes in 184 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 103/103] 127.0.0.1 () {42 vars in 697 bytes} [Thu Jul 10 03:47:50 2025] GET /v3/projects/admin => generated 86 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 164 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 104/104] 127.0.0.1 () {42 vars in 706 bytes} [Thu Jul 10 03:47:50 2025] GET /v3/projects?name=admin => generated 488 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 105/105] 127.0.0.1 () {46 vars in 833 bytes} [Thu Jul 10 03:47:50 2025] PATCH /v3/projects/92a57f581238454da443cf1b77b1dc31 => generated 409 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 106/106] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 03:47:50 2025] GET /v3 => generated 251 bytes in 0 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 107/107] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 03:47:50 2025] POST /v3/auth/tokens => generated 1440 bytes in 181 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 108/108] 127.0.0.1 () {42 vars in 699 bytes} [Thu Jul 10 03:47:50 2025] GET /v3/roles/superuser => generated 87 bytes in 7 msecs (HTTP/1.1 404) 4 headers in 164 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 109/109] 127.0.0.1 () {42 vars in 708 bytes} [Thu Jul 10 03:47:50 2025] GET /v3/roles?name=superuser => generated 322 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 110/110] 127.0.0.1 () {42 vars in 723 bytes} [Thu Jul 10 03:47:50 2025] GET /v3/users/vstorage-service-user => generated 99 bytes in 10 msecs (HTTP/1.1 404) 4 headers in 164 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 111/111] 127.0.0.1 () {42 vars in 732 bytes} [Thu Jul 10 03:47:50 2025] GET /v3/users?name=vstorage-service-user => generated 444 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 112/112] 127.0.0.1 () {42 vars in 697 bytes} [Thu Jul 10 03:47:50 2025] GET /v3/projects/admin => generated 86 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 164 bytes (1 switches on core 1)
+[pid: 30087|app: 0|req: 113/113] 127.0.0.1 () {42 vars in 706 bytes} [Thu Jul 10 03:47:50 2025] GET /v3/projects?name=admin => generated 500 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 30087|app: 0|req: 114/114] 127.0.0.1 () {44 vars in 932 bytes} [Thu Jul 10 03:47:50 2025] PUT /v3/projects/92a57f581238454da443cf1b77b1dc31/users/ebb2363ce8774c9bb10a9da4fba9627c/roles/a717611207924879ad038cb2ab7def0b => generated 0 bytes in 8 msecs (HTTP/1.1 204) 2 headers in 113 bytes (0 switches on core 1)
+SIGINT/SIGTERM received...killing workers...
+!!! uWSGI process 30087 got Segmentation Fault !!!
+*** backtrace of 30087 ***
+/usr/sbin/uwsgi(uwsgi_backtrace+0x43) [0x471293]
+/usr/sbin/uwsgi(uwsgi_segfault+0x27) [0x4717a7]
+/lib64/libc.so.6(+0x54db0) [0x7f7b5c854db0]
+/usr/lib64/python3.9/site-packages/greenlet/_greenlet.cpython-39-x86_64-linux-gnu.so(_ZN8greenlet4refs24MainGreenletExactCheckerEPv+0x33) [0x7f7b5b2f1e13]
+/usr/lib64/python3.9/site-packages/greenlet/_greenlet.cpython-39-x86_64-linux-gnu.so(_ZN24ThreadState_DestroyNoGIL19DestroyQueueWithGILEPv+0x33) [0x7f7b5b2f2283]
+/lib64/libpython3.9.so.1.0(+0x8e467) [0x7f7b5c48e467]
+/lib64/libpython3.9.so.1.0(+0x6715e) [0x7f7b5c46715e]
+/lib64/libpython3.9.so.1.0(+0x11cc43) [0x7f7b5c51cc43]
+/lib64/libpython3.9.so.1.0(PyObject_VectorcallMethod+0x8f) [0x7f7b5c52e74f]
+/lib64/libpython3.9.so.1.0(+0x1b691c) [0x7f7b5c5b691c]
+/lib64/libpython3.9.so.1.0(Py_FinalizeEx+0x37) [0x7f7b5c5b6667]
+/usr/sbin/uwsgi(uwsgi_plugins_atexit+0x71) [0x46c151]
+/lib64/libc.so.6(+0x574dd) [0x7f7b5c8574dd]
+/lib64/libc.so.6(on_exit+0) [0x7f7b5c857620]
+/usr/sbin/uwsgi() [0x41c335]
+/usr/sbin/uwsgi(end_me+0x2b) [0x46ecab]
+/lib64/libc.so.6(+0x54db0) [0x7f7b5c854db0]
+/lib64/libc.so.6(epoll_wait+0x5e) [0x7f7b5c94e81e]
+/usr/sbin/uwsgi(event_queue_wait+0x39) [0x463359]
+/usr/sbin/uwsgi(wsgi_req_accept+0x11a) [0x42047a]
+/usr/sbin/uwsgi(simple_loop_run+0xda) [0x46fefa]
+/usr/sbin/uwsgi(simple_loop+0x7b) [0x4700ab]
+/usr/sbin/uwsgi(uwsgi_ignition+0x29c) [0x4709cc]
+/usr/sbin/uwsgi(uwsgi_worker_run+0x272) [0x474d82]
+/usr/sbin/uwsgi(uwsgi_run+0x472) [0x475312]
+/usr/sbin/uwsgi() [0x419dc4]
+/lib64/libc.so.6(+0x3feb0) [0x7f7b5c83feb0]
+/lib64/libc.so.6(__libc_start_main+0x80) [0x7f7b5c83ff60]
+/usr/sbin/uwsgi(_start+0x25) [0x419df5]
+*** end of backtrace ***
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /run/keystone-uwsgi/keystone-admin.socket removed.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 04:19:09 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-backend/etc/keystone
+writing pidfile to /run/keystone-uwsgi/keystone-admin.pid
+detected binary path: /usr/sbin/uwsgi
+chdir() to /usr/libexec/vstorage-ui-backend/etc/keystone
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /run/keystone-uwsgi/keystone-admin.socket fd 3
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f869287f280
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1031270 bytes (1007 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5454)
+spawned uWSGI worker 1 (pid: 5478, cores: 2)
+spawned uWSGI worker 2 (pid: 5479, cores: 2)
+spawned uWSGI worker 3 (pid: 5480, cores: 2)
+spawned uWSGI worker 4 (pid: 5481, cores: 2)
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x7f869287f280 pid: 5479 (default app)
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x7f869287f280 pid: 5480 (default app)
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x7f869287f280 pid: 5478 (default app)
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x7f869287f280 pid: 5481 (default app)
+SIGINT/SIGTERM received...killing workers...
+[deadlock-detector] a process holding a robust mutex died. recovering...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /run/keystone-uwsgi/keystone-admin.socket removed.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 04:19:17 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-backend/etc/keystone
+writing pidfile to /run/keystone-uwsgi/keystone-admin.pid
+detected binary path: /usr/sbin/uwsgi
+chdir() to /usr/libexec/vstorage-ui-backend/etc/keystone
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /run/keystone-uwsgi/keystone-admin.socket fd 3
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f37cc47f280
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1031270 bytes (1007 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7232)
+spawned uWSGI worker 1 (pid: 7234, cores: 2)
+spawned uWSGI worker 2 (pid: 7235, cores: 2)
+spawned uWSGI worker 3 (pid: 7236, cores: 2)
+spawned uWSGI worker 4 (pid: 7237, cores: 2)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f37cc47f280 pid: 7234 (default app)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f37cc47f280 pid: 7236 (default app)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f37cc47f280 pid: 7237 (default app)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f37cc47f280 pid: 7235 (default app)
+[pid: 7234|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 04:19:26 2025] GET /v3 => generated 251 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 7236|app: 0|req: 1/2] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 04:19:26 2025] POST /v3/auth/tokens => generated 1505 bytes in 230 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 0)
+[pid: 7234|app: 0|req: 2/3] 127.0.0.1 () {44 vars in 898 bytes} [Thu Jul 10 04:19:26 2025] GET /v3/auth/tokens => generated 1505 bytes in 54 msecs (HTTP/1.1 200) 5 headers in 361 bytes (1 switches on core 1)
+[pid: 7236|app: 0|req: 2/4] 127.0.0.1 () {42 vars in 723 bytes} [Thu Jul 10 04:19:27 2025] GET /v3/users/vstorage-service-user => generated 99 bytes in 63 msecs (HTTP/1.1 404) 4 headers in 164 bytes (1 switches on core 1)
+[pid: 7237|app: 0|req: 1/5] 127.0.0.1 () {42 vars in 732 bytes} [Thu Jul 10 04:19:27 2025] GET /v3/users?name=vstorage-service-user => generated 444 bytes in 108 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 7237|app: 0|req: 2/6] 127.0.0.1 () {46 vars in 827 bytes} [Thu Jul 10 04:19:27 2025] PATCH /v3/users/ebb2363ce8774c9bb10a9da4fba9627c => generated 340 bytes in 404 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 1)
+[pid: 7235|app: 0|req: 1/7] 127.0.0.1 () {40 vars in 520 bytes} [Thu Jul 10 04:19:30 2025] GET /v3 => generated 251 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 7235|app: 0|req: 2/8] 127.0.0.1 () {44 vars in 627 bytes} [Thu Jul 10 04:19:30 2025] POST /v3/auth/tokens => generated 109 bytes in 310 msecs (HTTP/1.1 401) 5 headers in 229 bytes (1 switches on core 1)

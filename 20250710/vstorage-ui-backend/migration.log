@@ -1,0 +1,860 @@
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 3b31d446fc, empty message
+DEBUG [alembic.runtime.migration] new branch insert 3b31d446fc
+INFO  [alembic.runtime.migration] Running upgrade 3b31d446fc -> 4f43502ce75, empty message
+DEBUG [alembic.runtime.migration] update 3b31d446fc to 4f43502ce75
+INFO  [alembic.runtime.migration] Running upgrade 4f43502ce75 -> 173750b8585, empty message
+DEBUG [alembic.runtime.migration] update 4f43502ce75 to 173750b8585
+INFO  [alembic.runtime.migration] Running upgrade 173750b8585 -> 12a1b37110a, empty message
+DEBUG [alembic.runtime.migration] update 173750b8585 to 12a1b37110a
+INFO  [alembic.runtime.migration] Running upgrade 12a1b37110a -> 49e67c24109, empty message
+DEBUG [alembic.runtime.migration] update 12a1b37110a to 49e67c24109
+INFO  [alembic.runtime.migration] Running upgrade 49e67c24109 -> 2810780859b, empty message
+DEBUG [alembic.runtime.migration] update 49e67c24109 to 2810780859b
+INFO  [alembic.runtime.migration] Running upgrade 2810780859b -> 11e9eb396a9, empty message
+DEBUG [alembic.runtime.migration] update 2810780859b to 11e9eb396a9
+INFO  [alembic.runtime.migration] Running upgrade 11e9eb396a9 -> 5567e6c0b72, empty message
+DEBUG [alembic.runtime.migration] update 11e9eb396a9 to 5567e6c0b72
+INFO  [alembic.runtime.migration] Running upgrade 5567e6c0b72 -> 31b69d093af, empty message
+DEBUG [alembic.runtime.migration] update 5567e6c0b72 to 31b69d093af
+INFO  [alembic.runtime.migration] Running upgrade 31b69d093af -> 4576cdd9f6a, empty message
+DEBUG [alembic.runtime.migration] update 31b69d093af to 4576cdd9f6a
+INFO  [alembic.runtime.migration] Running upgrade 4576cdd9f6a -> 3722b1ae1687, empty message
+DEBUG [alembic.runtime.migration] update 4576cdd9f6a to 3722b1ae1687
+INFO  [alembic.runtime.migration] Running upgrade 3722b1ae1687 -> c345614f60f8, empty message
+DEBUG [alembic.runtime.migration] update 3722b1ae1687 to c345614f60f8
+INFO  [alembic.runtime.migration] Running upgrade c345614f60f8 -> 7a72b28b5b1b, empty message
+DEBUG [alembic.runtime.migration] update c345614f60f8 to 7a72b28b5b1b
+INFO  [alembic.runtime.migration] Running upgrade 7a72b28b5b1b -> 179b46a66c75, empty message
+DEBUG [alembic.runtime.migration] update 7a72b28b5b1b to 179b46a66c75
+INFO  [alembic.runtime.migration] Running upgrade 179b46a66c75 -> 79d34ac79481, empty message
+DEBUG [alembic.runtime.migration] update 179b46a66c75 to 79d34ac79481
+INFO  [alembic.runtime.migration] Running upgrade 79d34ac79481 -> 59f44b2c6275, empty message
+DEBUG [alembic.runtime.migration] update 79d34ac79481 to 59f44b2c6275
+INFO  [alembic.runtime.migration] Running upgrade 59f44b2c6275 -> d080b2fe906b, empty message
+DEBUG [alembic.runtime.migration] update 59f44b2c6275 to d080b2fe906b
+INFO  [alembic.runtime.migration] Running upgrade d080b2fe906b -> b260059a8f32, empty message
+DEBUG [alembic.runtime.migration] update d080b2fe906b to b260059a8f32
+INFO  [alembic.runtime.migration] Running upgrade 179b46a66c75 -> 3d77c8fe095, empty message
+DEBUG [alembic.runtime.migration] new branch insert 3d77c8fe095
+INFO  [alembic.runtime.migration] Running upgrade 3d77c8fe095 -> 482c735bef7, empty message
+DEBUG [alembic.runtime.migration] update 3d77c8fe095 to 482c735bef7
+INFO  [alembic.runtime.migration] Running upgrade 482c735bef7, 79d34ac79481 -> 51fdeadeaa3, empty message
+DEBUG [alembic.runtime.migration] update 482c735bef7 to 51fdeadeaa3
+INFO  [alembic.runtime.migration] Running upgrade 51fdeadeaa3 -> 2a44a333863, empty message
+DEBUG [alembic.runtime.migration] update 51fdeadeaa3 to 2a44a333863
+INFO  [alembic.runtime.migration] Running upgrade 2a44a333863 -> 1186569cef2, empty message
+DEBUG [alembic.runtime.migration] update 2a44a333863 to 1186569cef2
+INFO  [alembic.runtime.migration] Running upgrade 1186569cef2 -> 41dd3fa05ae, empty message
+DEBUG [alembic.runtime.migration] update 1186569cef2 to 41dd3fa05ae
+INFO  [alembic.runtime.migration] Running upgrade 41dd3fa05ae -> 40510a29488, empty message
+DEBUG [alembic.runtime.migration] update 41dd3fa05ae to 40510a29488
+INFO  [alembic.runtime.migration] Running upgrade 40510a29488 -> 22f195133df, empty message
+DEBUG [alembic.runtime.migration] update 40510a29488 to 22f195133df
+INFO  [alembic.runtime.migration] Running upgrade 22f195133df, b260059a8f32 -> 467b3d10640, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['22f195133df'], update b260059a8f32 to 467b3d10640
+INFO  [alembic.runtime.migration] Running upgrade 467b3d10640 -> 9dd8c001c5c3, empty message
+DEBUG [alembic.runtime.migration] update 467b3d10640 to 9dd8c001c5c3
+INFO  [alembic.runtime.migration] Running upgrade 467b3d10640 -> f3c3898b01e3, empty message
+DEBUG [alembic.runtime.migration] new branch insert f3c3898b01e3
+INFO  [alembic.runtime.migration] Running upgrade f3c3898b01e3, 9dd8c001c5c3 -> 60172b2a1c03, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['f3c3898b01e3'], update 9dd8c001c5c3 to 60172b2a1c03
+INFO  [alembic.runtime.migration] Running upgrade 60172b2a1c03 -> 56581d2194, empty message
+DEBUG [alembic.runtime.migration] update 60172b2a1c03 to 56581d2194
+INFO  [alembic.runtime.migration] Running upgrade 56581d2194 -> 316f1a71308, empty message
+DEBUG [alembic.runtime.migration] update 56581d2194 to 316f1a71308
+INFO  [alembic.runtime.migration] Running upgrade 316f1a71308 -> 3732e1d36cf, empty message
+DEBUG [alembic.runtime.migration] update 316f1a71308 to 3732e1d36cf
+INFO  [alembic.runtime.migration] Running upgrade 3732e1d36cf -> cdbd8e9942e3, empty message
+DEBUG [alembic.runtime.migration] update 3732e1d36cf to cdbd8e9942e3
+INFO  [alembic.runtime.migration] Running upgrade cdbd8e9942e3 -> f359ec6dfbfa, empty message
+DEBUG [alembic.runtime.migration] update cdbd8e9942e3 to f359ec6dfbfa
+INFO  [alembic.runtime.migration] Running upgrade f359ec6dfbfa -> 3532901301b, empty message
+DEBUG [alembic.runtime.migration] update f359ec6dfbfa to 3532901301b
+INFO  [alembic.runtime.migration] Running upgrade 3532901301b -> f5cd62e8d9b8, empty message
+DEBUG [alembic.runtime.migration] update 3532901301b to f5cd62e8d9b8
+INFO  [alembic.runtime.migration] Running upgrade f5cd62e8d9b8 -> b1adf031ca36, empty message
+DEBUG [alembic.runtime.migration] update f5cd62e8d9b8 to b1adf031ca36
+INFO  [alembic.runtime.migration] Running upgrade b1adf031ca36 -> 6d2a5a179254, empty message
+DEBUG [alembic.runtime.migration] update b1adf031ca36 to 6d2a5a179254
+INFO  [alembic.runtime.migration] Running upgrade 6d2a5a179254 -> 5ed9bee19c67, empty message
+DEBUG [alembic.runtime.migration] update 6d2a5a179254 to 5ed9bee19c67
+INFO  [alembic.runtime.migration] Running upgrade 5ed9bee19c67 -> 1d8d3ba33383, empty message
+DEBUG [alembic.runtime.migration] update 5ed9bee19c67 to 1d8d3ba33383
+INFO  [alembic.runtime.migration] Running upgrade 1d8d3ba33383 -> 510acb7cc9e6, empty message
+DEBUG [alembic.runtime.migration] update 1d8d3ba33383 to 510acb7cc9e6
+INFO  [alembic.runtime.migration] Running upgrade 510acb7cc9e6 -> 913f77691826, empty message
+DEBUG [alembic.runtime.migration] update 510acb7cc9e6 to 913f77691826
+INFO  [alembic.runtime.migration] Running upgrade 913f77691826 -> 804d051fac84, empty message
+DEBUG [alembic.runtime.migration] update 913f77691826 to 804d051fac84
+INFO  [alembic.runtime.migration] Running upgrade 804d051fac84 -> f05c3999b465, empty message
+DEBUG [alembic.runtime.migration] update 804d051fac84 to f05c3999b465
+INFO  [alembic.runtime.migration] Running upgrade f05c3999b465 -> 6af509031f7c, empty message
+DEBUG [alembic.runtime.migration] update f05c3999b465 to 6af509031f7c
+INFO  [alembic.runtime.migration] Running upgrade 6af509031f7c -> ca8770a00c58, empty message
+DEBUG [alembic.runtime.migration] update 6af509031f7c to ca8770a00c58
+INFO  [alembic.runtime.migration] Running upgrade ca8770a00c58 -> 9527b68f0bf9, empty message
+DEBUG [alembic.runtime.migration] update ca8770a00c58 to 9527b68f0bf9
+INFO  [alembic.runtime.migration] Running upgrade 9527b68f0bf9 -> abf9a71f07af, empty message
+DEBUG [alembic.runtime.migration] update 9527b68f0bf9 to abf9a71f07af
+INFO  [alembic.runtime.migration] Running upgrade abf9a71f07af -> 7870f15fb456, empty message
+DEBUG [alembic.runtime.migration] update abf9a71f07af to 7870f15fb456
+INFO  [alembic.runtime.migration] Running upgrade 7870f15fb456 -> a8868d847698, empty message
+DEBUG [alembic.runtime.migration] update 7870f15fb456 to a8868d847698
+INFO  [alembic.runtime.migration] Running upgrade a8868d847698 -> 0ad1a6ebfe2f, empty message
+DEBUG [alembic.runtime.migration] update a8868d847698 to 0ad1a6ebfe2f
+INFO  [alembic.runtime.migration] Running upgrade 0ad1a6ebfe2f -> b4bbd9814574, empty message
+DEBUG [alembic.runtime.migration] update 0ad1a6ebfe2f to b4bbd9814574
+INFO  [alembic.runtime.migration] Running upgrade b4bbd9814574 -> 026741ed89aa, empty message
+DEBUG [alembic.runtime.migration] update b4bbd9814574 to 026741ed89aa
+INFO  [alembic.runtime.migration] Running upgrade b4bbd9814574 -> 0ad59791291b, empty message
+DEBUG [alembic.runtime.migration] new branch insert 0ad59791291b
+INFO  [alembic.runtime.migration] Running upgrade 0ad59791291b, 026741ed89aa -> 60c201b51115, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['0ad59791291b'], update 026741ed89aa to 60c201b51115
+INFO  [alembic.runtime.migration] Running upgrade 60c201b51115 -> 0d9f7ccd94ae, empty message
+DEBUG [alembic.runtime.migration] update 60c201b51115 to 0d9f7ccd94ae
+INFO  [alembic.runtime.migration] Running upgrade 0d9f7ccd94ae -> 939d16af1058, empty message
+DEBUG [alembic.runtime.migration] update 0d9f7ccd94ae to 939d16af1058
+INFO  [alembic.runtime.migration] Running upgrade 939d16af1058 -> 33da4f219345, empty message
+DEBUG [alembic.runtime.migration] update 939d16af1058 to 33da4f219345
+INFO  [alembic.runtime.migration] Running upgrade 33da4f219345 -> 8e543e75d6e8, empty message
+DEBUG [alembic.runtime.migration] update 33da4f219345 to 8e543e75d6e8
+INFO  [alembic.runtime.migration] Running upgrade 8e543e75d6e8 -> cbef64227bbb, empty message
+DEBUG [alembic.runtime.migration] update 8e543e75d6e8 to cbef64227bbb
+INFO  [alembic.runtime.migration] Running upgrade cbef64227bbb -> 6232e0c3eee9, empty message
+DEBUG [alembic.runtime.migration] update cbef64227bbb to 6232e0c3eee9
+INFO  [alembic.runtime.migration] Running upgrade 6232e0c3eee9 -> c873994c9a7c, empty message
+DEBUG [alembic.runtime.migration] update 6232e0c3eee9 to c873994c9a7c
+INFO  [alembic.runtime.migration] Running upgrade c873994c9a7c -> 8500a3ed434f, empty message
+DEBUG [alembic.runtime.migration] update c873994c9a7c to 8500a3ed434f
+INFO  [alembic.runtime.migration] Running upgrade 8500a3ed434f -> dc4a3c87256e, empty message
+DEBUG [alembic.runtime.migration] update 8500a3ed434f to dc4a3c87256e
+INFO  [alembic.runtime.migration] Running upgrade dc4a3c87256e -> 5870eec4ac69, empty message
+DEBUG [alembic.runtime.migration] update dc4a3c87256e to 5870eec4ac69
+INFO  [alembic.runtime.migration] Running upgrade 5870eec4ac69 -> 552d8c65b28e, empty message
+DEBUG [alembic.runtime.migration] update 5870eec4ac69 to 552d8c65b28e
+INFO  [alembic.runtime.migration] Running upgrade 5870eec4ac69 -> 54c27474def5, empty message
+DEBUG [alembic.runtime.migration] new branch insert 54c27474def5
+INFO  [alembic.runtime.migration] Running upgrade 54c27474def5 -> d932f5b1c993, empty message
+DEBUG [alembic.runtime.migration] update 54c27474def5 to d932f5b1c993
+INFO  [alembic.runtime.migration] Running upgrade d932f5b1c993, 552d8c65b28e -> da496dcb851e, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['d932f5b1c993'], update 552d8c65b28e to da496dcb851e
+INFO  [alembic.runtime.migration] Running upgrade da496dcb851e -> 03ee8ac53893, empty message
+DEBUG [alembic.runtime.migration] update da496dcb851e to 03ee8ac53893
+INFO  [alembic.runtime.migration] Running upgrade 03ee8ac53893 -> 7d7efd00180e, empty message
+DEBUG [alembic.runtime.migration] update 03ee8ac53893 to 7d7efd00180e
+INFO  [alembic.runtime.migration] Running upgrade 7d7efd00180e -> 9ead639dea77, empty message
+DEBUG [alembic.runtime.migration] update 7d7efd00180e to 9ead639dea77
+INFO  [alembic.runtime.migration] Running upgrade 9ead639dea77 -> b0908c97d941, empty message
+DEBUG [alembic.runtime.migration] update 9ead639dea77 to b0908c97d941
+INFO  [alembic.runtime.migration] Running upgrade b0908c97d941 -> 423cc26be560, empty message
+DEBUG [alembic.runtime.migration] update b0908c97d941 to 423cc26be560
+INFO  [alembic.runtime.migration] Running upgrade 423cc26be560 -> 5d13d86aa770, empty message
+DEBUG [alembic.runtime.migration] update 423cc26be560 to 5d13d86aa770
+INFO  [alembic.runtime.migration] Running upgrade 5d13d86aa770 -> 47c9744a2d51, empty message
+DEBUG [alembic.runtime.migration] update 5d13d86aa770 to 47c9744a2d51
+INFO  [alembic.runtime.migration] Running upgrade 47c9744a2d51 -> 02447decf68c, empty message
+DEBUG [alembic.runtime.migration] update 47c9744a2d51 to 02447decf68c
+INFO  [alembic.runtime.migration] Running upgrade 02447decf68c -> 5535da0d28d1, empty message
+DEBUG [alembic.runtime.migration] update 02447decf68c to 5535da0d28d1
+INFO  [alembic.runtime.migration] Running upgrade 5535da0d28d1 -> 129c62d8cfc5, empty message
+DEBUG [alembic.runtime.migration] update 5535da0d28d1 to 129c62d8cfc5
+INFO  [alembic.runtime.migration] Running upgrade 129c62d8cfc5 -> 96712ac1cf49, empty message
+DEBUG [alembic.runtime.migration] update 129c62d8cfc5 to 96712ac1cf49
+INFO  [alembic.runtime.migration] Running upgrade 96712ac1cf49 -> 5d65dcd74851, empty message
+DEBUG [alembic.runtime.migration] update 96712ac1cf49 to 5d65dcd74851
+INFO  [alembic.runtime.migration] Running upgrade 5d65dcd74851 -> 521be7c52f85, empty message
+DEBUG [alembic.runtime.migration] update 5d65dcd74851 to 521be7c52f85
+INFO  [alembic.runtime.migration] Running upgrade 521be7c52f85 -> afbc3cfd7277, empty message
+DEBUG [alembic.runtime.migration] update 521be7c52f85 to afbc3cfd7277
+INFO  [alembic.runtime.migration] Running upgrade afbc3cfd7277 -> 015f24e070a5, empty message
+DEBUG [alembic.runtime.migration] update afbc3cfd7277 to 015f24e070a5
+INFO  [alembic.runtime.migration] Running upgrade 015f24e070a5 -> 2b627b3752f1, empty message
+DEBUG [alembic.runtime.migration] update 015f24e070a5 to 2b627b3752f1
+INFO  [alembic.runtime.migration] Running upgrade 015f24e070a5 -> 8688107de001, empty message
+DEBUG [alembic.runtime.migration] new branch insert 8688107de001
+INFO  [alembic.runtime.migration] Running upgrade 8688107de001 -> ef3d4e6d0bb6, empty message
+DEBUG [alembic.runtime.migration] update 8688107de001 to ef3d4e6d0bb6
+INFO  [alembic.runtime.migration] Running upgrade ef3d4e6d0bb6 -> 12bde23fbfb1, empty message
+DEBUG [alembic.runtime.migration] update ef3d4e6d0bb6 to 12bde23fbfb1
+INFO  [alembic.runtime.migration] Running upgrade 12bde23fbfb1 -> 018cca1be29c, empty message
+DEBUG [alembic.runtime.migration] update 12bde23fbfb1 to 018cca1be29c
+INFO  [alembic.runtime.migration] Running upgrade 018cca1be29c -> 8cb4d0e2248f, empty message
+DEBUG [alembic.runtime.migration] update 018cca1be29c to 8cb4d0e2248f
+INFO  [alembic.runtime.migration] Running upgrade 8cb4d0e2248f -> bb0ec2e81cfc, empty message
+DEBUG [alembic.runtime.migration] update 8cb4d0e2248f to bb0ec2e81cfc
+INFO  [alembic.runtime.migration] Running upgrade bb0ec2e81cfc -> 6fcaab1bc49e, empty message
+DEBUG [alembic.runtime.migration] update bb0ec2e81cfc to 6fcaab1bc49e
+INFO  [alembic.runtime.migration] Running upgrade 6fcaab1bc49e -> 5cd9f535fdf8, empty message
+DEBUG [alembic.runtime.migration] update 6fcaab1bc49e to 5cd9f535fdf8
+INFO  [alembic.runtime.migration] Running upgrade 5cd9f535fdf8 -> 3c80b6c40aa9, empty message
+DEBUG [alembic.runtime.migration] update 5cd9f535fdf8 to 3c80b6c40aa9
+INFO  [alembic.runtime.migration] Running upgrade 3c80b6c40aa9, 2b627b3752f1 -> 0c0a04eb3258, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['3c80b6c40aa9'], update 2b627b3752f1 to 0c0a04eb3258
+INFO  [alembic.runtime.migration] Running upgrade 0c0a04eb3258 -> ec49c8a9574a, empty message
+DEBUG [alembic.runtime.migration] update 0c0a04eb3258 to ec49c8a9574a
+INFO  [alembic.runtime.migration] Running upgrade ec49c8a9574a -> f2a97539ec7c, empty message
+DEBUG [alembic.runtime.migration] update ec49c8a9574a to f2a97539ec7c
+INFO  [alembic.runtime.migration] Running upgrade 0c0a04eb3258 -> 57fd11067d91, empty message
+DEBUG [alembic.runtime.migration] new branch insert 57fd11067d91
+INFO  [alembic.runtime.migration] Running upgrade 57fd11067d91 -> c06c64563c75, empty message
+DEBUG [alembic.runtime.migration] update 57fd11067d91 to c06c64563c75
+INFO  [alembic.runtime.migration] Running upgrade c06c64563c75 -> 2d3f36800294, empty message
+DEBUG [alembic.runtime.migration] update c06c64563c75 to 2d3f36800294
+INFO  [alembic.runtime.migration] Running upgrade 2d3f36800294, f2a97539ec7c -> 4d8d1b6e6cb3, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['2d3f36800294'], update f2a97539ec7c to 4d8d1b6e6cb3
+INFO  [alembic.runtime.migration] Running upgrade 4d8d1b6e6cb3 -> 2d16e1ce225c, empty message
+DEBUG [alembic.runtime.migration] update 4d8d1b6e6cb3 to 2d16e1ce225c
+INFO  [alembic.runtime.migration] Running upgrade 2d16e1ce225c -> c6eb1b245f88, empty message
+DEBUG [alembic.runtime.migration] update 2d16e1ce225c to c6eb1b245f88
+INFO  [alembic.runtime.migration] Running upgrade c6eb1b245f88 -> af2a58382377, empty message
+DEBUG [alembic.runtime.migration] update c6eb1b245f88 to af2a58382377
+INFO  [alembic.runtime.migration] Running upgrade af2a58382377 -> 81a89e09667b, empty message
+DEBUG [alembic.runtime.migration] update af2a58382377 to 81a89e09667b
+INFO  [alembic.runtime.migration] Running upgrade 81a89e09667b -> de27205fc56b, empty message
+DEBUG [alembic.runtime.migration] update 81a89e09667b to de27205fc56b
+INFO  [alembic.runtime.migration] Running upgrade de27205fc56b -> 1f18a8d41137, empty message
+DEBUG [alembic.runtime.migration] update de27205fc56b to 1f18a8d41137
+INFO  [alembic.runtime.migration] Running upgrade 1f18a8d41137 -> 99b7b4bed069, empty message
+DEBUG [alembic.runtime.migration] update 1f18a8d41137 to 99b7b4bed069
+INFO  [alembic.runtime.migration] Running upgrade 99b7b4bed069 -> e66fcc73d845, empty message
+DEBUG [alembic.runtime.migration] update 99b7b4bed069 to e66fcc73d845
+INFO  [alembic.runtime.migration] Running upgrade e66fcc73d845 -> 12500b70e81f, empty message
+DEBUG [alembic.runtime.migration] update e66fcc73d845 to 12500b70e81f
+INFO  [alembic.runtime.migration] Running upgrade 12500b70e81f -> 0febbbfa02a8, empty message
+DEBUG [alembic.runtime.migration] update 12500b70e81f to 0febbbfa02a8
+INFO  [alembic.runtime.migration] Running upgrade 0febbbfa02a8 -> 513a9b94ff1c, empty message
+DEBUG [alembic.runtime.migration] update 0febbbfa02a8 to 513a9b94ff1c
+INFO  [alembic.runtime.migration] Running upgrade 513a9b94ff1c -> 90b9e9afb133, empty message
+DEBUG [alembic.runtime.migration] update 513a9b94ff1c to 90b9e9afb133
+INFO  [alembic.runtime.migration] Running upgrade 90b9e9afb133 -> 1a6569cacfdd, empty message
+DEBUG [alembic.runtime.migration] update 90b9e9afb133 to 1a6569cacfdd
+INFO  [alembic.runtime.migration] Running upgrade 1a6569cacfdd -> 1f6f7e79c52a, empty message
+DEBUG [alembic.runtime.migration] update 1a6569cacfdd to 1f6f7e79c52a
+INFO  [alembic.runtime.migration] Running upgrade 1f6f7e79c52a -> 2f6fa957a136, empty message
+DEBUG [alembic.runtime.migration] update 1f6f7e79c52a to 2f6fa957a136
+INFO  [alembic.runtime.migration] Running upgrade 2f6fa957a136 -> 4cdf2fa3e527, empty message
+/usr/libexec/vstorage-ui-backend/migrations/versions/4cdf2fa3e527_.py:30: UserWarning: ssh value already exists
+  warnings.warn('ssh value already exists')
+DEBUG [alembic.runtime.migration] update 2f6fa957a136 to 4cdf2fa3e527
+INFO  [alembic.runtime.migration] Running upgrade 4cdf2fa3e527 -> cb3d92af6206, empty message
+/usr/libexec/vstorage-ui-backend/migrations/versions/cb3d92af6206_.py:25: UserWarning: web_cp value already exists
+  warnings.warn('web_cp value already exists')
+DEBUG [alembic.runtime.migration] update 4cdf2fa3e527 to cb3d92af6206
+INFO  [alembic.runtime.migration] Running upgrade cb3d92af6206 -> 23f4763d6182, empty message
+DEBUG [alembic.runtime.migration] update cb3d92af6206 to 23f4763d6182
+INFO  [alembic.runtime.migration] Running upgrade 23f4763d6182 -> 02a766f9d557, empty message
+DEBUG [alembic.runtime.migration] update 23f4763d6182 to 02a766f9d557
+INFO  [alembic.runtime.migration] Running upgrade 23f4763d6182 -> dd84e6549ffc, empty message
+DEBUG [alembic.runtime.migration] new branch insert dd84e6549ffc
+INFO  [alembic.runtime.migration] Running upgrade dd84e6549ffc, 02a766f9d557 -> 593c47d27481, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['dd84e6549ffc'], update 02a766f9d557 to 593c47d27481
+INFO  [alembic.runtime.migration] Running upgrade 593c47d27481 -> dc94037a8a0c, empty message
+DEBUG [alembic.runtime.migration] update 593c47d27481 to dc94037a8a0c
+INFO  [alembic.runtime.migration] Running upgrade dc94037a8a0c -> 3b74e47555d9, empty message
+/usr/libexec/vstorage-ui-backend/migrations/versions/3b74e47555d9_.py:24: UserWarning: `unknown' in `iscsi_state_t' enum type is value already exists
+  warnings.warn("`unknown' in `iscsi_state_t' enum type is value already exists")
+DEBUG [alembic.runtime.migration] update dc94037a8a0c to 3b74e47555d9
+INFO  [alembic.runtime.migration] Running upgrade 3b74e47555d9 -> 8f6eb90bb649, empty message
+DEBUG [alembic.runtime.migration] update 3b74e47555d9 to 8f6eb90bb649
+INFO  [alembic.runtime.migration] Running upgrade 8f6eb90bb649 -> 103c783e799e, empty message
+DEBUG [alembic.runtime.migration] update 8f6eb90bb649 to 103c783e799e
+INFO  [alembic.runtime.migration] Running upgrade 103c783e799e -> e41903cf70cf, empty message
+DEBUG [alembic.runtime.migration] update 103c783e799e to e41903cf70cf
+INFO  [alembic.runtime.migration] Running upgrade e41903cf70cf -> bcf4cec74f43, empty message
+DEBUG [alembic.runtime.migration] update e41903cf70cf to bcf4cec74f43
+INFO  [alembic.runtime.migration] Running upgrade bcf4cec74f43 -> 5952e00dccd8, empty message
+DEBUG [alembic.runtime.migration] update bcf4cec74f43 to 5952e00dccd8
+INFO  [alembic.runtime.migration] Running upgrade 5952e00dccd8 -> 146ea1c0dc6c, empty message
+DEBUG [alembic.runtime.migration] update 5952e00dccd8 to 146ea1c0dc6c
+INFO  [alembic.runtime.migration] Running upgrade 146ea1c0dc6c -> c213e3dd301e, empty message
+DEBUG [alembic.runtime.migration] update 146ea1c0dc6c to c213e3dd301e
+INFO  [alembic.runtime.migration] Running upgrade c213e3dd301e -> 79ae760d5d0d, empty message
+DEBUG [alembic.runtime.migration] update c213e3dd301e to 79ae760d5d0d
+INFO  [alembic.runtime.migration] Running upgrade 79ae760d5d0d -> 663d06172eca, empty message
+DEBUG [alembic.runtime.migration] update 79ae760d5d0d to 663d06172eca
+INFO  [alembic.runtime.migration] Running upgrade 663d06172eca -> 0e3fe6760f29, empty message
+DEBUG [alembic.runtime.migration] update 663d06172eca to 0e3fe6760f29
+INFO  [alembic.runtime.migration] Running upgrade 79ae760d5d0d -> e48a76314e83, empty message
+/usr/libexec/vstorage-ui-backend/migrations/versions/e48a76314e83_.py:25: UserWarning: `abgw_private' value already exists
+  warnings.warn("`abgw_private' value already exists")
+/usr/libexec/vstorage-ui-backend/migrations/versions/e48a76314e83_.py:30: UserWarning: `abgw_public' value already exists
+  warnings.warn("`abgw_public' value already exists")
+DEBUG [alembic.runtime.migration] new branch insert e48a76314e83
+INFO  [alembic.runtime.migration] Running upgrade e48a76314e83, 663d06172eca -> 569125bb15e3, empty message
+DEBUG [alembic.runtime.migration] update e48a76314e83 to 569125bb15e3
+INFO  [alembic.runtime.migration] Running upgrade 569125bb15e3, 0e3fe6760f29 -> 72c849be1aeb, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['569125bb15e3'], update 0e3fe6760f29 to 72c849be1aeb
+INFO  [alembic.runtime.migration] Running upgrade 0e3fe6760f29 -> 0a0807052af7, empty message
+DEBUG [alembic.runtime.migration] new branch insert 0a0807052af7
+INFO  [alembic.runtime.migration] Running upgrade 0a0807052af7 -> 5d5ebd9f948e, empty message
+DEBUG [alembic.runtime.migration] update 0a0807052af7 to 5d5ebd9f948e
+INFO  [alembic.runtime.migration] Running upgrade 5d5ebd9f948e, 72c849be1aeb -> 534006f2e665, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['5d5ebd9f948e'], update 72c849be1aeb to 534006f2e665
+INFO  [alembic.runtime.migration] Running upgrade 534006f2e665 -> 304e668c92ff, empty message
+DEBUG [alembic.runtime.migration] update 534006f2e665 to 304e668c92ff
+INFO  [alembic.runtime.migration] Running upgrade 304e668c92ff -> fd771cc891ee, empty message
+DEBUG [alembic.runtime.migration] update 304e668c92ff to fd771cc891ee
+INFO  [alembic.runtime.migration] Running upgrade fd771cc891ee -> ed33814b2b93, empty message
+DEBUG [alembic.runtime.migration] update fd771cc891ee to ed33814b2b93
+INFO  [alembic.runtime.migration] Running upgrade ed33814b2b93 -> ab6314470f36, Add Alert model
+DEBUG [alembic.runtime.migration] update ed33814b2b93 to ab6314470f36
+INFO  [alembic.runtime.migration] Running upgrade ab6314470f36 -> 2f7fbebed195, empty message
+DEBUG [alembic.runtime.migration] update ab6314470f36 to 2f7fbebed195
+INFO  [alembic.runtime.migration] Running upgrade 2f7fbebed195 -> 3542649c8ef4, empty message
+DEBUG [alembic.runtime.migration] update 2f7fbebed195 to 3542649c8ef4
+INFO  [alembic.runtime.migration] Running upgrade 3542649c8ef4 -> b99c5bbe0875, empty message
+DEBUG [alembic.runtime.migration] update 3542649c8ef4 to b99c5bbe0875
+INFO  [alembic.runtime.migration] Running upgrade ab6314470f36 -> 62953db45dcf, empty message
+DEBUG [alembic.runtime.migration] new branch insert 62953db45dcf
+INFO  [alembic.runtime.migration] Running upgrade 62953db45dcf, b99c5bbe0875 -> 975eacba5bd8, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['62953db45dcf'], update b99c5bbe0875 to 975eacba5bd8
+INFO  [alembic.runtime.migration] Running upgrade b99c5bbe0875 -> 57be567f66d2, empty message
+DEBUG [alembic.runtime.migration] new branch insert 57be567f66d2
+INFO  [alembic.runtime.migration] Running upgrade 57be567f66d2, 975eacba5bd8 -> 8a75defd6a87, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['57be567f66d2'], update 975eacba5bd8 to 8a75defd6a87
+INFO  [alembic.runtime.migration] Running upgrade 8a75defd6a87 -> bfc6265339e1, empty message
+DEBUG [alembic.runtime.migration] update 8a75defd6a87 to bfc6265339e1
+INFO  [alembic.runtime.migration] Running upgrade bfc6265339e1 -> 0722fb7c31b6, empty message
+DEBUG [alembic.runtime.migration] update bfc6265339e1 to 0722fb7c31b6
+INFO  [alembic.runtime.migration] Running upgrade 0722fb7c31b6 -> 4f2dc191a6a6, empty message
+DEBUG [alembic.runtime.migration] update 0722fb7c31b6 to 4f2dc191a6a6
+INFO  [alembic.runtime.migration] Running upgrade 4f2dc191a6a6 -> 67bae10ec0b5, empty message
+DEBUG [alembic.runtime.migration] update 4f2dc191a6a6 to 67bae10ec0b5
+INFO  [alembic.runtime.migration] Running upgrade 67bae10ec0b5 -> 244fbec51b05, empty message
+DEBUG [alembic.runtime.migration] update 67bae10ec0b5 to 244fbec51b05
+INFO  [alembic.runtime.migration] Running upgrade 244fbec51b05 -> 65c86376696a, empty message
+DEBUG [alembic.runtime.migration] update 244fbec51b05 to 65c86376696a
+INFO  [alembic.runtime.migration] Running upgrade 244fbec51b05 -> 7d71faffd287, empty message
+DEBUG [alembic.runtime.migration] new branch insert 7d71faffd287
+INFO  [alembic.runtime.migration] Running upgrade 65c86376696a, 7d71faffd287 -> ad47b3f036c4, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['65c86376696a'], update 7d71faffd287 to ad47b3f036c4
+INFO  [alembic.runtime.migration] Running upgrade ad47b3f036c4 -> 4621cbc86cca, empty message
+DEBUG [alembic.runtime.migration] update ad47b3f036c4 to 4621cbc86cca
+INFO  [alembic.runtime.migration] Running upgrade 7d71faffd287, 65c86376696a -> ae812ebf2fde, empty message
+DEBUG [alembic.runtime.migration] new branch insert ae812ebf2fde
+INFO  [alembic.runtime.migration] Running upgrade ae812ebf2fde -> b0582fb414a1, empty message
+DEBUG [alembic.runtime.migration] update ae812ebf2fde to b0582fb414a1
+INFO  [alembic.runtime.migration] Running upgrade b0582fb414a1, ad47b3f036c4 -> 64e4d1485388, empty message
+DEBUG [alembic.runtime.migration] update b0582fb414a1 to 64e4d1485388
+INFO  [alembic.runtime.migration] Running upgrade 64e4d1485388, 4621cbc86cca -> 0e004e6ca00b, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['64e4d1485388'], update 4621cbc86cca to 0e004e6ca00b
+INFO  [alembic.runtime.migration] Running upgrade 244fbec51b05 -> 95d1ac0f4487, empty message
+DEBUG [alembic.runtime.migration] new branch insert 95d1ac0f4487
+INFO  [alembic.runtime.migration] Running upgrade 95d1ac0f4487 -> 6444302f455a, empty message
+DEBUG [alembic.runtime.migration] update 95d1ac0f4487 to 6444302f455a
+INFO  [alembic.runtime.migration] Running upgrade 6444302f455a -> a31fdbaad3f3, empty message
+DEBUG [alembic.runtime.migration] update 6444302f455a to a31fdbaad3f3
+INFO  [alembic.runtime.migration] Running upgrade a31fdbaad3f3 -> 6cc012a2d515, empty message
+DEBUG [alembic.runtime.migration] update a31fdbaad3f3 to 6cc012a2d515
+INFO  [alembic.runtime.migration] Running upgrade 6cc012a2d515, 0e004e6ca00b -> 105ab4311fbb, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['6cc012a2d515'], update 0e004e6ca00b to 105ab4311fbb
+INFO  [alembic.runtime.migration] Running upgrade 105ab4311fbb -> b5a2d4b6c848, empty message
+DEBUG [alembic.runtime.migration] update 105ab4311fbb to b5a2d4b6c848
+INFO  [alembic.runtime.migration] Running upgrade 6444302f455a -> 1c93ccb9a088, empty message
+DEBUG [alembic.runtime.migration] new branch insert 1c93ccb9a088
+INFO  [alembic.runtime.migration] Running upgrade 1c93ccb9a088, b5a2d4b6c848 -> 6dd8984c6340, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['1c93ccb9a088'], update b5a2d4b6c848 to 6dd8984c6340
+INFO  [alembic.runtime.migration] Running upgrade 105ab4311fbb -> 6dd92d6ea973, empty message
+DEBUG [alembic.runtime.migration] new branch insert 6dd92d6ea973
+INFO  [alembic.runtime.migration] Running upgrade 6444302f455a -> 281cea777907, empty message
+DEBUG [alembic.runtime.migration] new branch insert 281cea777907
+INFO  [alembic.runtime.migration] Running upgrade 281cea777907, 6dd8984c6340 -> 8f73ad9969e9, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['281cea777907'], update 6dd8984c6340 to 8f73ad9969e9
+INFO  [alembic.runtime.migration] Running upgrade 8f73ad9969e9, 6dd92d6ea973 -> af9eba56c1f6, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['8f73ad9969e9'], update 6dd92d6ea973 to af9eba56c1f6
+INFO  [alembic.runtime.migration] Running upgrade af9eba56c1f6 -> da5edd02bcc7, empty message
+DEBUG [alembic.runtime.migration] update af9eba56c1f6 to da5edd02bcc7
+INFO  [alembic.runtime.migration] Running upgrade da5edd02bcc7 -> 07b1702f946e, empty message
+DEBUG [alembic.runtime.migration] update da5edd02bcc7 to 07b1702f946e
+INFO  [alembic.runtime.migration] Running upgrade da5edd02bcc7 -> 718057d9b587, empty message
+DEBUG [alembic.runtime.migration] new branch insert 718057d9b587
+INFO  [alembic.runtime.migration] Running upgrade 07b1702f946e, 718057d9b587 -> da10c214a95c, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['07b1702f946e'], update 718057d9b587 to da10c214a95c
+INFO  [alembic.runtime.migration] Running upgrade da10c214a95c -> 6b1496579d46, empty message
+DEBUG [alembic.runtime.migration] update da10c214a95c to 6b1496579d46
+INFO  [alembic.runtime.migration] Running upgrade 6b1496579d46 -> f84ae42a0dfc, empty message
+DEBUG [alembic.runtime.migration] update 6b1496579d46 to f84ae42a0dfc
+INFO  [alembic.runtime.migration] Running upgrade 07b1702f946e -> 2b8a2aa24ad6, empty message
+DEBUG [alembic.runtime.migration] new branch insert 2b8a2aa24ad6
+INFO  [alembic.runtime.migration] Running upgrade 2b8a2aa24ad6, 6b1496579d46 -> 6eb1503ab5eb, empty message
+DEBUG [alembic.runtime.migration] update 2b8a2aa24ad6 to 6eb1503ab5eb
+INFO  [alembic.runtime.migration] Running upgrade 6eb1503ab5eb, f84ae42a0dfc -> 109e9edcd540, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['6eb1503ab5eb'], update f84ae42a0dfc to 109e9edcd540
+INFO  [alembic.runtime.migration] Running upgrade 109e9edcd540 -> 8bb18d80e00c, empty message
+DEBUG [alembic.runtime.migration] update 109e9edcd540 to 8bb18d80e00c
+INFO  [alembic.runtime.migration] Running upgrade 109e9edcd540 -> 76680fe8f64b, empty message
+DEBUG [alembic.runtime.migration] new branch insert 76680fe8f64b
+INFO  [alembic.runtime.migration] Running upgrade 109e9edcd540 -> 28cb5aec613b, empty message                                                                                                                                                                                                    
+DEBUG [alembic.runtime.migration] new branch insert 28cb5aec613b
+INFO  [alembic.runtime.migration] Running upgrade 28cb5aec613b, 76680fe8f64b, 8bb18d80e00c -> 454b7d284329, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['28cb5aec613b', '76680fe8f64b'], update 8bb18d80e00c to 454b7d284329
+INFO  [alembic.runtime.migration] Running upgrade 454b7d284329 -> aba9ca571432, empty message
+DEBUG [alembic.runtime.migration] update 454b7d284329 to aba9ca571432
+INFO  [alembic.runtime.migration] Running upgrade aba9ca571432 -> cf90dcded531, empty message
+DEBUG [alembic.runtime.migration] update aba9ca571432 to cf90dcded531
+INFO  [alembic.runtime.migration] Running upgrade 109e9edcd540 -> 3cdb62ff192b, empty message
+DEBUG [alembic.runtime.migration] new branch insert 3cdb62ff192b
+INFO  [alembic.runtime.migration] Running upgrade 3cdb62ff192b, cf90dcded531 -> c42dff9b13d9, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['3cdb62ff192b'], update cf90dcded531 to c42dff9b13d9
+INFO  [alembic.runtime.migration] Running upgrade aba9ca571432 -> 21e1e220d6af, empty message
+DEBUG [alembic.runtime.migration] new branch insert 21e1e220d6af
+INFO  [alembic.runtime.migration] Running upgrade 21e1e220d6af, c42dff9b13d9 -> 20ed87b7531c, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['21e1e220d6af'], update c42dff9b13d9 to 20ed87b7531c
+INFO  [alembic.runtime.migration] Running upgrade 20ed87b7531c -> 404beaa0cbfb, empty message
+DEBUG [alembic.runtime.migration] update 20ed87b7531c to 404beaa0cbfb
+INFO  [alembic.runtime.migration] Running upgrade 404beaa0cbfb -> 45857974d6d5, empty message
+DEBUG [alembic.runtime.migration] update 404beaa0cbfb to 45857974d6d5
+INFO  [alembic.runtime.migration] Running upgrade 404beaa0cbfb -> 5518cfdeda3c, empty message
+DEBUG [alembic.runtime.migration] new branch insert 5518cfdeda3c
+INFO  [alembic.runtime.migration] Running upgrade 5518cfdeda3c, 45857974d6d5 -> 791bc9228d2c, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['5518cfdeda3c'], update 45857974d6d5 to 791bc9228d2c
+INFO  [alembic.runtime.migration] Running upgrade 791bc9228d2c -> 69f4b68dadc3, empty message
+DEBUG [alembic.runtime.migration] update 791bc9228d2c to 69f4b68dadc3
+INFO  [alembic.runtime.migration] Running upgrade 69f4b68dadc3 -> 026d258f5b81, empty message
+DEBUG [alembic.runtime.migration] update 69f4b68dadc3 to 026d258f5b81
+INFO  [alembic.runtime.migration] Running upgrade 026d258f5b81 -> 440e75ce2283, empty message
+DEBUG [alembic.runtime.migration] update 026d258f5b81 to 440e75ce2283
+INFO  [alembic.runtime.migration] Running upgrade 026d258f5b81 -> f86d9237456c, empty message
+DEBUG [alembic.runtime.migration] new branch insert f86d9237456c
+INFO  [alembic.runtime.migration] Running upgrade f86d9237456c, 440e75ce2283 -> d88ffb1d0b47, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['f86d9237456c'], update 440e75ce2283 to d88ffb1d0b47
+INFO  [alembic.runtime.migration] Running upgrade d88ffb1d0b47 -> df9a073126a2, empty message
+DEBUG [alembic.runtime.migration] update d88ffb1d0b47 to df9a073126a2
+INFO  [alembic.runtime.migration] Running upgrade d88ffb1d0b47 -> c9862f0fcdc3, empty message
+DEBUG [alembic.runtime.migration] new branch insert c9862f0fcdc3
+INFO  [alembic.runtime.migration] Running upgrade c9862f0fcdc3 -> 2e44819d6a56, empty message
+DEBUG [alembic.runtime.migration] update c9862f0fcdc3 to 2e44819d6a56
+INFO  [alembic.runtime.migration] Running upgrade 2e44819d6a56, df9a073126a2 -> 06cc3a209f65, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['2e44819d6a56'], update df9a073126a2 to 06cc3a209f65
+INFO  [alembic.runtime.migration] Running upgrade 06cc3a209f65 -> 5acd68855269, empty message
+DEBUG [alembic.runtime.migration] update 06cc3a209f65 to 5acd68855269
+INFO  [alembic.runtime.migration] Running upgrade 06cc3a209f65 -> a8397c5dc4bb, empty message
+DEBUG [alembic.runtime.migration] new branch insert a8397c5dc4bb
+INFO  [alembic.runtime.migration] Running upgrade a8397c5dc4bb, 5acd68855269 -> 870ac34a8e43, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['a8397c5dc4bb'], update 5acd68855269 to 870ac34a8e43
+INFO  [alembic.runtime.migration] Running upgrade 870ac34a8e43 -> f8047760a333, empty message
+DEBUG [alembic.runtime.migration] update 870ac34a8e43 to f8047760a333
+INFO  [alembic.runtime.migration] Running upgrade f8047760a333 -> 84ef7b2f2880, empty message
+DEBUG [alembic.runtime.migration] update f8047760a333 to 84ef7b2f2880
+INFO  [alembic.runtime.migration] Running upgrade f8047760a333 -> 31e280a64fad, empty message
+DEBUG [alembic.runtime.migration] new branch insert 31e280a64fad
+INFO  [alembic.runtime.migration] Running upgrade 31e280a64fad, 84ef7b2f2880 -> 8a7b437f161d, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['31e280a64fad'], update 84ef7b2f2880 to 8a7b437f161d
+INFO  [alembic.runtime.migration] Running upgrade 5acd68855269 -> b571fc48f02e, empty message
+DEBUG [alembic.runtime.migration] new branch insert b571fc48f02e
+INFO  [alembic.runtime.migration] Running upgrade b571fc48f02e -> d5f5a3b2c91c, empty message
+DEBUG [alembic.runtime.migration] update b571fc48f02e to d5f5a3b2c91c
+INFO  [alembic.runtime.migration] Running upgrade 8a7b437f161d, d5f5a3b2c91c -> b4df003a9695, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['8a7b437f161d'], update d5f5a3b2c91c to b4df003a9695
+INFO  [alembic.runtime.migration] Running upgrade b4df003a9695 -> 04b3f23d2e31, empty message
+DEBUG [alembic.runtime.migration] update b4df003a9695 to 04b3f23d2e31
+INFO  [alembic.runtime.migration] Running upgrade 04b3f23d2e31 -> 8da77d4825cf, empty message
+DEBUG [alembic.runtime.migration] update 04b3f23d2e31 to 8da77d4825cf
+INFO  [alembic.runtime.migration] Running upgrade 8a7b437f161d -> a4ac3a0e67fc, iSCSI latency stats
+DEBUG [alembic.runtime.migration] new branch insert a4ac3a0e67fc
+INFO  [alembic.runtime.migration] Running upgrade a4ac3a0e67fc, b4df003a9695 -> 3c11ece041b7, empty message
+DEBUG [alembic.runtime.migration] update a4ac3a0e67fc to 3c11ece041b7
+INFO  [alembic.runtime.migration] Running upgrade 3c11ece041b7, 8da77d4825cf -> 8cb8d1746bbc, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['3c11ece041b7'], update 8da77d4825cf to 8cb8d1746bbc
+INFO  [alembic.runtime.migration] Running upgrade 8cb8d1746bbc -> 82abefdba5b4, empty message
+DEBUG [alembic.runtime.migration] update 8cb8d1746bbc to 82abefdba5b4
+INFO  [alembic.runtime.migration] Running upgrade 8cb8d1746bbc -> 35335d5f490d, empty message
+DEBUG [alembic.runtime.migration] new branch insert 35335d5f490d
+INFO  [alembic.runtime.migration] Running upgrade 35335d5f490d, 82abefdba5b4 -> f9f993f4c21c, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['35335d5f490d'], update 82abefdba5b4 to f9f993f4c21c
+INFO  [alembic.runtime.migration] Running upgrade f9f993f4c21c -> a248857d01ca, empty message
+DEBUG [alembic.runtime.migration] update f9f993f4c21c to a248857d01ca
+INFO  [alembic.runtime.migration] Running upgrade f9f993f4c21c -> 198915482ad3, empty message
+DEBUG [alembic.runtime.migration] new branch insert 198915482ad3
+INFO  [alembic.runtime.migration] Running upgrade 198915482ad3 -> c923ce05a952, empty message
+DEBUG [alembic.runtime.migration] update 198915482ad3 to c923ce05a952
+INFO  [alembic.runtime.migration] Running upgrade c923ce05a952, a248857d01ca -> c1e883e14ead, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['c923ce05a952'], update a248857d01ca to c1e883e14ead
+INFO  [alembic.runtime.migration] Running upgrade c1e883e14ead -> 6a0c5297879e, empty message
+DEBUG [alembic.runtime.migration] update c1e883e14ead to 6a0c5297879e
+INFO  [alembic.runtime.migration] Running upgrade 6a0c5297879e -> bb7b7c3e7427, empty message
+/usr/lib/python3.9/site-packages/alembic/ddl/postgresql.py:170: UserWarning: autoincrement and existing_autoincrement only make sense for MySQL
+  super(PostgresqlImpl, self).alter_column(
+DEBUG [alembic.runtime.migration] update 6a0c5297879e to bb7b7c3e7427
+INFO  [alembic.runtime.migration] Running upgrade bb7b7c3e7427 -> 6bdb8911a3e8, empty message
+DEBUG [alembic.runtime.migration] update bb7b7c3e7427 to 6bdb8911a3e8
+INFO  [alembic.runtime.migration] Running upgrade bb7b7c3e7427 -> 24ba44cd2959, Consul services table with abgw and node services and triggers
+DEBUG [alembic.runtime.migration] new branch insert 24ba44cd2959
+INFO  [alembic.runtime.migration] Running upgrade 24ba44cd2959, 6bdb8911a3e8 -> f786d2d419cc, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['24ba44cd2959'], update 6bdb8911a3e8 to f786d2d419cc
+INFO  [alembic.runtime.migration] Running upgrade f786d2d419cc -> bcb99b786287, empty message
+DEBUG [alembic.runtime.migration] update f786d2d419cc to bcb99b786287
+INFO  [alembic.runtime.migration] Running upgrade bcb99b786287 -> 7d8e1339e19a, empty message
+DEBUG [alembic.runtime.migration] update bcb99b786287 to 7d8e1339e19a
+INFO  [alembic.runtime.migration] Running upgrade 7d8e1339e19a -> ea1e66bbee0c, empty message
+DEBUG [alembic.runtime.migration] update 7d8e1339e19a to ea1e66bbee0c
+INFO  [alembic.runtime.migration] Running upgrade ea1e66bbee0c -> edb191e97970, empty message
+DEBUG [alembic.runtime.migration] update ea1e66bbee0c to edb191e97970
+INFO  [alembic.runtime.migration] Running upgrade edb191e97970 -> 6a0d99591248, empty message
+DEBUG [alembic.runtime.migration] update edb191e97970 to 6a0d99591248
+INFO  [alembic.runtime.migration] Running upgrade 6a0d99591248 -> 174032cdffc9, empty message
+DEBUG [alembic.runtime.migration] update 6a0d99591248 to 174032cdffc9
+INFO  [alembic.runtime.migration] Running upgrade 174032cdffc9 -> 4286afb0f1da, empty message
+DEBUG [alembic.runtime.migration] update 174032cdffc9 to 4286afb0f1da
+INFO  [alembic.runtime.migration] Running upgrade 4286afb0f1da -> f1405086abcd, empty message
+DEBUG [alembic.runtime.migration] update 4286afb0f1da to f1405086abcd
+INFO  [alembic.runtime.migration] Running upgrade f1405086abcd -> f0fba88bc31d, empty message
+DEBUG [alembic.runtime.migration] update f1405086abcd to f0fba88bc31d
+INFO  [alembic.runtime.migration] Running upgrade f0fba88bc31d -> 3b3ab7b49255, empty message
+DEBUG [alembic.runtime.migration] update f0fba88bc31d to 3b3ab7b49255
+INFO  [alembic.runtime.migration] Running upgrade 3b3ab7b49255 -> 17161077f932, empty message
+DEBUG [alembic.runtime.migration] update 3b3ab7b49255 to 17161077f932
+INFO  [alembic.runtime.migration] Running upgrade 17161077f932 -> e185110f26f8, empty message
+DEBUG [alembic.runtime.migration] update 17161077f932 to e185110f26f8
+INFO  [alembic.runtime.migration] Running upgrade e185110f26f8 -> d7d7966fb75b, empty message
+DEBUG [alembic.runtime.migration] update e185110f26f8 to d7d7966fb75b
+INFO  [alembic.runtime.migration] Running upgrade d7d7966fb75b -> 08082032ed4d, iSCSI consul support
+DEBUG [alembic.runtime.migration] update d7d7966fb75b to 08082032ed4d
+INFO  [alembic.runtime.migration] Running upgrade 08082032ed4d -> 6a76a01d7c79, Added compute table
+DEBUG [alembic.runtime.migration] update 08082032ed4d to 6a76a01d7c79
+INFO  [alembic.runtime.migration] Running upgrade 6a76a01d7c79 -> 6b43bd995050, empty message
+DEBUG [alembic.runtime.migration] update 6a76a01d7c79 to 6b43bd995050
+INFO  [alembic.runtime.migration] Running upgrade 6b43bd995050 -> 427a08ab2805, empty message
+DEBUG [alembic.runtime.migration] update 6b43bd995050 to 427a08ab2805
+INFO  [alembic.runtime.migration] Running upgrade 427a08ab2805 -> d2e2f54e55b2, empty message
+DEBUG [alembic.runtime.migration] update 427a08ab2805 to d2e2f54e55b2
+INFO  [alembic.runtime.migration] Running upgrade d2e2f54e55b2 -> 727837f494af, empty message
+DEBUG [alembic.runtime.migration] update d2e2f54e55b2 to 727837f494af
+INFO  [alembic.runtime.migration] Running upgrade 727837f494af -> dbaccecabc5e, Add infiniband interface type
+DEBUG [alembic.runtime.migration] update 727837f494af to dbaccecabc5e
+INFO  [alembic.runtime.migration] Running upgrade dbaccecabc5e -> 5c5cbe6f7bc0, Alter UserAlerts.user_id column type to Text
+DEBUG [alembic.runtime.migration] update dbaccecabc5e to 5c5cbe6f7bc0
+INFO  [alembic.runtime.migration] Running upgrade 5c5cbe6f7bc0 -> e5261b592412, Add ovsbridge interface type
+DEBUG [alembic.runtime.migration] update 5c5cbe6f7bc0 to e5261b592412
+INFO  [alembic.runtime.migration] Running upgrade e5261b592412 -> f20446994aa7, empty message
+DEBUG [alembic.runtime.migration] update e5261b592412 to f20446994aa7
+INFO  [alembic.runtime.migration] Running upgrade f20446994aa7 -> 8a25b6662f4b, empty message
+DEBUG [alembic.runtime.migration] update f20446994aa7 to 8a25b6662f4b
+INFO  [alembic.runtime.migration] Running upgrade 8a25b6662f4b -> e5e1b737ce7a, empty message
+DEBUG [alembic.runtime.migration] update 8a25b6662f4b to e5e1b737ce7a
+INFO  [alembic.runtime.migration] Running upgrade e5e1b737ce7a -> f34458ca652a, empty message
+DEBUG [alembic.runtime.migration] update e5e1b737ce7a to f34458ca652a
+INFO  [alembic.runtime.migration] Running upgrade f34458ca652a -> d04c688deaba, empty message
+DEBUG [alembic.runtime.migration] update f34458ca652a to d04c688deaba
+INFO  [alembic.runtime.migration] Running upgrade d04c688deaba -> 3e4f97a6c55e, empty message
+DEBUG [alembic.runtime.migration] update d04c688deaba to 3e4f97a6c55e
+INFO  [alembic.runtime.migration] Running upgrade 3e4f97a6c55e -> f46face0cfab, empty message
+DEBUG [alembic.runtime.migration] update 3e4f97a6c55e to f46face0cfab
+INFO  [alembic.runtime.migration] Running upgrade f46face0cfab -> 7db899754d4f, empty message
+DEBUG [alembic.runtime.migration] update f46face0cfab to 7db899754d4f
+INFO  [alembic.runtime.migration] Running upgrade 7db899754d4f -> 02e525957dbf, empty message
+DEBUG [alembic.runtime.migration] update 7db899754d4f to 02e525957dbf
+INFO  [alembic.runtime.migration] Running upgrade 02e525957dbf -> f5a17db65f2d, Added compute_nodes.is_compute
+DEBUG [alembic.runtime.migration] update 02e525957dbf to f5a17db65f2d
+INFO  [alembic.runtime.migration] Running upgrade f5a17db65f2d -> 349f9d1e5506, empty message
+DEBUG [alembic.runtime.migration] update f5a17db65f2d to 349f9d1e5506
+INFO  [alembic.runtime.migration] Running upgrade 349f9d1e5506 -> 7ac79a9077fa, empty message
+DEBUG [alembic.runtime.migration] update 349f9d1e5506 to 7ac79a9077fa
+INFO  [alembic.runtime.migration] Running upgrade 7ac79a9077fa -> 200a3361485c, empty message
+DEBUG [alembic.runtime.migration] update 7ac79a9077fa to 200a3361485c
+INFO  [alembic.runtime.migration] Running upgrade 200a3361485c -> f799414e945b, empty message
+DEBUG [alembic.runtime.migration] update 200a3361485c to f799414e945b
+INFO  [alembic.runtime.migration] Running upgrade f799414e945b -> 21f7df796e82, Added compute.options column
+DEBUG [alembic.runtime.migration] update f799414e945b to 21f7df796e82
+INFO  [alembic.runtime.migration] Running upgrade 21f7df796e82 -> a854b814e101, empty message
+DEBUG [alembic.runtime.migration] update 21f7df796e82 to a854b814e101
+INFO  [alembic.runtime.migration] Running upgrade a854b814e101 -> dddbea417d9a, empty message
+DEBUG [alembic.runtime.migration] update a854b814e101 to dddbea417d9a
+INFO  [alembic.runtime.migration] Running upgrade dddbea417d9a -> 173b6735f17e, empty message
+DEBUG [alembic.runtime.migration] update dddbea417d9a to 173b6735f17e
+INFO  [alembic.runtime.migration] Running upgrade 173b6735f17e -> bc271b5ebeba, empty message
+DEBUG [alembic.runtime.migration] update 173b6735f17e to bc271b5ebeba
+INFO  [alembic.runtime.migration] Running upgrade bc271b5ebeba -> ece58ce981fd, empty message
+DEBUG [alembic.runtime.migration] update bc271b5ebeba to ece58ce981fd
+INFO  [alembic.runtime.migration] Running upgrade ece58ce981fd -> 6602a67a061c, empty message
+DEBUG [alembic.runtime.migration] update ece58ce981fd to 6602a67a061c
+INFO  [alembic.runtime.migration] Running upgrade 6602a67a061c -> 1f2bbe488a8b, empty message
+DEBUG [alembic.runtime.migration] update 6602a67a061c to 1f2bbe488a8b
+INFO  [alembic.runtime.migration] Running upgrade 1f2bbe488a8b -> 41a2fc87a951, empty message
+DEBUG [alembic.runtime.migration] update 1f2bbe488a8b to 41a2fc87a951
+INFO  [alembic.runtime.migration] Running upgrade 41a2fc87a951 -> 670a4f3c8606, empty message
+DEBUG [alembic.runtime.migration] update 41a2fc87a951 to 670a4f3c8606
+INFO  [alembic.runtime.migration] Running upgrade 670a4f3c8606 -> c078ebe1b8d1, empty message
+DEBUG [alembic.runtime.migration] update 670a4f3c8606 to c078ebe1b8d1
+INFO  [alembic.runtime.migration] Running upgrade c078ebe1b8d1 -> a9c042901323, empty message
+DEBUG [alembic.runtime.migration] update c078ebe1b8d1 to a9c042901323
+INFO  [alembic.runtime.migration] Running upgrade a9c042901323 -> 6a619063f5b1, empty message
+DEBUG [alembic.runtime.migration] update a9c042901323 to 6a619063f5b1
+INFO  [alembic.runtime.migration] Running upgrade 6a619063f5b1 -> e3acd838ccb9, empty message
+DEBUG [alembic.runtime.migration] update 6a619063f5b1 to e3acd838ccb9
+INFO  [alembic.runtime.migration] Running upgrade e3acd838ccb9 -> a18c65baccb8, empty message
+DEBUG [alembic.runtime.migration] update e3acd838ccb9 to a18c65baccb8
+INFO  [alembic.runtime.migration] Running upgrade a18c65baccb8 -> 51b70b72804b, empty message
+DEBUG [alembic.runtime.migration] update a18c65baccb8 to 51b70b72804b
+INFO  [alembic.runtime.migration] Running upgrade 51b70b72804b -> b05adb19191b, empty message
+DEBUG [alembic.runtime.migration] update 51b70b72804b to b05adb19191b
+INFO  [alembic.runtime.migration] Running upgrade 51b70b72804b -> ea7d20e5a100, empty message
+DEBUG [alembic.runtime.migration] new branch insert ea7d20e5a100
+INFO  [alembic.runtime.migration] Running upgrade ea7d20e5a100 -> 8dc0d80c8de9, empty message
+DEBUG [alembic.runtime.migration] update ea7d20e5a100 to 8dc0d80c8de9
+INFO  [alembic.runtime.migration] Running upgrade 8dc0d80c8de9 -> 3bfb340e9c82, empty message
+DEBUG [alembic.runtime.migration] update 8dc0d80c8de9 to 3bfb340e9c82
+INFO  [alembic.runtime.migration] Running upgrade 3bfb340e9c82 -> cce98551dedf, empty message
+DEBUG [alembic.runtime.migration] update 3bfb340e9c82 to cce98551dedf
+INFO  [alembic.runtime.migration] Running upgrade cce98551dedf -> 78f9c636d798, empty message
+DEBUG [alembic.runtime.migration] update cce98551dedf to 78f9c636d798
+INFO  [alembic.runtime.migration] Running upgrade 78f9c636d798 -> 13414af45173, empty message
+DEBUG [alembic.runtime.migration] update 78f9c636d798 to 13414af45173
+INFO  [alembic.runtime.migration] Running upgrade 13414af45173 -> fa0cfaa0fa62, empty message
+DEBUG [alembic.runtime.migration] update 13414af45173 to fa0cfaa0fa62
+INFO  [alembic.runtime.migration] Running upgrade fa0cfaa0fa62 -> 1514a499db7a, empty message
+DEBUG [alembic.runtime.migration] update fa0cfaa0fa62 to 1514a499db7a
+INFO  [alembic.runtime.migration] Running upgrade 1514a499db7a -> abac129b3b3b, empty message
+DEBUG [alembic.runtime.migration] update 1514a499db7a to abac129b3b3b
+INFO  [alembic.runtime.migration] Running upgrade b05adb19191b, abac129b3b3b -> dbfa17943691, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['b05adb19191b'], update abac129b3b3b to dbfa17943691
+INFO  [alembic.runtime.migration] Running upgrade dbfa17943691 -> 2f2c055bc47c, empty message
+DEBUG [alembic.runtime.migration] update dbfa17943691 to 2f2c055bc47c
+INFO  [alembic.runtime.migration] Running upgrade 2f2c055bc47c -> e4c9b38c63e3, empty message
+DEBUG [alembic.runtime.migration] update 2f2c055bc47c to e4c9b38c63e3
+INFO  [alembic.runtime.migration] Running upgrade e4c9b38c63e3 -> 8dd3146db65d, Add column reserved_memory to compute_nodes
+DEBUG [alembic.runtime.migration] update e4c9b38c63e3 to 8dd3146db65d
+INFO  [alembic.runtime.migration] Running upgrade 8dd3146db65d -> df6c06d92833, Set nbd role along with management role
+DEBUG [alembic.runtime.migration] update 8dd3146db65d to df6c06d92833
+INFO  [alembic.runtime.migration] Running upgrade df6c06d92833 -> c9bcd786e70e, Added time_not_synced alert type
+DEBUG [alembic.runtime.migration] update df6c06d92833 to c9bcd786e70e
+INFO  [alembic.runtime.migration] Running upgrade b05adb19191b -> 7c988089bdb9, empty message
+DEBUG [alembic.runtime.migration] new branch insert 7c988089bdb9
+INFO  [alembic.runtime.migration] Running upgrade 7c988089bdb9, c9bcd786e70e -> 8db999ed079c, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['7c988089bdb9'], update c9bcd786e70e to 8db999ed079c
+INFO  [alembic.runtime.migration] Running upgrade 8db999ed079c -> 2e68f76fb371, empty message
+DEBUG [alembic.runtime.migration] update 8db999ed079c to 2e68f76fb371
+INFO  [alembic.runtime.migration] Running upgrade 2e68f76fb371 -> 47d518722e36, empty message
+DEBUG [alembic.runtime.migration] update 2e68f76fb371 to 47d518722e36
+INFO  [alembic.runtime.migration] Running upgrade 47d518722e36 -> d0d60b25ab7d, empty message
+DEBUG [alembic.runtime.migration] update 47d518722e36 to d0d60b25ab7d
+INFO  [alembic.runtime.migration] Running upgrade 47d518722e36 -> 952d07a4d4e8, empty message
+DEBUG [alembic.runtime.migration] new branch insert 952d07a4d4e8
+INFO  [alembic.runtime.migration] Running upgrade 952d07a4d4e8 -> 7f5f83046732, empty message
+DEBUG [alembic.runtime.migration] update 952d07a4d4e8 to 7f5f83046732
+INFO  [alembic.runtime.migration] Running upgrade 7f5f83046732 -> 1c61ae04a775, empty message
+DEBUG [alembic.runtime.migration] update 7f5f83046732 to 1c61ae04a775
+INFO  [alembic.runtime.migration] Running upgrade 1c61ae04a775 -> cc1f900f0dfb, empty message
+DEBUG [alembic.runtime.migration] update 1c61ae04a775 to cc1f900f0dfb
+INFO  [alembic.runtime.migration] Running upgrade cc1f900f0dfb -> bd950e95a780, empty message
+DEBUG [alembic.runtime.migration] update cc1f900f0dfb to bd950e95a780
+INFO  [alembic.runtime.migration] Running upgrade bd950e95a780 -> 2a28d269a939, empty message
+DEBUG [alembic.runtime.migration] update bd950e95a780 to 2a28d269a939
+INFO  [alembic.runtime.migration] Running upgrade 2a28d269a939 -> 9293b6b505c7, empty message
+DEBUG [alembic.runtime.migration] update 2a28d269a939 to 9293b6b505c7
+INFO  [alembic.runtime.migration] Running upgrade 9293b6b505c7 -> cb1dbc7ec039, empty message
+DEBUG [alembic.runtime.migration] update 9293b6b505c7 to cb1dbc7ec039
+INFO  [alembic.runtime.migration] Running upgrade cb1dbc7ec039 -> 730bce985138, NodeMaintenance table
+DEBUG [alembic.runtime.migration] update cb1dbc7ec039 to 730bce985138
+INFO  [alembic.runtime.migration] Running upgrade 730bce985138 -> 14b94b8a2334, empty message
+DEBUG [alembic.runtime.migration] update 730bce985138 to 14b94b8a2334
+INFO  [alembic.runtime.migration] Running upgrade 14b94b8a2334 -> 33d2cc214d70, empty message
+DEBUG [alembic.runtime.migration] update 14b94b8a2334 to 33d2cc214d70
+INFO  [alembic.runtime.migration] Running upgrade 33d2cc214d70 -> bcae7a61c20b, empty message
+DEBUG [alembic.runtime.migration] update 33d2cc214d70 to bcae7a61c20b
+INFO  [alembic.runtime.migration] Running upgrade bcae7a61c20b -> 7fbf19a27c44, empty message
+DEBUG [alembic.runtime.migration] update bcae7a61c20b to 7fbf19a27c44
+INFO  [alembic.runtime.migration] Running upgrade 7fbf19a27c44, d0d60b25ab7d -> 3488a9d7aa36, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['7fbf19a27c44'], update d0d60b25ab7d to 3488a9d7aa36
+INFO  [alembic.runtime.migration] Running upgrade 3488a9d7aa36 -> c3dc90df1c8a, empty message
+DEBUG [alembic.runtime.migration] update 3488a9d7aa36 to c3dc90df1c8a
+INFO  [alembic.runtime.migration] Running upgrade c3dc90df1c8a -> 5ee52ebb583c, Add loadbalancers statuses table
+DEBUG [alembic.runtime.migration] update c3dc90df1c8a to 5ee52ebb583c
+INFO  [alembic.runtime.migration] Running upgrade 5ee52ebb583c -> af8f3a7a5ef4, empty message
+DEBUG [alembic.runtime.migration] update 5ee52ebb583c to af8f3a7a5ef4
+INFO  [alembic.runtime.migration] Running upgrade 5ee52ebb583c -> 2df0f3b6c2bf, empty message
+DEBUG [alembic.runtime.migration] new branch insert 2df0f3b6c2bf
+INFO  [alembic.runtime.migration] Running upgrade 2df0f3b6c2bf -> 0aae10131a44, empty message
+DEBUG [alembic.runtime.migration] update 2df0f3b6c2bf to 0aae10131a44
+INFO  [alembic.runtime.migration] Running upgrade af8f3a7a5ef4, 0aae10131a44 -> 3513dcbac0ab, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['af8f3a7a5ef4'], update 0aae10131a44 to 3513dcbac0ab
+INFO  [alembic.runtime.migration] Running upgrade 3513dcbac0ab -> 2f760fc4a0dc, empty message
+DEBUG [alembic.runtime.migration] update 3513dcbac0ab to 2f760fc4a0dc
+INFO  [alembic.runtime.migration] Running upgrade af8f3a7a5ef4 -> a24827724862, empty message
+DEBUG [alembic.runtime.migration] new branch insert a24827724862
+INFO  [alembic.runtime.migration] Running upgrade a24827724862 -> c9fd3f044a50, empty message
+DEBUG [alembic.runtime.migration] update a24827724862 to c9fd3f044a50
+INFO  [alembic.runtime.migration] Running upgrade a24827724862, 2f760fc4a0dc -> ad18806ddb96, empty message
+DEBUG [alembic.runtime.migration] update 2f760fc4a0dc to ad18806ddb96
+INFO  [alembic.runtime.migration] Running upgrade ad18806ddb96 -> 0f6f062e6246, empty message
+DEBUG [alembic.runtime.migration] update ad18806ddb96 to 0f6f062e6246
+INFO  [alembic.runtime.migration] Running upgrade 0f6f062e6246 -> c1f962642863, empty message
+DEBUG [alembic.runtime.migration] update 0f6f062e6246 to c1f962642863
+INFO  [alembic.runtime.migration] Running upgrade c1f962642863 -> e612dd302af4, empty message
+DEBUG [alembic.runtime.migration] update c1f962642863 to e612dd302af4
+INFO  [alembic.runtime.migration] Running upgrade e612dd302af4 -> 8e50b22a8c1a, empty message
+DEBUG [alembic.runtime.migration] update e612dd302af4 to 8e50b22a8c1a
+INFO  [alembic.runtime.migration] Running upgrade 8e50b22a8c1a -> 774537b7381d, empty message
+DEBUG [alembic.runtime.migration] update 8e50b22a8c1a to 774537b7381d
+INFO  [alembic.runtime.migration] Running upgrade 774537b7381d, c9fd3f044a50 -> 88abe007593a, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['774537b7381d'], update c9fd3f044a50 to 88abe007593a
+INFO  [alembic.runtime.migration] Running upgrade 88abe007593a -> 084de393c5e2, empty message
+DEBUG [alembic.runtime.migration] update 88abe007593a to 084de393c5e2
+INFO  [alembic.runtime.migration] Running upgrade 084de393c5e2 -> 0fa67374bb1b, empty message
+DEBUG [alembic.runtime.migration] update 084de393c5e2 to 0fa67374bb1b
+INFO  [alembic.runtime.migration] Running upgrade 084de393c5e2 -> 8ca587c96184, empty message
+DEBUG [alembic.runtime.migration] new branch insert 8ca587c96184
+INFO  [alembic.runtime.migration] Running upgrade 8ca587c96184 -> 82857778374d, empty message
+DEBUG [alembic.runtime.migration] update 8ca587c96184 to 82857778374d
+INFO  [alembic.runtime.migration] Running upgrade 82857778374d -> e347835e3a40, add 'ill cs' status to AlertTypes_t enum
+DEBUG [alembic.runtime.migration] update 82857778374d to e347835e3a40
+INFO  [alembic.runtime.migration] Running upgrade e347835e3a40 -> 617339d2c44f, add audit_log.user_id
+DEBUG [alembic.runtime.migration] update e347835e3a40 to 617339d2c44f
+INFO  [alembic.runtime.migration] Running upgrade 617339d2c44f -> 9c1fc56166c6, add incompatible hardware alert
+DEBUG [alembic.runtime.migration] update 617339d2c44f to 9c1fc56166c6
+INFO  [alembic.runtime.migration] Running upgrade 9c1fc56166c6 -> e0b587ec5b8f, Added ifaces.mtu
+DEBUG [alembic.runtime.migration] update 9c1fc56166c6 to e0b587ec5b8f
+INFO  [alembic.runtime.migration] Running upgrade e0b587ec5b8f -> 887f4a8ef688, empty message
+DEBUG [alembic.runtime.migration] update e0b587ec5b8f to 887f4a8ef688
+INFO  [alembic.runtime.migration] Running upgrade 887f4a8ef688 -> e110b7b2edaf, allow_deny_lists
+DEBUG [alembic.runtime.migration] update 887f4a8ef688 to e110b7b2edaf
+INFO  [alembic.runtime.migration] Running upgrade e110b7b2edaf -> 2751e7007379, empty message
+DEBUG [alembic.runtime.migration] update e110b7b2edaf to 2751e7007379
+INFO  [alembic.runtime.migration] Running upgrade 2751e7007379, 0fa67374bb1b -> 7fc6c7631861, empty message
+DEBUG [alembic.runtime.migration] merge, delete ['2751e7007379'], update 0fa67374bb1b to 7fc6c7631861
+INFO  [alembic.runtime.migration] Running upgrade 7fc6c7631861 -> df92a6303aa7, Revision ID: df92a6303aa7
+Revises: 7fc6c7631861
+Create Date: 2021-01-19 17:09:25.154869
+DEBUG [alembic.runtime.migration] update 7fc6c7631861 to df92a6303aa7
+INFO  [alembic.runtime.migration] Running upgrade df92a6303aa7 -> e4feb3918154, empty message
+DEBUG [alembic.runtime.migration] update df92a6303aa7 to e4feb3918154
+INFO  [alembic.runtime.migration] Running upgrade e4feb3918154 -> 3643560f65db, empty message
+DEBUG [alembic.runtime.migration] update e4feb3918154 to 3643560f65db
+INFO  [alembic.runtime.migration] Running upgrade 3643560f65db -> 7660a019cb74, empty message
+DEBUG [alembic.runtime.migration] update 3643560f65db to 7660a019cb74
+INFO  [alembic.runtime.migration] Running upgrade 7660a019cb74 -> c00dca353f00, empty message
+DEBUG [alembic.runtime.migration] update 7660a019cb74 to c00dca353f00
+INFO  [alembic.runtime.migration] Running upgrade c00dca353f00 -> 0c3956da023d, empty message
+DEBUG [alembic.runtime.migration] update c00dca353f00 to 0c3956da023d
+INFO  [alembic.runtime.migration] Running upgrade 0c3956da023d -> a7e8b965ea8e, empty message
+DEBUG [alembic.runtime.migration] update 0c3956da023d to a7e8b965ea8e
+INFO  [alembic.runtime.migration] Running upgrade a7e8b965ea8e -> 1b378de788e4, rename_allow_deny
+DEBUG [alembic.runtime.migration] update a7e8b965ea8e to 1b378de788e4
+INFO  [alembic.runtime.migration] Running upgrade 1b378de788e4 -> 948ae41f9696, outbound_allow
+DEBUG [alembic.runtime.migration] update 1b378de788e4 to 948ae41f9696
+INFO  [alembic.runtime.migration] Running upgrade 948ae41f9696 -> 953c8050b030, empty message
+DEBUG [alembic.runtime.migration] update 948ae41f9696 to 953c8050b030
+INFO  [alembic.runtime.migration] Running upgrade 953c8050b030 -> 953c8050b031, empty message
+DEBUG [alembic.runtime.migration] update 953c8050b030 to 953c8050b031
+INFO  [alembic.runtime.migration] Running upgrade 953c8050b031 -> d840a46fbc85, add csd and mdsd statuses
+DEBUG [alembic.runtime.migration] update 953c8050b031 to d840a46fbc85
+INFO  [alembic.runtime.migration] Running upgrade d840a46fbc85 -> 45b32008b59b, alter alerts type to text
+DEBUG [alembic.runtime.migration] update d840a46fbc85 to 45b32008b59b
+INFO  [alembic.runtime.migration] Running upgrade 45b32008b59b -> 0afbe625cb30, Added compute_nodes.options
+DEBUG [alembic.runtime.migration] update 45b32008b59b to 0afbe625cb30
+INFO  [alembic.runtime.migration] Running upgrade 0afbe625cb30 -> 7bfeb71434e8, Added new items into AlertTypes_t enum
+DEBUG [alembic.runtime.migration] update 0afbe625cb30 to 7bfeb71434e8
+INFO  [alembic.runtime.migration] Running upgrade 7bfeb71434e8 -> ac79a2483fa6, Add fail_message field for CSes and MDSes
+DEBUG [alembic.runtime.migration] update 7bfeb71434e8 to ac79a2483fa6
+INFO  [alembic.runtime.migration] Running upgrade ac79a2483fa6 -> 9f81ba601bfa, add domain_idp table
+DEBUG [alembic.runtime.migration] update ac79a2483fa6 to 9f81ba601bfa
+INFO  [alembic.runtime.migration] Running upgrade 9f81ba601bfa -> 701339314ffb, add disk_size and disk_type
+DEBUG [alembic.runtime.migration] update 9f81ba601bfa to 701339314ffb
+INFO  [alembic.runtime.migration] Running upgrade 701339314ffb -> 4b4846172a4f, Make fail_message from text to json
+DEBUG [alembic.runtime.migration] update 701339314ffb to 4b4846172a4f
+INFO  [alembic.runtime.migration] Running upgrade 4b4846172a4f -> ea68a6d70d28, Add new alert type for alertmanager
+DEBUG [alembic.runtime.migration] update 4b4846172a4f to ea68a6d70d28
+INFO  [alembic.runtime.migration] Running upgrade ea68a6d70d28 -> 45464b1a2aff, Change fail_message from json to text array
+DEBUG [alembic.runtime.migration] update ea68a6d70d28 to 45464b1a2aff
+INFO  [alembic.runtime.migration] Running upgrade 45464b1a2aff -> b32a6b138eac, add idp.enabled column
+DEBUG [alembic.runtime.migration] update 45464b1a2aff to b32a6b138eac
+INFO  [alembic.runtime.migration] Running upgrade b32a6b138eac -> 049e8a96f512, Add new alert type for dr outdated vms
+DEBUG [alembic.runtime.migration] update b32a6b138eac to 049e8a96f512
+INFO  [alembic.runtime.migration] Running upgrade 049e8a96f512 -> 369596fded12, console_portrange
+DEBUG [alembic.runtime.migration] update 049e8a96f512 to 369596fded12
+INFO  [alembic.runtime.migration] Running upgrade 369596fded12 -> 9dd7f2128581, Include IKE traffic into outbound_allow_list
+DEBUG [alembic.runtime.migration] update 369596fded12 to 9dd7f2128581
+INFO  [alembic.runtime.migration] Running upgrade 9dd7f2128581 -> 677df07ced08, drop agent_core
+DEBUG [alembic.runtime.migration] update 9dd7f2128581 to 677df07ced08
+INFO  [alembic.runtime.migration] Running upgrade 677df07ced08 -> e495a9210ac6, drop abgw_stats
+DEBUG [alembic.runtime.migration] update 677df07ced08 to e495a9210ac6
+INFO  [alembic.runtime.migration] Running upgrade e495a9210ac6 -> b316b8641ef9, Add table for IPsec subnets
+DEBUG [alembic.runtime.migration] update e495a9210ac6 to b316b8641ef9
+INFO  [alembic.runtime.migration] Running upgrade b316b8641ef9 -> 05fdb700a895, remove LCA tables
+DEBUG [alembic.runtime.migration] update b316b8641ef9 to 05fdb700a895
+INFO  [alembic.runtime.migration] Running upgrade 05fdb700a895 -> ffa8faad273f, add IdP response type
+DEBUG [alembic.runtime.migration] update 05fdb700a895 to ffa8faad273f
+INFO  [alembic.runtime.migration] Running upgrade ffa8faad273f -> 08d8da2d1e7f, add idp_validation_failure alert type
+DEBUG [alembic.runtime.migration] update ffa8faad273f to 08d8da2d1e7f
+INFO  [alembic.runtime.migration] Running upgrade 08d8da2d1e7f -> 0e86a64085d0, Add abgw active column
+DEBUG [alembic.runtime.migration] update 08d8da2d1e7f to 0e86a64085d0
+INFO  [alembic.runtime.migration] Running upgrade 0e86a64085d0 -> f786ee9fc71a, Create hypervisor_type column in compute_nodes table
+DEBUG [alembic.runtime.migration] update 0e86a64085d0 to f786ee9fc71a
+INFO  [alembic.runtime.migration] Running upgrade f786ee9fc71a -> 870ab23ea7b6, Add sequence for allocation of IPv6 interface IDs
+DEBUG [alembic.runtime.migration] update f786ee9fc71a to 870ab23ea7b6
+INFO  [alembic.runtime.migration] Running upgrade 870ab23ea7b6 -> d1738228b617, Create settings entry for ipv6_prefix
+DEBUG [alembic.runtime.migration] update 870ab23ea7b6 to d1738228b617
+INFO  [alembic.runtime.migration] Running upgrade d1738228b617 -> 9a461782e9fd, Switch cluster to IPv6
+DEBUG [alembic.runtime.migration] update d1738228b617 to 9a461782e9fd
+INFO  [alembic.runtime.migration] Running upgrade 9a461782e9fd -> 3cefb649e530, Add compute_storages table
+DEBUG [alembic.runtime.migration] update 9a461782e9fd to 3cefb649e530
+INFO  [alembic.runtime.migration] Running upgrade 3cefb649e530 -> da4937a5dec3, sofware info cache
+DEBUG [alembic.runtime.migration] update 3cefb649e530 to da4937a5dec3
+INFO  [alembic.runtime.migration] Running upgrade da4937a5dec3 -> d731dd562ac1, Remove obsolete disk write cache alerts
+DEBUG [alembic.runtime.migration] update da4937a5dec3 to d731dd562ac1
+INFO  [alembic.runtime.migration] Running upgrade d731dd562ac1 -> 16263da5637b, Switch to new compute.options `k8saas_labels` format
+DEBUG [alembic.runtime.migration] update d731dd562ac1 to 16263da5637b
+INFO  [alembic.runtime.migration] Running upgrade 16263da5637b -> 9db1bdd4ad21, Add table for IPsec exceptions
+DEBUG [alembic.runtime.migration] update 16263da5637b to 9db1bdd4ad21
+INFO  [alembic.runtime.migration] Running upgrade 9db1bdd4ad21 -> 8c27ebeedf29, Add optional cluster_id to system settings
+DEBUG [alembic.runtime.migration] update 9db1bdd4ad21 to 8c27ebeedf29
+INFO  [alembic.runtime.migration] Running upgrade 8c27ebeedf29 -> f31d71fecac0, Add table for tracking issued certificates
+DEBUG [alembic.runtime.migration] update 8c27ebeedf29 to f31d71fecac0
+INFO  [alembic.runtime.migration] Running upgrade f31d71fecac0 -> e0ad6db5cf0a, Add sequence for CRL numbers
+DEBUG [alembic.runtime.migration] update f31d71fecac0 to e0ad6db5cf0a
+INFO  [alembic.runtime.migration] Running upgrade e0ad6db5cf0a -> 4d12fb35d564, Add journal mountpoint
+DEBUG [alembic.runtime.migration] update e0ad6db5cf0a to 4d12fb35d564
+INFO  [alembic.runtime.migration] Running upgrade 4d12fb35d564 -> f0bc52bd214a, Pull journals mountpoints from cses
+DEBUG [alembic.runtime.migration] update 4d12fb35d564 to f0bc52bd214a
+INFO  [alembic.runtime.migration] Running upgrade f0bc52bd214a -> e1ed5f2f4db8, CS disk partition ID
+DEBUG [alembic.runtime.migration] update f0bc52bd214a to e1ed5f2f4db8
+INFO  [alembic.runtime.migration] Running upgrade e1ed5f2f4db8 -> 6a0fac0f9346, Node recovering state
+DEBUG [alembic.runtime.migration] update e1ed5f2f4db8 to 6a0fac0f9346
+INFO  [alembic.runtime.migration] Running upgrade 6a0fac0f9346 -> ae2ff350426e, Add conncheck outbound rules
+DEBUG [alembic.runtime.migration] update 6a0fac0f9346 to ae2ff350426e
+INFO  [alembic.runtime.migration] Running upgrade ae2ff350426e -> ced887c3f520, Add disk partition ID
+DEBUG [alembic.runtime.migration] update ae2ff350426e to ced887c3f520
+INFO  [alembic.runtime.migration] Running upgrade ced887c3f520 -> 0123456789ab, Drop geo-repl cleaning up triggers
+DEBUG [alembic.runtime.migration] update ced887c3f520 to 0123456789ab
+INFO  [alembic.runtime.migration] Running upgrade 0123456789ab -> a733b415d56d, Add zoned column to cses table
+DEBUG [alembic.runtime.migration] update 0123456789ab to a733b415d56d
+INFO  [alembic.runtime.migration] Running upgrade a733b415d56d -> 0b22a86b2ab8, Drop events
+DEBUG [alembic.runtime.migration] update a733b415d56d to 0b22a86b2ab8
+INFO  [alembic.runtime.migration] Running upgrade 0b22a86b2ab8 -> a0322647d6b1, Add reuse_after_ts
+DEBUG [alembic.runtime.migration] update 0b22a86b2ab8 to a0322647d6b1
+INFO  [alembic.runtime.migration] Running upgrade a0322647d6b1 -> 0252fd22a48f, Add column ifaces.altnames
+DEBUG [alembic.runtime.migration] update a0322647d6b1 to 0252fd22a48f
+INFO  [alembic.runtime.migration] Running upgrade 0252fd22a48f -> f403d42168a6, remove auditlog foreign keys
+DEBUG [alembic.runtime.migration] update 0252fd22a48f to f403d42168a6
+INFO  [alembic.runtime.migration] Running upgrade f403d42168a6 -> 06239837c9eb, S3 metadata policy
+DEBUG [alembic.runtime.migration] update f403d42168a6 to 06239837c9eb
+INFO  [alembic.runtime.migration] Running upgrade 06239837c9eb -> 84ea76523a10, add IDP verify_ssl and request_timeout fields
+DEBUG [alembic.runtime.migration] update 06239837c9eb to 84ea76523a10
+INFO  [alembic.runtime.migration] Running upgrade 84ea76523a10 -> df577429a81a, management panel
+DEBUG [alembic.runtime.migration] update 84ea76523a10 to df577429a81a
+INFO  [alembic.runtime.migration] Running upgrade df577429a81a -> df36e3271635, last error
+DEBUG [alembic.runtime.migration] update df577429a81a to df36e3271635
+INFO  [alembic.runtime.migration] Running upgrade df36e3271635 -> 04033bd1ff0d, Added compute_nodes.fenced
+DEBUG [alembic.runtime.migration] update df36e3271635 to 04033bd1ff0d
+INFO  [alembic.runtime.migration] Running upgrade 04033bd1ff0d -> a284f508a5e6, fix_lbaas_compute_options
+DEBUG [alembic.runtime.migration] update 04033bd1ff0d to a284f508a5e6
+INFO  [alembic.runtime.migration] Running upgrade a284f508a5e6 -> edf94ccd3560, s3 user added
+DEBUG [alembic.runtime.migration] update a284f508a5e6 to edf94ccd3560
+INFO  [alembic.runtime.migration] Running upgrade edf94ccd3560 -> 71996c6a3ecf, domain_s3_prop
+DEBUG [alembic.runtime.migration] update edf94ccd3560 to 71996c6a3ecf
+INFO  [alembic.runtime.migration] Running upgrade 71996c6a3ecf -> 19a77849901c, Add filebeat tables
+DEBUG [alembic.runtime.migration] update 71996c6a3ecf to 19a77849901c
+INFO  [alembic.runtime.migration] Running upgrade 19a77849901c -> 9dc3872d6186, s3_user_enabled_column
+DEBUG [alembic.runtime.migration] update 19a77849901c to 9dc3872d6186
+INFO  [alembic.runtime.migration] Running upgrade 19a77849901c -> 53f23f69449a, split maintenance
+DEBUG [alembic.runtime.migration] new branch insert 53f23f69449a
+INFO  [alembic.runtime.migration] Running upgrade 53f23f69449a, 9dc3872d6186 -> 5da549f8e537, merge heads
+DEBUG [alembic.runtime.migration] merge, delete ['53f23f69449a'], update 9dc3872d6186 to 5da549f8e537
+INFO  [alembic.runtime.migration] Running upgrade 5da549f8e537 -> 98a636b8d18e, Do not reference 'clusters' table from 'ssh_keys'
+DEBUG [alembic.runtime.migration] update 5da549f8e537 to 98a636b8d18e
+INFO  [alembic.runtime.migration] Running upgrade 98a636b8d18e -> b719c3474461, Add 'expires_at' & 'limited' columns to 'ssh_keys'
+DEBUG [alembic.runtime.migration] update 98a636b8d18e to b719c3474461
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.

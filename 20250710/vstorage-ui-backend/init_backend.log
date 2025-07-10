@@ -1,0 +1,930 @@
+[INFO][5456] 2025-07-09 20:19:09,490 *** Start 2025-07-09 20:19:09,489: init-backend.sh  ***
+[INFO][5456] 2025-07-09 20:19:09,490 Backend initialization...
+[INFO][5456] 2025-07-09 20:19:09,493 Enabling ssl ...
+[INFO][5456] 2025-07-09 20:19:09,493 Create SSL certificates
+clientwebcpcompute[INFO][5456] 2025-07-09 20:19:10,592 Restarting nginx service
+[INFO][5456] 2025-07-09 20:19:10,714 ssl is enabled
+Created symlink /etc/systemd/system/multi-user.target.wants/postgresql.service → /usr/lib/systemd/system/postgresql.service.
+[INFO][5456] 2025-07-09 20:19:10,961 Configure database...
+[INFO][5456] 2025-07-09 20:19:11,074 Ensuring roles for user vstoradmin...
+ALTER ROLE
+[INFO][5456] 2025-07-09 20:19:11,132 Roles for postgresql user vstoradmin are granted
+[INFO][5456] 2025-07-09 20:19:11,132 Create database vstoradmin
+[INFO][5456] 2025-07-09 20:19:11,200 Database has been configured
+[INFO][5456] 2025-07-09 20:19:16,695 pgbouncer: Init pgbouncer...
+[INFO][5456] 2025-07-09 20:19:16,696 pgbouncer: reconfiguring backend
+[INFO][5456] 2025-07-09 20:19:16,699 pgbouncer: updating keystone config
+[INFO][5456] 2025-07-09 20:19:18,752 pgbouncer: updating compute...
+[INFO][5456] 2025-07-09 20:19:18,757 pgbouncer: updating kolla config files...
+/usr/bin/grep: /etc/kolla/*/*.conf: No such file or directory
+[INFO][5456] 2025-07-09 20:19:18,758 pgbouncer: done
+[INFO][5456] 2025-07-09 20:19:18,759 pgbouncer: initialized ok
+[INFO][5456] 2025-07-09 20:19:18,761 Starting database migration...
+[INFO][5456] 2025-07-09 20:19:20,899 Database migration finished
+[DEBUG][5456] 2025-07-09 20:19:20,900 Disabling oneshot scripts...
+[INFO][5456] 2025-07-09 20:19:20,943 Configuring firewall external interface is enp4s0 internal interface is enp5s0f0
+[INFO][5456] 2025-07-09 20:19:20,944 Configure internal interface: enp5s0f0
+2025-07-09 20:19:20.991 DEBUG [roles_cfg] Set roles=[{'name': 'web_cp', 'rules': [{'proto': 'tcp', 'dport': {'port': '8888'}, 'source': None, 'destination': None}, {'proto': 'tcp', 'dport': {'port': '6180'}, 'source': None, 'destination': None}], 'inbound_allow_list': [], 'inbound_deny_list': []}, {'name': 'ssh', 'rules': [{'proto': 'tcp', 'dport': {'port': '22'}, 'source': None, 'destination': None}], 'inbound_allow_list': [], 'inbound_deny_list': []}] inbound_allow_list=None inbound_deny_list=None outbound_allow_list=[{'proto': None, 'dport': None, 'source': None, 'destination': None}] for interface enp5s0f0
+2025-07-09 20:19:20.991 DEBUG [roles_cfg] /usr/libexec/vstorage-ui-agent/var/roles.json doesnt exist
+2025-07-09 20:19:20.991 DEBUG [roles_cfg] Set roles=[{'name': 'web_cp', 'rules': [{'proto': 'tcp', 'dport': {'port': '8888'}, 'source': None, 'destination': None}, {'proto': 'tcp', 'dport': {'port': '6180'}, 'source': None, 'destination': None}], 'inbound_allow_list': [], 'inbound_deny_list': []}, {'name': 'ssh', 'rules': [{'proto': 'tcp', 'dport': {'port': '22'}, 'source': None, 'destination': None}], 'inbound_allow_list': [], 'inbound_deny_list': []}], inbound_allow_list=[], inbound_deny_list=[], outbound_allow_list=[{'proto': None, 'dport': None, 'source': None, 'destination': None}] for interface enp5s0f0
+2025-07-09 20:19:20.991 DEBUG [roles_cfg] Roles are changing. Original roles=[]
+2025-07-09 20:19:20.991 DEBUG [roles_cfg] outbound_allow_list is changing. Original outbound_allow_list=[]
+2025-07-09 20:19:20.994 DEBUG [roles_cfg] Remove default rules for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Rule "-A INPUT -j CUSTOM" is not found for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Create rule: "-A INPUT -j CUSTOM" for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Create chain: CUSTOM for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Rule "-A INPUT -j VZ_IN_TAIL" is not found for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Cleanup all rules by pattern VZ_IN_TAIL for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Create rule: "-A INPUT -j VZ_IN_TAIL" for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Create chain: VZ_IN_TAIL for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Move VZ_IN_TAIL chain to the -1 position in INPUT chain for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Rule "-A OUTPUT -j OCUSTOM" is not found for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Create rule: "-A OUTPUT -j OCUSTOM" for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Create chain: OCUSTOM for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Rule "-A OUTPUT -j VZ_OUT" is not found for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Cleanup all rules by pattern VZ_OUT for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Create rule: "-A OUTPUT -j VZ_OUT" for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Create chain: VZ_OUT for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Move VZ_OUT chain to the 1 position in OUTPUT chain for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Rule "-A OUTPUT -j VZ_OUT_TAIL" is not found for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Cleanup all rules by pattern VZ_OUT_TAIL for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Create rule: "-A OUTPUT -j VZ_OUT_TAIL" for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Create chain: VZ_OUT_TAIL for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Move VZ_OUT_TAIL chain to the -1 position in OUTPUT chain for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Rule "-A OUTPUT -j VZ_OUT_DT" is not found for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Cleanup all rules by pattern VZ_OUT_DT for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Create rule: "-A OUTPUT -j VZ_OUT_DT" for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Create chain: VZ_OUT_DT for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Move VZ_OUT_DT chain to the -2 position in OUTPUT chain for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Create chain: OUT_PREDROP for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] "Log dropped outgoing packets" rule is not found for ip4tables. Add it.
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Content of VZ_IN_TAIL chain for ip4tables is not validated. Recreate it.
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Content of VZ_OUT_DT chain for ip4tables is not validated. Recreate it.
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Content of VZ_OUT_TAIL chain for ip4tables is not validated. Recreate it.
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Rule "-A VZ_IN -j VZ_IN_DEF" from ip4tables is not validated. Remove it.
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] ESP IN rule is not found for ip4tables, adding
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] ESP OUT rule is not found for ip4tables, adding
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] The rule '-A VZ_IN -i o-hm0 -p udp -m udp --dport 5555 -j ACCEPT' for octavia health monitor device is not found for ip4tables. Add it.
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] The rule '-A VZ_OUT -o o-hm0 -j ACCEPT' for octavia health monitor device is not found for ip4tables. Add it.
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Table filter was updated for ip4tables during validation
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Rule "-A PREROUTING -j VZ_PRE" is not found for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Cleanup all rules by pattern VZ_PRE for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Create rule: "-A PREROUTING -j VZ_PRE" for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Create chain: VZ_PRE for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Rule "-A OUTPUT -j VZ_OUT" is not found for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Cleanup all rules by pattern VZ_OUT for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Create rule: "-A OUTPUT -j VZ_OUT" for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Create chain: VZ_OUT for ip4tables
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] NOTRACK rule for loopback device is not found for ip4tables. Add it.
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Table raw was updated for ip4tables during validation
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] NONLOCAL MARK rule is not found for ip4tables, adding
+2025-07-09 20:19:20.995 DEBUG [roles_cfg] Table mangle was updated for ip4tables during validation
+2025-07-09 20:19:20.996 DEBUG [roles_cfg] Last read ip4tables config:
+*filter
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [48:6834]
+:DOCKER - [0:0]
+:DOCKER-ISOLATION-STAGE-1 - [0:0]
+:DOCKER-ISOLATION-STAGE-2 - [0:0]
+:DOCKER-USER - [0:0]
+:VZ_IN - [0:0]
+:VZ_IN_DEF - [0:0]
+-A INPUT -j VZ_IN
+-A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -p icmp -j ACCEPT
+-A INPUT -i lo -j ACCEPT
+-A INPUT -m conntrack --ctstate INVALID -j DROP
+-A INPUT -j REJECT --reject-with icmp-host-prohibited
+-A FORWARD -j DOCKER-USER
+-A FORWARD -j DOCKER-ISOLATION-STAGE-1
+-A FORWARD -o docker0 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A FORWARD -o docker0 -j DOCKER
+-A FORWARD -i docker0 ! -o docker0 -j ACCEPT
+-A FORWARD -i docker0 -o docker0 -j ACCEPT
+-A FORWARD -j REJECT --reject-with icmp-host-prohibited
+-A DOCKER-ISOLATION-STAGE-1 -i docker0 ! -o docker0 -j DOCKER-ISOLATION-STAGE-2
+-A DOCKER-ISOLATION-STAGE-1 -j RETURN
+-A DOCKER-ISOLATION-STAGE-2 -o docker0 -j DROP
+-A DOCKER-ISOLATION-STAGE-2 -j RETURN
+-A DOCKER-USER -j RETURN
+-A VZ_IN -j VZ_IN_DEF
+-A VZ_IN_DEF -p tcp -m tcp --dport 22 -m conntrack --ctstate NEW -j ACCEPT
+COMMIT
+*raw
+:PREROUTING ACCEPT [45:10735]
+:OUTPUT ACCEPT [48:6834]
+COMMIT
+*mangle
+:PREROUTING ACCEPT [0:0]
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+:POSTROUTING ACCEPT [0:0]
+COMMIT
+
+2025-07-09 20:19:20.996 DEBUG [roles_cfg] Commit ip4tables rules:
+*filter
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [48:6834]
+:DOCKER - [0:0]
+:DOCKER-ISOLATION-STAGE-1 - [0:0]
+:DOCKER-ISOLATION-STAGE-2 - [0:0]
+:DOCKER-USER - [0:0]
+:VZ_IN - [0:0]
+:VZ_IN_DEF - [0:0]
+:CUSTOM - [0:0]
+:VZ_IN_TAIL - [0:0]
+:OCUSTOM - [0:0]
+:VZ_OUT - [0:0]
+:VZ_OUT_TAIL - [0:0]
+:VZ_OUT_DT - [0:0]
+:OUT_PREDROP - [0:0]
+:VZ_IN_f8758a67 - [0:0]
+:VZ_IN_f8758a67_F - [0:0]
+:VZ_IN_f8758a67_5d48d176_F - [0:0]
+:VZ_IN_f8758a67_5d48d176 - [0:0]
+:VZ_IN_f8758a67_1787d764_F - [0:0]
+:VZ_IN_f8758a67_1787d764 - [0:0]
+:VZ_OUT_f8758a67 - [0:0]
+:VZ_OUT_f8758a67_USR - [0:0]
+-A OUTPUT -j OCUSTOM
+-A OUTPUT -j VZ_OUT
+-A OUTPUT -j VZ_OUT_DT
+-A OUTPUT -j VZ_OUT_TAIL
+-A INPUT -j CUSTOM
+-A INPUT -j VZ_IN
+-A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -p icmp -j ACCEPT
+-A INPUT -i lo -j ACCEPT
+-A INPUT -m conntrack --ctstate INVALID -j DROP
+-A INPUT -j REJECT --reject-with icmp-host-prohibited
+-A INPUT -j VZ_IN_TAIL
+-A FORWARD -j DOCKER-USER
+-A FORWARD -j DOCKER-ISOLATION-STAGE-1
+-A FORWARD -o docker0 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A FORWARD -o docker0 -j DOCKER
+-A FORWARD -i docker0 ! -o docker0 -j ACCEPT
+-A FORWARD -i docker0 -o docker0 -j ACCEPT
+-A FORWARD -j REJECT --reject-with icmp-host-prohibited
+-A DOCKER-ISOLATION-STAGE-1 -i docker0 ! -o docker0 -j DOCKER-ISOLATION-STAGE-2
+-A DOCKER-ISOLATION-STAGE-1 -j RETURN
+-A DOCKER-ISOLATION-STAGE-2 -o docker0 -j DROP
+-A DOCKER-ISOLATION-STAGE-2 -j RETURN
+-A DOCKER-USER -j RETURN
+-A VZ_IN_DEF -p tcp -m tcp --dport 22 -m conntrack --ctstate NEW -j ACCEPT
+-A OUT_PREDROP -j LOG --log-prefix "DROP: "
+-A VZ_IN_TAIL -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A VZ_IN_TAIL -i lo -j ACCEPT
+-A VZ_IN_TAIL -p icmp -j ACCEPT
+-A VZ_IN_TAIL -m conntrack --ctstate INVALID -j DROP
+-A VZ_IN_TAIL -j REJECT --reject-with icmp-host-prohibited
+-A VZ_OUT_DT -p udp -m udp --dport 500 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 4500 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 8888 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 80 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 443 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 53 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 53 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 123 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 8443 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 44445 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 40440 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 9877 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 2049 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 2049 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 111 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 111 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 892 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 892 -j ACCEPT
+-A VZ_OUT_TAIL -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A VZ_OUT_TAIL -o lo -j ACCEPT
+-A VZ_OUT_TAIL -p icmp -j ACCEPT
+-A VZ_OUT_TAIL -j OUT_PREDROP
+-A VZ_OUT_TAIL -m conntrack --ctstate INVALID -j DROP
+-A VZ_OUT_TAIL -j REJECT --reject-with icmp-host-prohibited
+-A VZ_IN -p esp -j ACCEPT
+-A VZ_OUT -p esp -j ACCEPT
+-A VZ_IN -i o-hm0 -p udp -m udp --dport 5555 -j ACCEPT
+-A VZ_OUT -o o-hm0 -j ACCEPT
+-A VZ_IN_f8758a67_F -i enp5s0f0 -j ACCEPT
+-A VZ_IN_f8758a67_5d48d176_F -i enp5s0f0 -j VZ_IN_f8758a67_F
+-A VZ_IN_f8758a67_5d48d176 -i enp5s0f0 -p tcp -m tcp --dport 8888 -j VZ_IN_f8758a67_5d48d176_F
+-A VZ_IN_f8758a67_5d48d176 -i enp5s0f0 -p tcp -m tcp --dport 6180 -j VZ_IN_f8758a67_5d48d176_F
+-A VZ_IN_f8758a67 -i enp5s0f0 -j VZ_IN_f8758a67_5d48d176
+-A VZ_IN_f8758a67_1787d764_F -i enp5s0f0 -j VZ_IN_f8758a67_F
+-A VZ_IN_f8758a67_1787d764 -i enp5s0f0 -p tcp -m tcp --dport 22 -j VZ_IN_f8758a67_1787d764_F
+-A VZ_IN_f8758a67 -i enp5s0f0 -j VZ_IN_f8758a67_1787d764
+-A VZ_IN -i enp5s0f0 -j VZ_IN_f8758a67
+-A VZ_OUT -o enp5s0f0 -j VZ_OUT_f8758a67
+-A VZ_OUT_f8758a67 -o enp5s0f0 -j VZ_OUT_f8758a67_USR
+-A VZ_OUT_f8758a67_USR -o enp5s0f0 -j ACCEPT
+-A VZ_OUT_f8758a67 -o enp5s0f0 -j VZ_OUT_TAIL
+COMMIT
+*mangle
+:PREROUTING ACCEPT [0:0]
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+:POSTROUTING ACCEPT [0:0]
+-A PREROUTING ! -i lo -m comment --comment VZ_MARK_NONLOCAL -j MARK --set-xmark 0x80000000/0x80000000
+COMMIT
+*raw
+:PREROUTING ACCEPT [45:10735]
+:OUTPUT ACCEPT [48:6834]
+:VZ_PRE - [0:0]
+:VZ_OUT - [0:0]
+-A OUTPUT -j VZ_OUT
+-A PREROUTING -j VZ_PRE
+-A VZ_OUT -o lo -j NOTRACK
+COMMIT
+
+2025-07-09 20:19:21.047 INFO [roles_cfg] ip4tables are updated
+2025-07-09 20:19:21.050 DEBUG [roles_cfg] Remove default rules for ip6tables
+2025-07-09 20:19:21.050 DEBUG [roles_cfg] Rule "-A INPUT -j CUSTOM" is not found for ip6tables
+2025-07-09 20:19:21.050 DEBUG [roles_cfg] Create rule: "-A INPUT -j CUSTOM" for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Create chain: CUSTOM for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Rule "-A INPUT -j VZ_IN_TAIL" is not found for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Cleanup all rules by pattern VZ_IN_TAIL for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Create rule: "-A INPUT -j VZ_IN_TAIL" for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Create chain: VZ_IN_TAIL for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Move VZ_IN_TAIL chain to the -1 position in INPUT chain for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Rule "-A OUTPUT -j OCUSTOM" is not found for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Create rule: "-A OUTPUT -j OCUSTOM" for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Create chain: OCUSTOM for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Rule "-A OUTPUT -j VZ_OUT" is not found for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Cleanup all rules by pattern VZ_OUT for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Create rule: "-A OUTPUT -j VZ_OUT" for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Create chain: VZ_OUT for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Move VZ_OUT chain to the 1 position in OUTPUT chain for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Rule "-A OUTPUT -j VZ_OUT_TAIL" is not found for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Cleanup all rules by pattern VZ_OUT_TAIL for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Create rule: "-A OUTPUT -j VZ_OUT_TAIL" for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Create chain: VZ_OUT_TAIL for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Move VZ_OUT_TAIL chain to the -1 position in OUTPUT chain for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Rule "-A OUTPUT -j VZ_OUT_DT" is not found for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Cleanup all rules by pattern VZ_OUT_DT for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Create rule: "-A OUTPUT -j VZ_OUT_DT" for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Create chain: VZ_OUT_DT for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Move VZ_OUT_DT chain to the -2 position in OUTPUT chain for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Create chain: OUT_PREDROP for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] "Log dropped outgoing packets" rule is not found for ip6tables. Add it.
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Content of VZ_IN_TAIL chain for ip6tables is not validated. Recreate it.
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Content of VZ_OUT_DT chain for ip6tables is not validated. Recreate it.
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Content of VZ_OUT_TAIL chain for ip6tables is not validated. Recreate it.
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Rule "-A VZ_IN -j VZ_IN_DEF" from ip6tables is not validated. Remove it.
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] ESP IN rule is not found for ip6tables, adding
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] ESP OUT rule is not found for ip6tables, adding
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] The rule '-A VZ_IN -i o-hm0 -p udp -m udp --dport 5555 -j ACCEPT' for octavia health monitor device is not found for ip6tables. Add it.
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] The rule '-A VZ_OUT -o o-hm0 -j ACCEPT' for octavia health monitor device is not found for ip6tables. Add it.
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Table filter was updated for ip6tables during validation
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Rule "-A PREROUTING -j VZ_PRE" is not found for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Cleanup all rules by pattern VZ_PRE for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Create rule: "-A PREROUTING -j VZ_PRE" for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Create chain: VZ_PRE for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Rule "-A OUTPUT -j VZ_OUT" is not found for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Cleanup all rules by pattern VZ_OUT for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Create rule: "-A OUTPUT -j VZ_OUT" for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Create chain: VZ_OUT for ip6tables
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] NOTRACK rule for loopback device is not found for ip6tables. Add it.
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Table raw was updated for ip6tables during validation
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] NONLOCAL MARK rule is not found for ip6tables, adding
+2025-07-09 20:19:21.051 DEBUG [roles_cfg] Table mangle was updated for ip6tables during validation
+2025-07-09 20:19:21.052 DEBUG [roles_cfg] Last read ip6tables config:
+*filter
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [462:266796]
+:VZ_IN - [0:0]
+:VZ_IN_DEF - [0:0]
+-A INPUT -j VZ_IN
+-A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -p ipv6-icmp -j ACCEPT
+-A INPUT -i lo -j ACCEPT
+-A INPUT -d fe80::/64 -p udp -m udp --dport 546 -m conntrack --ctstate NEW -j ACCEPT
+-A INPUT -m conntrack --ctstate INVALID -j DROP
+-A INPUT -j REJECT --reject-with icmp6-adm-prohibited
+-A FORWARD -j REJECT --reject-with icmp6-adm-prohibited
+-A VZ_IN -j VZ_IN_DEF
+-A VZ_IN_DEF -p tcp -m tcp --dport 22 -m conntrack --ctstate NEW -j ACCEPT
+COMMIT
+*raw
+:PREROUTING ACCEPT [444:265371]
+:OUTPUT ACCEPT [462:266796]
+COMMIT
+*mangle
+:PREROUTING ACCEPT [0:0]
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+:POSTROUTING ACCEPT [0:0]
+COMMIT
+
+2025-07-09 20:19:21.052 DEBUG [roles_cfg] Commit ip6tables rules:
+*filter
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [462:266796]
+:VZ_IN - [0:0]
+:VZ_IN_DEF - [0:0]
+:CUSTOM - [0:0]
+:VZ_IN_TAIL - [0:0]
+:OCUSTOM - [0:0]
+:VZ_OUT - [0:0]
+:VZ_OUT_TAIL - [0:0]
+:VZ_OUT_DT - [0:0]
+:OUT_PREDROP - [0:0]
+:VZ_IN_f8758a67 - [0:0]
+:VZ_IN_f8758a67_F - [0:0]
+:VZ_IN_f8758a67_5d48d176_F - [0:0]
+:VZ_IN_f8758a67_5d48d176 - [0:0]
+:VZ_IN_f8758a67_1787d764_F - [0:0]
+:VZ_IN_f8758a67_1787d764 - [0:0]
+:VZ_OUT_f8758a67 - [0:0]
+:VZ_OUT_f8758a67_USR - [0:0]
+-A OUTPUT -j OCUSTOM
+-A OUTPUT -j VZ_OUT
+-A OUTPUT -j VZ_OUT_DT
+-A OUTPUT -j VZ_OUT_TAIL
+-A INPUT -j CUSTOM
+-A INPUT -j VZ_IN
+-A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -p ipv6-icmp -j ACCEPT
+-A INPUT -i lo -j ACCEPT
+-A INPUT -d fe80::/64 -p udp -m udp --dport 546 -m conntrack --ctstate NEW -j ACCEPT
+-A INPUT -m conntrack --ctstate INVALID -j DROP
+-A INPUT -j REJECT --reject-with icmp6-adm-prohibited
+-A INPUT -j VZ_IN_TAIL
+-A FORWARD -j REJECT --reject-with icmp6-adm-prohibited
+-A VZ_IN_DEF -p tcp -m tcp --dport 22 -m conntrack --ctstate NEW -j ACCEPT
+-A OUT_PREDROP -j LOG --log-prefix "DROP: "
+-A VZ_IN_TAIL -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A VZ_IN_TAIL -i lo -j ACCEPT
+-A VZ_IN_TAIL -p ipv6-icmp -j ACCEPT
+-A VZ_IN_TAIL -m conntrack --ctstate INVALID -j DROP
+-A VZ_IN_TAIL -j REJECT --reject-with icmp6-adm-prohibited
+-A VZ_OUT_DT -p udp -m udp --dport 500 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 4500 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 8888 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 80 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 443 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 53 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 53 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 123 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 8443 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 44445 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 40440 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 9877 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 2049 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 2049 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 111 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 111 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 892 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 892 -j ACCEPT
+-A VZ_OUT_TAIL -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A VZ_OUT_TAIL -o lo -j ACCEPT
+-A VZ_OUT_TAIL -p ipv6-icmp -j ACCEPT
+-A VZ_OUT_TAIL -j OUT_PREDROP
+-A VZ_OUT_TAIL -m conntrack --ctstate INVALID -j DROP
+-A VZ_OUT_TAIL -j REJECT --reject-with icmp6-adm-prohibited
+-A VZ_IN -p esp -j ACCEPT
+-A VZ_OUT -p esp -j ACCEPT
+-A VZ_IN -i o-hm0 -p udp -m udp --dport 5555 -j ACCEPT
+-A VZ_OUT -o o-hm0 -j ACCEPT
+-A VZ_IN_f8758a67_F -i enp5s0f0 -j ACCEPT
+-A VZ_IN_f8758a67_5d48d176_F -i enp5s0f0 -j VZ_IN_f8758a67_F
+-A VZ_IN_f8758a67_5d48d176 -i enp5s0f0 -p tcp -m tcp --dport 8888 -j VZ_IN_f8758a67_5d48d176_F
+-A VZ_IN_f8758a67_5d48d176 -i enp5s0f0 -p tcp -m tcp --dport 6180 -j VZ_IN_f8758a67_5d48d176_F
+-A VZ_IN_f8758a67 -i enp5s0f0 -j VZ_IN_f8758a67_5d48d176
+-A VZ_IN_f8758a67_1787d764_F -i enp5s0f0 -j VZ_IN_f8758a67_F
+-A VZ_IN_f8758a67_1787d764 -i enp5s0f0 -p tcp -m tcp --dport 22 -j VZ_IN_f8758a67_1787d764_F
+-A VZ_IN_f8758a67 -i enp5s0f0 -j VZ_IN_f8758a67_1787d764
+-A VZ_IN -i enp5s0f0 -j VZ_IN_f8758a67
+-A VZ_OUT -o enp5s0f0 -j VZ_OUT_f8758a67
+-A VZ_OUT_f8758a67 -o enp5s0f0 -j VZ_OUT_f8758a67_USR
+-A VZ_OUT_f8758a67_USR -o enp5s0f0 -j ACCEPT
+-A VZ_OUT_f8758a67 -o enp5s0f0 -j VZ_OUT_TAIL
+COMMIT
+*mangle
+:PREROUTING ACCEPT [0:0]
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+:POSTROUTING ACCEPT [0:0]
+-A PREROUTING ! -i lo -m comment --comment VZ_MARK_NONLOCAL -j MARK --set-xmark 0x80000000/0x80000000
+COMMIT
+*raw
+:PREROUTING ACCEPT [444:265371]
+:OUTPUT ACCEPT [462:266796]
+:VZ_PRE - [0:0]
+:VZ_OUT - [0:0]
+-A OUTPUT -j VZ_OUT
+-A PREROUTING -j VZ_PRE
+-A VZ_OUT -o lo -j NOTRACK
+COMMIT
+
+2025-07-09 20:19:21.100 INFO [roles_cfg] ip6tables are updated
+[INFO][5456] 2025-07-09 20:19:21,118 Configure external interface: enp4s0
+2025-07-09 20:19:21.161 DEBUG [roles_cfg] Set roles=[{'name': 'web_cp', 'rules': [{'proto': 'tcp', 'dport': {'port': '8888'}, 'source': None, 'destination': None}, {'proto': 'tcp', 'dport': {'port': '6180'}, 'source': None, 'destination': None}], 'inbound_allow_list': [], 'inbound_deny_list': []}, {'name': 'ssh', 'rules': [{'proto': 'tcp', 'dport': {'port': '22'}, 'source': None, 'destination': None}], 'inbound_allow_list': [], 'inbound_deny_list': []}] inbound_allow_list=None inbound_deny_list=None outbound_allow_list=[{'proto': None, 'dport': None, 'source': None, 'destination': None}] for interface enp4s0
+2025-07-09 20:19:21.161 DEBUG [roles_cfg] Set roles=[{'name': 'web_cp', 'rules': [{'proto': 'tcp', 'dport': {'port': '8888'}, 'source': None, 'destination': None}, {'proto': 'tcp', 'dport': {'port': '6180'}, 'source': None, 'destination': None}], 'inbound_allow_list': [], 'inbound_deny_list': []}, {'name': 'ssh', 'rules': [{'proto': 'tcp', 'dport': {'port': '22'}, 'source': None, 'destination': None}], 'inbound_allow_list': [], 'inbound_deny_list': []}], inbound_allow_list=[], inbound_deny_list=[], outbound_allow_list=[{'proto': None, 'dport': None, 'source': None, 'destination': None}] for interface enp4s0
+2025-07-09 20:19:21.161 DEBUG [roles_cfg] Roles are changing. Original roles=[]
+2025-07-09 20:19:21.161 DEBUG [roles_cfg] outbound_allow_list is changing. Original outbound_allow_list=[]
+2025-07-09 20:19:21.166 DEBUG [roles_cfg] Remove default rules for ip4tables
+2025-07-09 20:19:21.167 DEBUG [roles_cfg] Last read ip4tables config:
+*filter
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+:CUSTOM - [0:0]
+:DOCKER - [0:0]
+:DOCKER-ISOLATION-STAGE-1 - [0:0]
+:DOCKER-ISOLATION-STAGE-2 - [0:0]
+:DOCKER-USER - [0:0]
+:OCUSTOM - [0:0]
+:OUT_PREDROP - [0:0]
+:VZ_IN - [0:0]
+:VZ_IN_DEF - [0:0]
+:VZ_IN_TAIL - [0:0]
+:VZ_IN_f8758a67 - [0:0]
+:VZ_IN_f8758a67_1787d764 - [0:0]
+:VZ_IN_f8758a67_1787d764_F - [0:0]
+:VZ_IN_f8758a67_5d48d176 - [0:0]
+:VZ_IN_f8758a67_5d48d176_F - [0:0]
+:VZ_IN_f8758a67_F - [0:0]
+:VZ_OUT - [0:0]
+:VZ_OUT_DT - [0:0]
+:VZ_OUT_TAIL - [0:0]
+:VZ_OUT_f8758a67 - [0:0]
+:VZ_OUT_f8758a67_USR - [0:0]
+-A INPUT -j CUSTOM
+-A INPUT -j VZ_IN
+-A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -p icmp -j ACCEPT
+-A INPUT -i lo -j ACCEPT
+-A INPUT -m conntrack --ctstate INVALID -j DROP
+-A INPUT -j REJECT --reject-with icmp-host-prohibited
+-A INPUT -j VZ_IN_TAIL
+-A FORWARD -j DOCKER-USER
+-A FORWARD -j DOCKER-ISOLATION-STAGE-1
+-A FORWARD -o docker0 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A FORWARD -o docker0 -j DOCKER
+-A FORWARD -i docker0 ! -o docker0 -j ACCEPT
+-A FORWARD -i docker0 -o docker0 -j ACCEPT
+-A FORWARD -j REJECT --reject-with icmp-host-prohibited
+-A OUTPUT -j OCUSTOM
+-A OUTPUT -j VZ_OUT
+-A OUTPUT -j VZ_OUT_DT
+-A OUTPUT -j VZ_OUT_TAIL
+-A DOCKER-ISOLATION-STAGE-1 -i docker0 ! -o docker0 -j DOCKER-ISOLATION-STAGE-2
+-A DOCKER-ISOLATION-STAGE-1 -j RETURN
+-A DOCKER-ISOLATION-STAGE-2 -o docker0 -j DROP
+-A DOCKER-ISOLATION-STAGE-2 -j RETURN
+-A DOCKER-USER -j RETURN
+-A OUT_PREDROP -j LOG --log-prefix "DROP: "
+-A VZ_IN -p esp -j ACCEPT
+-A VZ_IN -i o-hm0 -p udp -m udp --dport 5555 -j ACCEPT
+-A VZ_IN -i enp5s0f0 -j VZ_IN_f8758a67
+-A VZ_IN_DEF -p tcp -m tcp --dport 22 -m conntrack --ctstate NEW -j ACCEPT
+-A VZ_IN_TAIL -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A VZ_IN_TAIL -i lo -j ACCEPT
+-A VZ_IN_TAIL -p icmp -j ACCEPT
+-A VZ_IN_TAIL -m conntrack --ctstate INVALID -j DROP
+-A VZ_IN_TAIL -j REJECT --reject-with icmp-host-prohibited
+-A VZ_IN_f8758a67 -i enp5s0f0 -j VZ_IN_f8758a67_5d48d176
+-A VZ_IN_f8758a67 -i enp5s0f0 -j VZ_IN_f8758a67_1787d764
+-A VZ_IN_f8758a67_1787d764 -i enp5s0f0 -p tcp -m tcp --dport 22 -j VZ_IN_f8758a67_1787d764_F
+-A VZ_IN_f8758a67_1787d764_F -i enp5s0f0 -j VZ_IN_f8758a67_F
+-A VZ_IN_f8758a67_5d48d176 -i enp5s0f0 -p tcp -m tcp --dport 8888 -j VZ_IN_f8758a67_5d48d176_F
+-A VZ_IN_f8758a67_5d48d176 -i enp5s0f0 -p tcp -m tcp --dport 6180 -j VZ_IN_f8758a67_5d48d176_F
+-A VZ_IN_f8758a67_5d48d176_F -i enp5s0f0 -j VZ_IN_f8758a67_F
+-A VZ_IN_f8758a67_F -i enp5s0f0 -j ACCEPT
+-A VZ_OUT -p esp -j ACCEPT
+-A VZ_OUT -o o-hm0 -j ACCEPT
+-A VZ_OUT -o enp5s0f0 -j VZ_OUT_f8758a67
+-A VZ_OUT_DT -p udp -m udp --dport 500 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 4500 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 8888 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 80 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 443 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 53 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 53 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 123 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 8443 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 44445 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 40440 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 9877 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 2049 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 2049 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 111 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 111 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 892 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 892 -j ACCEPT
+-A VZ_OUT_TAIL -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A VZ_OUT_TAIL -o lo -j ACCEPT
+-A VZ_OUT_TAIL -p icmp -j ACCEPT
+-A VZ_OUT_TAIL -j OUT_PREDROP
+-A VZ_OUT_TAIL -m conntrack --ctstate INVALID -j DROP
+-A VZ_OUT_TAIL -j REJECT --reject-with icmp-host-prohibited
+-A VZ_OUT_f8758a67 -o enp5s0f0 -j VZ_OUT_f8758a67_USR
+-A VZ_OUT_f8758a67 -o enp5s0f0 -j VZ_OUT_TAIL
+-A VZ_OUT_f8758a67_USR -o enp5s0f0 -j ACCEPT
+COMMIT
+*raw
+:PREROUTING ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+:VZ_OUT - [0:0]
+:VZ_PRE - [0:0]
+-A PREROUTING -j VZ_PRE
+-A OUTPUT -j VZ_OUT
+-A VZ_OUT -o lo -j NOTRACK
+COMMIT
+*mangle
+:PREROUTING ACCEPT [0:0]
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+:POSTROUTING ACCEPT [0:0]
+-A PREROUTING ! -i lo -m comment --comment VZ_MARK_NONLOCAL -j MARK --set-xmark 0x80000000/0x80000000
+COMMIT
+
+2025-07-09 20:19:21.167 DEBUG [roles_cfg] Commit ip4tables rules:
+*filter
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+:CUSTOM - [0:0]
+:DOCKER - [0:0]
+:DOCKER-ISOLATION-STAGE-1 - [0:0]
+:DOCKER-ISOLATION-STAGE-2 - [0:0]
+:DOCKER-USER - [0:0]
+:OCUSTOM - [0:0]
+:OUT_PREDROP - [0:0]
+:VZ_IN - [0:0]
+:VZ_IN_DEF - [0:0]
+:VZ_IN_TAIL - [0:0]
+:VZ_IN_f8758a67 - [0:0]
+:VZ_IN_f8758a67_1787d764 - [0:0]
+:VZ_IN_f8758a67_1787d764_F - [0:0]
+:VZ_IN_f8758a67_5d48d176 - [0:0]
+:VZ_IN_f8758a67_5d48d176_F - [0:0]
+:VZ_IN_f8758a67_F - [0:0]
+:VZ_OUT - [0:0]
+:VZ_OUT_DT - [0:0]
+:VZ_OUT_TAIL - [0:0]
+:VZ_OUT_f8758a67 - [0:0]
+:VZ_OUT_f8758a67_USR - [0:0]
+:VZ_IN_912638a2 - [0:0]
+:VZ_IN_912638a2_F - [0:0]
+:VZ_IN_912638a2_5d48d176_F - [0:0]
+:VZ_IN_912638a2_5d48d176 - [0:0]
+:VZ_IN_912638a2_1787d764_F - [0:0]
+:VZ_IN_912638a2_1787d764 - [0:0]
+:VZ_OUT_912638a2 - [0:0]
+:VZ_OUT_912638a2_USR - [0:0]
+-A INPUT -j CUSTOM
+-A INPUT -j VZ_IN
+-A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -p icmp -j ACCEPT
+-A INPUT -i lo -j ACCEPT
+-A INPUT -m conntrack --ctstate INVALID -j DROP
+-A INPUT -j REJECT --reject-with icmp-host-prohibited
+-A INPUT -j VZ_IN_TAIL
+-A FORWARD -j DOCKER-USER
+-A FORWARD -j DOCKER-ISOLATION-STAGE-1
+-A FORWARD -o docker0 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A FORWARD -o docker0 -j DOCKER
+-A FORWARD -i docker0 ! -o docker0 -j ACCEPT
+-A FORWARD -i docker0 -o docker0 -j ACCEPT
+-A FORWARD -j REJECT --reject-with icmp-host-prohibited
+-A OUTPUT -j OCUSTOM
+-A OUTPUT -j VZ_OUT
+-A OUTPUT -j VZ_OUT_DT
+-A OUTPUT -j VZ_OUT_TAIL
+-A DOCKER-ISOLATION-STAGE-1 -i docker0 ! -o docker0 -j DOCKER-ISOLATION-STAGE-2
+-A DOCKER-ISOLATION-STAGE-1 -j RETURN
+-A DOCKER-ISOLATION-STAGE-2 -o docker0 -j DROP
+-A DOCKER-ISOLATION-STAGE-2 -j RETURN
+-A DOCKER-USER -j RETURN
+-A OUT_PREDROP -j LOG --log-prefix "DROP: "
+-A VZ_IN -p esp -j ACCEPT
+-A VZ_IN -i o-hm0 -p udp -m udp --dport 5555 -j ACCEPT
+-A VZ_IN -i enp5s0f0 -j VZ_IN_f8758a67
+-A VZ_IN_DEF -p tcp -m tcp --dport 22 -m conntrack --ctstate NEW -j ACCEPT
+-A VZ_IN_TAIL -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A VZ_IN_TAIL -i lo -j ACCEPT
+-A VZ_IN_TAIL -p icmp -j ACCEPT
+-A VZ_IN_TAIL -m conntrack --ctstate INVALID -j DROP
+-A VZ_IN_TAIL -j REJECT --reject-with icmp-host-prohibited
+-A VZ_IN_f8758a67 -i enp5s0f0 -j VZ_IN_f8758a67_5d48d176
+-A VZ_IN_f8758a67 -i enp5s0f0 -j VZ_IN_f8758a67_1787d764
+-A VZ_IN_f8758a67_1787d764 -i enp5s0f0 -p tcp -m tcp --dport 22 -j VZ_IN_f8758a67_1787d764_F
+-A VZ_IN_f8758a67_1787d764_F -i enp5s0f0 -j VZ_IN_f8758a67_F
+-A VZ_IN_f8758a67_5d48d176 -i enp5s0f0 -p tcp -m tcp --dport 8888 -j VZ_IN_f8758a67_5d48d176_F
+-A VZ_IN_f8758a67_5d48d176 -i enp5s0f0 -p tcp -m tcp --dport 6180 -j VZ_IN_f8758a67_5d48d176_F
+-A VZ_IN_f8758a67_5d48d176_F -i enp5s0f0 -j VZ_IN_f8758a67_F
+-A VZ_IN_f8758a67_F -i enp5s0f0 -j ACCEPT
+-A VZ_OUT -p esp -j ACCEPT
+-A VZ_OUT -o o-hm0 -j ACCEPT
+-A VZ_OUT -o enp5s0f0 -j VZ_OUT_f8758a67
+-A VZ_OUT_DT -p udp -m udp --dport 500 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 4500 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 8888 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 80 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 443 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 53 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 53 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 123 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 8443 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 44445 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 40440 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 9877 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 2049 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 2049 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 111 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 111 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 892 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 892 -j ACCEPT
+-A VZ_OUT_TAIL -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A VZ_OUT_TAIL -o lo -j ACCEPT
+-A VZ_OUT_TAIL -p icmp -j ACCEPT
+-A VZ_OUT_TAIL -j OUT_PREDROP
+-A VZ_OUT_TAIL -m conntrack --ctstate INVALID -j DROP
+-A VZ_OUT_TAIL -j REJECT --reject-with icmp-host-prohibited
+-A VZ_OUT_f8758a67 -o enp5s0f0 -j VZ_OUT_f8758a67_USR
+-A VZ_OUT_f8758a67 -o enp5s0f0 -j VZ_OUT_TAIL
+-A VZ_OUT_f8758a67_USR -o enp5s0f0 -j ACCEPT
+-A VZ_IN_912638a2_F -i enp4s0 -j ACCEPT
+-A VZ_IN_912638a2_5d48d176_F -i enp4s0 -j VZ_IN_912638a2_F
+-A VZ_IN_912638a2_5d48d176 -i enp4s0 -p tcp -m tcp --dport 8888 -j VZ_IN_912638a2_5d48d176_F
+-A VZ_IN_912638a2_5d48d176 -i enp4s0 -p tcp -m tcp --dport 6180 -j VZ_IN_912638a2_5d48d176_F
+-A VZ_IN_912638a2 -i enp4s0 -j VZ_IN_912638a2_5d48d176
+-A VZ_IN_912638a2_1787d764_F -i enp4s0 -j VZ_IN_912638a2_F
+-A VZ_IN_912638a2_1787d764 -i enp4s0 -p tcp -m tcp --dport 22 -j VZ_IN_912638a2_1787d764_F
+-A VZ_IN_912638a2 -i enp4s0 -j VZ_IN_912638a2_1787d764
+-A VZ_IN -i enp4s0 -j VZ_IN_912638a2
+-A VZ_OUT -o enp4s0 -j VZ_OUT_912638a2
+-A VZ_OUT_912638a2 -o enp4s0 -j VZ_OUT_912638a2_USR
+-A VZ_OUT_912638a2_USR -o enp4s0 -j ACCEPT
+-A VZ_OUT_912638a2 -o enp4s0 -j VZ_OUT_TAIL
+COMMIT
+*mangle
+:PREROUTING ACCEPT [0:0]
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+:POSTROUTING ACCEPT [0:0]
+-A PREROUTING ! -i lo -m comment --comment VZ_MARK_NONLOCAL -j MARK --set-xmark 0x80000000/0x80000000
+COMMIT
+*raw
+:PREROUTING ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+:VZ_OUT - [0:0]
+:VZ_PRE - [0:0]
+-A PREROUTING -j VZ_PRE
+-A OUTPUT -j VZ_OUT
+-A VZ_OUT -o lo -j NOTRACK
+COMMIT
+
+2025-07-09 20:19:21.193 INFO [roles_cfg] ip4tables are updated
+2025-07-09 20:19:21.197 DEBUG [roles_cfg] Remove default rules for ip6tables
+2025-07-09 20:19:21.197 DEBUG [roles_cfg] Last read ip6tables config:
+*filter
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+:CUSTOM - [0:0]
+:OCUSTOM - [0:0]
+:OUT_PREDROP - [0:0]
+:VZ_IN - [0:0]
+:VZ_IN_DEF - [0:0]
+:VZ_IN_TAIL - [0:0]
+:VZ_IN_f8758a67 - [0:0]
+:VZ_IN_f8758a67_1787d764 - [0:0]
+:VZ_IN_f8758a67_1787d764_F - [0:0]
+:VZ_IN_f8758a67_5d48d176 - [0:0]
+:VZ_IN_f8758a67_5d48d176_F - [0:0]
+:VZ_IN_f8758a67_F - [0:0]
+:VZ_OUT - [0:0]
+:VZ_OUT_DT - [0:0]
+:VZ_OUT_TAIL - [0:0]
+:VZ_OUT_f8758a67 - [0:0]
+:VZ_OUT_f8758a67_USR - [0:0]
+-A INPUT -j CUSTOM
+-A INPUT -j VZ_IN
+-A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -p ipv6-icmp -j ACCEPT
+-A INPUT -i lo -j ACCEPT
+-A INPUT -d fe80::/64 -p udp -m udp --dport 546 -m conntrack --ctstate NEW -j ACCEPT
+-A INPUT -m conntrack --ctstate INVALID -j DROP
+-A INPUT -j REJECT --reject-with icmp6-adm-prohibited
+-A INPUT -j VZ_IN_TAIL
+-A FORWARD -j REJECT --reject-with icmp6-adm-prohibited
+-A OUTPUT -j OCUSTOM
+-A OUTPUT -j VZ_OUT
+-A OUTPUT -j VZ_OUT_DT
+-A OUTPUT -j VZ_OUT_TAIL
+-A OUT_PREDROP -j LOG --log-prefix "DROP: "
+-A VZ_IN -p esp -j ACCEPT
+-A VZ_IN -i o-hm0 -p udp -m udp --dport 5555 -j ACCEPT
+-A VZ_IN -i enp5s0f0 -j VZ_IN_f8758a67
+-A VZ_IN_DEF -p tcp -m tcp --dport 22 -m conntrack --ctstate NEW -j ACCEPT
+-A VZ_IN_TAIL -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A VZ_IN_TAIL -i lo -j ACCEPT
+-A VZ_IN_TAIL -p ipv6-icmp -j ACCEPT
+-A VZ_IN_TAIL -m conntrack --ctstate INVALID -j DROP
+-A VZ_IN_TAIL -j REJECT --reject-with icmp6-adm-prohibited
+-A VZ_IN_f8758a67 -i enp5s0f0 -j VZ_IN_f8758a67_5d48d176
+-A VZ_IN_f8758a67 -i enp5s0f0 -j VZ_IN_f8758a67_1787d764
+-A VZ_IN_f8758a67_1787d764 -i enp5s0f0 -p tcp -m tcp --dport 22 -j VZ_IN_f8758a67_1787d764_F
+-A VZ_IN_f8758a67_1787d764_F -i enp5s0f0 -j VZ_IN_f8758a67_F
+-A VZ_IN_f8758a67_5d48d176 -i enp5s0f0 -p tcp -m tcp --dport 8888 -j VZ_IN_f8758a67_5d48d176_F
+-A VZ_IN_f8758a67_5d48d176 -i enp5s0f0 -p tcp -m tcp --dport 6180 -j VZ_IN_f8758a67_5d48d176_F
+-A VZ_IN_f8758a67_5d48d176_F -i enp5s0f0 -j VZ_IN_f8758a67_F
+-A VZ_IN_f8758a67_F -i enp5s0f0 -j ACCEPT
+-A VZ_OUT -p esp -j ACCEPT
+-A VZ_OUT -o o-hm0 -j ACCEPT
+-A VZ_OUT -o enp5s0f0 -j VZ_OUT_f8758a67
+-A VZ_OUT_DT -p udp -m udp --dport 500 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 4500 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 8888 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 80 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 443 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 53 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 53 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 123 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 8443 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 44445 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 40440 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 9877 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 2049 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 2049 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 111 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 111 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 892 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 892 -j ACCEPT
+-A VZ_OUT_TAIL -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A VZ_OUT_TAIL -o lo -j ACCEPT
+-A VZ_OUT_TAIL -p ipv6-icmp -j ACCEPT
+-A VZ_OUT_TAIL -j OUT_PREDROP
+-A VZ_OUT_TAIL -m conntrack --ctstate INVALID -j DROP
+-A VZ_OUT_TAIL -j REJECT --reject-with icmp6-adm-prohibited
+-A VZ_OUT_f8758a67 -o enp5s0f0 -j VZ_OUT_f8758a67_USR
+-A VZ_OUT_f8758a67 -o enp5s0f0 -j VZ_OUT_TAIL
+-A VZ_OUT_f8758a67_USR -o enp5s0f0 -j ACCEPT
+COMMIT
+*raw
+:PREROUTING ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+:VZ_OUT - [0:0]
+:VZ_PRE - [0:0]
+-A PREROUTING -j VZ_PRE
+-A OUTPUT -j VZ_OUT
+-A VZ_OUT -o lo -j NOTRACK
+COMMIT
+*mangle
+:PREROUTING ACCEPT [0:0]
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+:POSTROUTING ACCEPT [0:0]
+-A PREROUTING ! -i lo -m comment --comment VZ_MARK_NONLOCAL -j MARK --set-xmark 0x80000000/0x80000000
+COMMIT
+
+2025-07-09 20:19:21.198 DEBUG [roles_cfg] Commit ip6tables rules:
+*filter
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+:CUSTOM - [0:0]
+:OCUSTOM - [0:0]
+:OUT_PREDROP - [0:0]
+:VZ_IN - [0:0]
+:VZ_IN_DEF - [0:0]
+:VZ_IN_TAIL - [0:0]
+:VZ_IN_f8758a67 - [0:0]
+:VZ_IN_f8758a67_1787d764 - [0:0]
+:VZ_IN_f8758a67_1787d764_F - [0:0]
+:VZ_IN_f8758a67_5d48d176 - [0:0]
+:VZ_IN_f8758a67_5d48d176_F - [0:0]
+:VZ_IN_f8758a67_F - [0:0]
+:VZ_OUT - [0:0]
+:VZ_OUT_DT - [0:0]
+:VZ_OUT_TAIL - [0:0]
+:VZ_OUT_f8758a67 - [0:0]
+:VZ_OUT_f8758a67_USR - [0:0]
+:VZ_IN_912638a2 - [0:0]
+:VZ_IN_912638a2_F - [0:0]
+:VZ_IN_912638a2_5d48d176_F - [0:0]
+:VZ_IN_912638a2_5d48d176 - [0:0]
+:VZ_IN_912638a2_1787d764_F - [0:0]
+:VZ_IN_912638a2_1787d764 - [0:0]
+:VZ_OUT_912638a2 - [0:0]
+:VZ_OUT_912638a2_USR - [0:0]
+-A INPUT -j CUSTOM
+-A INPUT -j VZ_IN
+-A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -p ipv6-icmp -j ACCEPT
+-A INPUT -i lo -j ACCEPT
+-A INPUT -d fe80::/64 -p udp -m udp --dport 546 -m conntrack --ctstate NEW -j ACCEPT
+-A INPUT -m conntrack --ctstate INVALID -j DROP
+-A INPUT -j REJECT --reject-with icmp6-adm-prohibited
+-A INPUT -j VZ_IN_TAIL
+-A FORWARD -j REJECT --reject-with icmp6-adm-prohibited
+-A OUTPUT -j OCUSTOM
+-A OUTPUT -j VZ_OUT
+-A OUTPUT -j VZ_OUT_DT
+-A OUTPUT -j VZ_OUT_TAIL
+-A OUT_PREDROP -j LOG --log-prefix "DROP: "
+-A VZ_IN -p esp -j ACCEPT
+-A VZ_IN -i o-hm0 -p udp -m udp --dport 5555 -j ACCEPT
+-A VZ_IN -i enp5s0f0 -j VZ_IN_f8758a67
+-A VZ_IN_DEF -p tcp -m tcp --dport 22 -m conntrack --ctstate NEW -j ACCEPT
+-A VZ_IN_TAIL -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A VZ_IN_TAIL -i lo -j ACCEPT
+-A VZ_IN_TAIL -p ipv6-icmp -j ACCEPT
+-A VZ_IN_TAIL -m conntrack --ctstate INVALID -j DROP
+-A VZ_IN_TAIL -j REJECT --reject-with icmp6-adm-prohibited
+-A VZ_IN_f8758a67 -i enp5s0f0 -j VZ_IN_f8758a67_5d48d176
+-A VZ_IN_f8758a67 -i enp5s0f0 -j VZ_IN_f8758a67_1787d764
+-A VZ_IN_f8758a67_1787d764 -i enp5s0f0 -p tcp -m tcp --dport 22 -j VZ_IN_f8758a67_1787d764_F
+-A VZ_IN_f8758a67_1787d764_F -i enp5s0f0 -j VZ_IN_f8758a67_F
+-A VZ_IN_f8758a67_5d48d176 -i enp5s0f0 -p tcp -m tcp --dport 8888 -j VZ_IN_f8758a67_5d48d176_F
+-A VZ_IN_f8758a67_5d48d176 -i enp5s0f0 -p tcp -m tcp --dport 6180 -j VZ_IN_f8758a67_5d48d176_F
+-A VZ_IN_f8758a67_5d48d176_F -i enp5s0f0 -j VZ_IN_f8758a67_F
+-A VZ_IN_f8758a67_F -i enp5s0f0 -j ACCEPT
+-A VZ_OUT -p esp -j ACCEPT
+-A VZ_OUT -o o-hm0 -j ACCEPT
+-A VZ_OUT -o enp5s0f0 -j VZ_OUT_f8758a67
+-A VZ_OUT_DT -p udp -m udp --dport 500 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 4500 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 8888 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 80 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 443 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 53 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 53 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 123 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 8443 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 44445 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 40440 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 9877 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 2049 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 2049 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 111 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 111 -j ACCEPT
+-A VZ_OUT_DT -p tcp -m tcp --dport 892 -j ACCEPT
+-A VZ_OUT_DT -p udp -m udp --dport 892 -j ACCEPT
+-A VZ_OUT_TAIL -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A VZ_OUT_TAIL -o lo -j ACCEPT
+-A VZ_OUT_TAIL -p ipv6-icmp -j ACCEPT
+-A VZ_OUT_TAIL -j OUT_PREDROP
+-A VZ_OUT_TAIL -m conntrack --ctstate INVALID -j DROP
+-A VZ_OUT_TAIL -j REJECT --reject-with icmp6-adm-prohibited
+-A VZ_OUT_f8758a67 -o enp5s0f0 -j VZ_OUT_f8758a67_USR
+-A VZ_OUT_f8758a67 -o enp5s0f0 -j VZ_OUT_TAIL
+-A VZ_OUT_f8758a67_USR -o enp5s0f0 -j ACCEPT
+-A VZ_IN_912638a2_F -i enp4s0 -j ACCEPT
+-A VZ_IN_912638a2_5d48d176_F -i enp4s0 -j VZ_IN_912638a2_F
+-A VZ_IN_912638a2_5d48d176 -i enp4s0 -p tcp -m tcp --dport 8888 -j VZ_IN_912638a2_5d48d176_F
+-A VZ_IN_912638a2_5d48d176 -i enp4s0 -p tcp -m tcp --dport 6180 -j VZ_IN_912638a2_5d48d176_F
+-A VZ_IN_912638a2 -i enp4s0 -j VZ_IN_912638a2_5d48d176
+-A VZ_IN_912638a2_1787d764_F -i enp4s0 -j VZ_IN_912638a2_F
+-A VZ_IN_912638a2_1787d764 -i enp4s0 -p tcp -m tcp --dport 22 -j VZ_IN_912638a2_1787d764_F
+-A VZ_IN_912638a2 -i enp4s0 -j VZ_IN_912638a2_1787d764
+-A VZ_IN -i enp4s0 -j VZ_IN_912638a2
+-A VZ_OUT -o enp4s0 -j VZ_OUT_912638a2
+-A VZ_OUT_912638a2 -o enp4s0 -j VZ_OUT_912638a2_USR
+-A VZ_OUT_912638a2_USR -o enp4s0 -j ACCEPT
+-A VZ_OUT_912638a2 -o enp4s0 -j VZ_OUT_TAIL
+COMMIT
+*mangle
+:PREROUTING ACCEPT [0:0]
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+:POSTROUTING ACCEPT [0:0]
+-A PREROUTING ! -i lo -m comment --comment VZ_MARK_NONLOCAL -j MARK --set-xmark 0x80000000/0x80000000
+COMMIT
+*raw
+:PREROUTING ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+:VZ_OUT - [0:0]
+:VZ_PRE - [0:0]
+-A PREROUTING -j VZ_PRE
+-A OUTPUT -j VZ_OUT
+-A VZ_OUT -o lo -j NOTRACK
+COMMIT
+
+2025-07-09 20:19:21.238 INFO [roles_cfg] ip6tables are updated
+[INFO][5456] 2025-07-09 20:19:21,252 firewall has been configured
+[INFO][5456] 2025-07-09 20:19:21,253 Rewrite file /usr/libexec/vstorage-ui-backend/etc/roles.init
+[INFO][5456] 2025-07-09 20:19:26,081 Starting keystone password reset
+[INFO][5456] 2025-07-09 20:19:27,673 Keystone password reset performed successfully
+1
+OK
+OK
+[INFO][5456] 2025-07-09 20:19:29,799 Done ALUA post scripts
+[INFO][5456] 2025-07-09 20:19:29,804 Starting node password changing...
+The request you have made requires authentication. (HTTP 401) (Request-ID: req-40aa5859-04d9-44fb-8ada-d321132a4449)
+[ERROR][5456] 2025-07-09 20:19:30,649 Unable to create user admin. Error code is 1
+[INFO][5456] 2025-07-09 20:19:30,651 *** Finish 2025-07-09 20:19:30,650: init-backend.sh  ***

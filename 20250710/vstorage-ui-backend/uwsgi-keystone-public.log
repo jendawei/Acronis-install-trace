@@ -1,0 +1,153 @@
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 03:47:23 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-backend
+writing pidfile to /run/keystone-uwsgi/keystone-public.pid
+detected binary path: /usr/sbin/uwsgi
+chdir() to /usr/libexec/vstorage-ui-backend/etc/keystone
+your processes number limit is 513891
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /run/keystone-uwsgi/keystone-public.socket fd 3
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x247fcc0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 412508 bytes (402 KB) for 2 cores
+*** Operational MODE: threaded ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 30053)
+spawned uWSGI worker 1 (pid: 30075, cores: 2)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x247fcc0 pid: 30075 (default app)
+SIGINT/SIGTERM received...killing workers...
+!!! uWSGI process 30075 got Segmentation Fault !!!
+*** backtrace of 30075 ***
+/usr/sbin/uwsgi(uwsgi_backtrace+0x43) [0x471293]
+/usr/sbin/uwsgi(uwsgi_segfault+0x27) [0x4717a7]
+/lib64/libc.so.6(+0x54db0) [0x7f1219e54db0]
+/usr/lib64/python3.9/site-packages/greenlet/_greenlet.cpython-39-x86_64-linux-gnu.so(_ZN8greenlet4refs24MainGreenletExactCheckerEPv+0x33) [0x7f12189cde13]
+/usr/lib64/python3.9/site-packages/greenlet/_greenlet.cpython-39-x86_64-linux-gnu.so(_ZN24ThreadState_DestroyNoGIL19DestroyQueueWithGILEPv+0x33) [0x7f12189ce283]
+/lib64/libpython3.9.so.1.0(+0x8e467) [0x7f1219a8e467]
+/lib64/libpython3.9.so.1.0(+0x6715e) [0x7f1219a6715e]
+/lib64/libpython3.9.so.1.0(+0x11cc43) [0x7f1219b1cc43]
+/lib64/libpython3.9.so.1.0(PyObject_VectorcallMethod+0x8f) [0x7f1219b2e74f]
+/lib64/libpython3.9.so.1.0(+0x1b691c) [0x7f1219bb691c]
+/lib64/libpython3.9.so.1.0(Py_FinalizeEx+0x37) [0x7f1219bb6667]
+/usr/sbin/uwsgi(uwsgi_plugins_atexit+0x71) [0x46c151]
+/lib64/libc.so.6(+0x574dd) [0x7f1219e574dd]
+/lib64/libc.so.6(on_exit+0) [0x7f1219e57620]
+/usr/sbin/uwsgi() [0x41c335]
+/usr/sbin/uwsgi(end_me+0x2b) [0x46ecab]
+/lib64/libc.so.6(+0x54db0) [0x7f1219e54db0]
+/lib64/libc.so.6(epoll_wait+0x5e) [0x7f1219f4e81e]
+/usr/sbin/uwsgi(event_queue_wait+0x39) [0x463359]
+/usr/sbin/uwsgi(wsgi_req_accept+0x11a) [0x42047a]
+/usr/sbin/uwsgi(simple_loop_run+0xda) [0x46fefa]
+/usr/sbin/uwsgi(simple_loop+0x7b) [0x4700ab]
+/usr/sbin/uwsgi(uwsgi_ignition+0x29c) [0x4709cc]
+/usr/sbin/uwsgi(uwsgi_worker_run+0x272) [0x474d82]
+/usr/sbin/uwsgi(uwsgi_run+0x472) [0x475312]
+/usr/sbin/uwsgi() [0x419dc4]
+/lib64/libc.so.6(+0x3feb0) [0x7f1219e3feb0]
+/lib64/libc.so.6(__libc_start_main+0x80) [0x7f1219e3ff60]
+/usr/sbin/uwsgi(_start+0x25) [0x419df5]
+*** end of backtrace ***
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /run/keystone-uwsgi/keystone-public.socket removed.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 04:19:09 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-backend/etc/keystone
+writing pidfile to /run/keystone-uwsgi/keystone-public.pid
+detected binary path: /usr/sbin/uwsgi
+chdir() to /usr/libexec/vstorage-ui-backend/etc/keystone
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /run/keystone-uwsgi/keystone-public.socket fd 3
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f9def87f280
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1031270 bytes (1007 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5455)
+spawned uWSGI worker 1 (pid: 5474, cores: 2)
+spawned uWSGI worker 2 (pid: 5475, cores: 2)
+spawned uWSGI worker 3 (pid: 5476, cores: 2)
+spawned uWSGI worker 4 (pid: 5477, cores: 2)
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x7f9def87f280 pid: 5476 (default app)
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x7f9def87f280 pid: 5475 (default app)
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x7f9def87f280 pid: 5477 (default app)
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x7f9def87f280 pid: 5474 (default app)
+SIGINT/SIGTERM received...killing workers...
+[deadlock-detector] a process holding a robust mutex died. recovering...
+[deadlock-detector] a process holding a robust mutex died. recovering...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /run/keystone-uwsgi/keystone-public.socket removed.
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jul 10 04:19:18 2025] ***
+compiled with version: 11.3.1 20221121 (Red Hat 11.3.1-4) on 04 October 2023 00:00:00
+os: Linux-5.14.0-427.33.1.vz9.72.5 #1 SMP PREEMPT_DYNAMIC Thu Sep 26 19:09:22 CEST 2024
+nodename: demo-2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /usr/libexec/vstorage-ui-backend/etc/keystone
+writing pidfile to /run/keystone-uwsgi/keystone-public.pid
+detected binary path: /usr/sbin/uwsgi
+chdir() to /usr/libexec/vstorage-ui-backend/etc/keystone
+your processes number limit is 512114
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /run/keystone-uwsgi/keystone-public.socket fd 3
+Python version: 3.9.18 (main, Sep  7 2023, 00:00:00)  [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+Python main interpreter initialized at 0x7f7bb747f280
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1031270 bytes (1007 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7242)
+spawned uWSGI worker 1 (pid: 7261, cores: 2)
+spawned uWSGI worker 2 (pid: 7262, cores: 2)
+spawned uWSGI worker 3 (pid: 7263, cores: 2)
+spawned uWSGI worker 4 (pid: 7264, cores: 2)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f7bb747f280 pid: 7262 (default app)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f7bb747f280 pid: 7263 (default app)
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x7f7bb747f280 pid: 7261 (default app)
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x7f7bb747f280 pid: 7264 (default app)
+[pid: 7262|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 614 bytes} [Thu Jul 10 04:19:22 2025] POST /v3/auth/tokens => generated 1505 bytes in 270 msecs (HTTP/1.1 201) 5 headers in 366 bytes (1 switches on core 0)
+[pid: 7263|app: 0|req: 1/2] 127.0.0.1 () {46 vars in 760 bytes} [Thu Jul 10 04:19:23 2025] POST /v3/users => generated 325 bytes in 103 msecs (HTTP/1.1 201) 4 headers in 163 bytes (1 switches on core 0)
+[pid: 7262|app: 0|req: 2/3] 127.0.0.1 () {42 vars in 677 bytes} [Thu Jul 10 04:19:23 2025] GET /v3/roles => generated 4686 bytes in 24 msecs (HTTP/1.1 200) 4 headers in 159 bytes (1 switches on core 1)
+[pid: 7263|app: 0|req: 2/4] 127.0.0.1 () {44 vars in 878 bytes} [Thu Jul 10 04:19:23 2025] PUT /v3/domains/default/users/669b4c16b62a476c8c592336f43d8d3a/roles/6f89b9da181049848d9bde7c8d4f9038 => generated 0 bytes in 64 msecs (HTTP/1.1 204) 2 headers in 113 bytes (0 switches on core 1)
+[pid: 7261|app: 0|req: 1/5] 127.0.0.1 () {44 vars in 944 bytes} [Thu Jul 10 04:19:23 2025] PUT /v3/OS-INHERIT/domains/default/users/669b4c16b62a476c8c592336f43d8d3a/roles/6f89b9da181049848d9bde7c8d4f9038/inherited_to_projects => generated 0 bytes in 154 msecs (HTTP/1.1 204) 2 headers in 113 bytes (0 switches on core 0)
+[pid: 7264|app: 0|req: 1/6] 127.0.0.1 () {42 vars in 780 bytes} [Thu Jul 10 04:19:23 2025] GET /v3/role_assignments?user.id=669b4c16b62a476c8c592336f43d8d3a => generated 821 bytes in 82 msecs (HTTP/1.1 200) 4 headers in 158 bytes (1 switches on core 0)
+[pid: 7264|app: 0|req: 2/7] 127.0.0.1 () {42 vars in 677 bytes} [Thu Jul 10 04:19:23 2025] GET /v3/roles => generated 4686 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 159 bytes (1 switches on core 1)

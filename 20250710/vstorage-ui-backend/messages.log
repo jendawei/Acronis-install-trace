@@ -1,0 +1,30 @@
+2025-07-10 03:47:09,882 DEBUG [-] backend/business/models/notifications/signal_handlers.py:27:NotificationsSignalHandler.activate ActivateNotificationsSignalsHandler activate handler
+2025-07-10 03:47:09,882 DEBUG [-] backend/database.py:86:BackendSQAlchemy.apply_pool_defaults Add additional option in sqalchemy.create_engine function: json_serializer=<function dumps at 0x7f8d9781c9d0>
+2025-07-10 03:47:09,968 INFO [-] backend/presentation/prometheus/endpoints.py:23:CustomMetricsCollector.activate Custom metrics collector is activated
+2025-07-09 20:19:13,642 DEBUG [-] backend/business/models/notifications/signal_handlers.py:27:NotificationsSignalHandler.activate ActivateNotificationsSignalsHandler activate handler
+2025-07-09 20:19:13,642 DEBUG [-] backend/database.py:86:BackendSQAlchemy.apply_pool_defaults Add additional option in sqalchemy.create_engine function: json_serializer=<function dumps at 0x7f58559d6b80>
+2025-07-09 20:19:13,742 INFO [-] backend/presentation/prometheus/endpoints.py:23:CustomMetricsCollector.activate Custom metrics collector is activated
+2025-07-09 20:19:14,119 DEBUG [-] backend/database.py:86:BackendSQAlchemy.apply_pool_defaults Add additional option in sqalchemy.create_engine function: json_serializer=<function dumps at 0x7f58559d6b80>
+2025-07-09 20:19:14,153 DEBUG [-] backend/shell.py:43:__execute_command Execute shell command: ['/usr/libexec/vstorage-ui-backend/bin/resolv-conf-updater.sh', '192.168.1.1']
+2025-07-09 20:19:14,191 DEBUG [-] backend/shell.py:73:__execute_command 'active\n'
+2025-07-09 20:19:15,912 DEBUG [-] backend/business/models/notifications/signal_handlers.py:27:NotificationsSignalHandler.activate ActivateNotificationsSignalsHandler activate handler
+2025-07-09 20:19:15,912 DEBUG [-] backend/database.py:86:BackendSQAlchemy.apply_pool_defaults Add additional option in sqalchemy.create_engine function: json_serializer=<function dumps at 0x7f928c9ddb80>
+2025-07-09 20:19:15,976 INFO [-] backend/presentation/prometheus/endpoints.py:23:CustomMetricsCollector.activate Custom metrics collector is activated
+2025-07-09 20:19:16,331 DEBUG [-] backend/database.py:86:BackendSQAlchemy.apply_pool_defaults Add additional option in sqalchemy.create_engine function: json_serializer=<function dumps at 0x7f928c9ddb80>
+2025-07-09 20:19:20,224 DEBUG [-] backend/business/models/notifications/signal_handlers.py:27:NotificationsSignalHandler.activate ActivateNotificationsSignalsHandler activate handler
+2025-07-09 20:19:20,225 DEBUG [-] backend/database.py:86:BackendSQAlchemy.apply_pool_defaults Add additional option in sqalchemy.create_engine function: json_serializer=<function dumps at 0x7f4b25080b80>
+2025-07-09 20:19:20,290 INFO [-] backend/presentation/prometheus/endpoints.py:23:CustomMetricsCollector.activate Custom metrics collector is activated
+2025-07-09 20:19:22,612 DEBUG [-] backend/business/models/notifications/signal_handlers.py:27:NotificationsSignalHandler.activate ActivateNotificationsSignalsHandler activate handler
+2025-07-09 20:19:22,612 DEBUG [-] backend/database.py:86:BackendSQAlchemy.apply_pool_defaults Add additional option in sqalchemy.create_engine function: json_serializer=<function dumps at 0x7fc77d06fb80>
+2025-07-09 20:19:22,676 INFO [-] backend/presentation/prometheus/endpoints.py:23:CustomMetricsCollector.activate Custom metrics collector is activated
+2025-07-09 20:19:25,314 DEBUG [-] backend/business/models/notifications/signal_handlers.py:27:NotificationsSignalHandler.activate ActivateNotificationsSignalsHandler activate handler
+2025-07-09 20:19:25,314 DEBUG [-] backend/database.py:86:BackendSQAlchemy.apply_pool_defaults Add additional option in sqalchemy.create_engine function: json_serializer=<function dumps at 0x7f4fd4e40b80>
+2025-07-09 20:19:25,379 INFO [-] backend/presentation/prometheus/endpoints.py:23:CustomMetricsCollector.activate Custom metrics collector is activated
+2025-07-09 20:19:25,731 DEBUG [-] backend/database.py:86:BackendSQAlchemy.apply_pool_defaults Add additional option in sqalchemy.create_engine function: json_serializer=<function dumps at 0x7f4fd4e40b80>
+2025-07-09 20:19:25,741 INFO [-] backend/manage/software_management_info.py:45:InitSoftwareManagementInfo.run InitSoftwareManagementInfo installed version = 6.3.1-128
+2025-07-09 20:19:25,741 INFO [-] backend/manage/software_management_info.py:46:InitSoftwareManagementInfo.run InitSoftwareManagementInfo available version = None
+2025-07-09 20:19:25,741 INFO [-] backend/manage/software_management_info.py:47:InitSoftwareManagementInfo.run InitSoftwareManagementInfo downloaded version = None
+2025-07-09 20:19:29,042 DEBUG [-] backend/business/models/notifications/signal_handlers.py:27:NotificationsSignalHandler.activate ActivateNotificationsSignalsHandler activate handler
+2025-07-09 20:19:29,042 DEBUG [-] backend/database.py:86:BackendSQAlchemy.apply_pool_defaults Add additional option in sqalchemy.create_engine function: json_serializer=<function dumps at 0x7f6bbe693b80>
+2025-07-09 20:19:29,107 INFO [-] backend/presentation/prometheus/endpoints.py:23:CustomMetricsCollector.activate Custom metrics collector is activated
+2025-07-09 20:19:29,460 DEBUG [-] backend/database.py:86:BackendSQAlchemy.apply_pool_defaults Add additional option in sqalchemy.create_engine function: json_serializer=<function dumps at 0x7f6bbe693b80>
