@@ -1,0 +1,871 @@
+23:37:36,568 INF core.configuration.product: Loading information about products from /etc/anaconda/product.d.
+23:37:36,571 INF core.configuration.product: Found Fedora at /etc/anaconda/product.d/fedora.conf.
+23:37:36,573 INF core.configuration.product: Found Fedora-ELN at /etc/anaconda/product.d/fedora-eln.conf.
+23:37:36,574 INF core.configuration.product: Found Fedora Workstation Live at /etc/anaconda/product.d/fedora-workstation-live.conf.
+23:37:36,574 INF core.configuration.product: Found AlmaLinux at /etc/anaconda/product.d/almalinux.conf.
+23:37:36,574 INF core.configuration.product: Found Virtuozzo Hybrid Infrastructure at /etc/anaconda/product.d/vhi.conf.
+23:37:36,574 INF core.configuration.product: Found Virtuozzo Linux at /etc/anaconda/product.d/vzlinux.conf.
+23:37:36,577 INF core.configuration.product: Found Rocky at /etc/anaconda/product.d/rocky.conf.
+23:37:36,577 INF core.configuration.product: Found Fedora Server at /etc/anaconda/product.d/fedora-server.conf.
+23:37:36,578 INF core.configuration.product: Found CentOS Stream at /etc/anaconda/product.d/centos-stream.conf.
+23:37:36,578 INF core.configuration.product: Found Red Hat Enterprise Linux at /etc/anaconda/product.d/rhel.conf.
+23:37:36,578 INF core.configuration.product: Found Fedora Silverblue at /etc/anaconda/product.d/fedora-silverblue.conf.
+23:37:36,578 INF core.configuration.product: Found RHVH at /etc/anaconda/product.d/rhvh.conf.
+23:37:36,578 INF core.configuration.product: Found CentOS Linux at /etc/anaconda/product.d/centos.conf.
+23:37:36,578 INF core.configuration.product: Found oVirt Node Next at /etc/anaconda/product.d/ovirt.conf.
+23:37:36,579 INF core.configuration.product: Found Fedora Workstation at /etc/anaconda/product.d/fedora-workstation.conf.
+23:37:36,579 INF core.configuration.product: Found Scientific Linux at /etc/anaconda/product.d/scientific-linux.conf.
+23:37:36,579 INF core.configuration.product: Found Acronis Cyber Infrastructure at /etc/anaconda/product.d/aci.conf.
+23:37:36,582 INF core.configuration.product: Found Fedora-IoT IoT at /etc/anaconda/product.d/fedora-iot.conf.
+23:37:36,583 INF core.configuration.product: The product Acronis Cyber Infrastructure is supported.
+23:37:36,584 WRN misc: /usr/lib64/python3.9/site-packages/pyanaconda/core/configuration/anaconda.py:74: DeprecationWarning: The kickstart_modules configuration option is deprecated and will be removed in in the future.
+  warnings.warn(
+
+23:37:36,586 INF main: /sbin/anaconda 34.25.0.29-1.vl9.38
+23:37:36,596 INF core.util: Reporting the IPMI event: 7
+23:37:37,060 INF isys: 131800236 kB (128711 MB) are available
+23:37:37,064 WRN misc: /usr/lib64/python3.9/subprocess.py:941: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+
+23:37:37,069 INF startup_utils: check_memory(): total:128711, needed:320, graphical:410
+23:37:37,069 DBG startup_utils: Don't set up proxy variables.
+23:37:37,081 INF main: anaconda called with cmdline = ['/sbin/anaconda']
+23:37:37,081 INF main: Default encoding = utf-8 
+23:37:37,082 INF misc: Writing a temporary configuration loaded from: ['/etc/anaconda/anaconda.conf', '/etc/anaconda/product.d/rhel.conf', '/etc/anaconda/product.d/vzlinux.conf', '/etc/anaconda/product.d/vhi.conf', '/etc/anaconda/product.d/aci.conf', '/etc/anaconda/conf.d/00-do-nothing.conf', '/etc/anaconda/conf.d/01-still-do-nothing.conf']
+23:37:37,089 INF core.dbus: Connecting to the Anaconda bus at unix:abstract=/tmp/dbus-eOnzovsKSo,guid=15f79b287d92bc174f82e066686f3581.
+23:37:50,221 INF main: Found a kickstart file: /usr/share/anaconda/interactive-defaults.ks
+23:37:50,239 INF startup_utils: Parsing kickstart: /usr/share/anaconda/interactive-defaults.ks
+23:37:50,284 WRN kickstart: Command selinux will be parsed in DBus module.
+23:37:50,284 WRN kickstart: Command lang will be parsed in DBus module.
+23:37:50,284 DBG pwpolicy: Using the password policy from the configuration.
+23:37:50,563 DBG modules.payloads.payload.dnf.dnf_manager: The DNF base has been reset.
+23:37:50,628 DBG modules.payloads.payload.dnf.utils: Release version of Acronis Cyber Infrastructure is 6.3.
+23:37:50,629 DBG modules.payloads.payload.dnf.dnf_manager: The DNF base has been created.
+23:37:50,687 DBG modules.payloads.payload.dnf.dnf_manager: DNF configuration:
+[main]
+allow_vendor_change = 1
+assumeno = 0
+assumeyes = 0
+autocheck_running_kernel = 1
+bandwidth = 0
+best = 0
+bugtracker_url = https://bugzilla.redhat.com/enter_bug.cgi?product=Fedora&component=dnf
+cachedir = /tmp/dnf.cache
+cacheonly = 0
+check_config_file_age = 1
+clean_requirements_on_remove = 1
+color = auto
+color_list_available_downgrade = magenta
+color_list_available_install = bold,cyan
+color_list_available_reinstall = bold,underline,green
+color_list_available_upgrade = bold,blue
+color_list_installed_extra = bold,red
+color_list_installed_newer = bold,yellow
+color_list_installed_older = yellow
+color_list_installed_reinstall = cyan
+color_search_match = bold,magenta
+color_update_installed = red
+color_update_local = green
+color_update_remote = bold,green
+config_file_path = /etc/dnf/dnf.conf
+countme = 0
+debug_solver = 0
+debuglevel = 2
+defaultyes = 0
+deltarpm = 1
+deltarpm_percentage = 75
+disable_excludes = 
+diskspacecheck = 1
+enabled = 1
+enablegroups = 1
+errorlevel = 3
+exclude = 
+exclude_from_weak = 
+exclude_from_weak_autodetect = 1
+excludepkgs = 
+exit_on_lock = 0
+fastestmirror = 0
+gpgcheck = 0
+gpgkey_dns_verification = 0
+group_package_types = mandatory, default, conditional
+history_list_view = commands
+history_record = 1
+history_record_packages = dnf, rpm
+ignorearch = 0
+includepkgs = 
+install_weak_deps = 1
+installonly_limit = 3
+installonlypkgs = kernel, kernel-PAE, installonlypkg(kernel), installonlypkg(kernel-module), installonlypkg(vm), multiversion(kernel)
+installroot = /mnt/sysroot
+ip_resolve = whatever
+keepcache = 0
+localpkg_gpgcheck = 0
+log_compress = 0
+log_rotate = 4
+log_size = 1048576
+logdir = /tmp/
+logfilelevel = 9
+max_downloads_per_mirror = 3
+max_parallel_downloads = 3
+metadata_expire = 172800
+metadata_timer_sync = 10800
+minrate = 1000
+module_obsoletes = 0
+module_platform_id = platform:el9
+module_stream_switch = 0
+multilib_policy = best
+obsoletes = 1
+password = 
+persistdir = /mnt/sysroot/var/lib/dnf
+pluginconfpath = /tmp/dnf.pluginconf
+pluginpath = /usr/lib/python3.9/site-packages/dnf-plugins
+plugins = 1
+protect_running_kernel = 1
+protected_packages = dnf, grub2-tools-minimal, scst, grub2-pc, grub2-efi-x64, setup, dnf, yum, sudo, systemd, systemd-udev, grub2-tools-minimal, scst, grub2-pc, grub2-efi-x64, setup, dnf, yum, sudo, systemd, systemd-udev
+proxy = 
+proxy_auth_method = any
+proxy_password = 
+proxy_sslcacert = 
+proxy_sslclientcert = 
+proxy_sslclientkey = 
+proxy_sslverify = 1
+proxy_username = 
+recent = 7
+repo_gpgcheck = 0
+reposdir = /etc/yum.repos.d, /etc/anaconda.repos.d
+reset_nice = 1
+retries = 10
+rpmverbosity = info
+showdupesfromrepos = 0
+skip_broken = 0
+skip_if_unavailable = 0
+sslcacert = 
+sslclientcert = 
+sslclientkey = 
+sslverify = 1
+sslverifystatus = 0
+strict = 1
+system_cachedir = /var/cache/dnf
+throttle = 0
+timeout = 30
+transformdb = 1
+tsflags = 
+upgrade_group_objects_upgrade = 1
+user_agent = libdnf (Acronis Cyber Infrastructure 9; generic; Linux.x86_64)
+username = 
+varsdir = /etc/yum/vars, /etc/dnf/vars
+zchunk = 1
+
+23:37:50,688 DBG modules.payloads.payload.dnf.dnf_manager: The DNF base has been reset.
+23:37:50,690 DBG modules.payloads.payload.dnf.utils: Release version of Acronis Cyber Infrastructure is 6.3.
+23:37:50,690 DBG modules.payloads.payload.dnf.dnf_manager: The DNF base has been created.
+23:37:50,691 DBG modules.payloads.payload.dnf.dnf_manager: DNF configuration:
+[main]
+allow_vendor_change = 1
+assumeno = 0
+assumeyes = 0
+autocheck_running_kernel = 1
+bandwidth = 0
+best = 0
+bugtracker_url = https://bugzilla.redhat.com/enter_bug.cgi?product=Fedora&component=dnf
+cachedir = /tmp/dnf.cache
+cacheonly = 0
+check_config_file_age = 1
+clean_requirements_on_remove = 1
+color = auto
+color_list_available_downgrade = magenta
+color_list_available_install = bold,cyan
+color_list_available_reinstall = bold,underline,green
+color_list_available_upgrade = bold,blue
+color_list_installed_extra = bold,red
+color_list_installed_newer = bold,yellow
+color_list_installed_older = yellow
+color_list_installed_reinstall = cyan
+color_search_match = bold,magenta
+color_update_installed = red
+color_update_local = green
+color_update_remote = bold,green
+config_file_path = /etc/dnf/dnf.conf
+countme = 0
+debug_solver = 0
+debuglevel = 2
+defaultyes = 0
+deltarpm = 1
+deltarpm_percentage = 75
+disable_excludes = 
+diskspacecheck = 1
+enabled = 1
+enablegroups = 1
+errorlevel = 3
+exclude = 
+exclude_from_weak = 
+exclude_from_weak_autodetect = 1
+excludepkgs = 
+exit_on_lock = 0
+fastestmirror = 0
+gpgcheck = 0
+gpgkey_dns_verification = 0
+group_package_types = mandatory, default, conditional
+history_list_view = commands
+history_record = 1
+history_record_packages = dnf, rpm
+ignorearch = 0
+includepkgs = 
+install_weak_deps = 1
+installonly_limit = 3
+installonlypkgs = kernel, kernel-PAE, installonlypkg(kernel), installonlypkg(kernel-module), installonlypkg(vm), multiversion(kernel)
+installroot = /mnt/sysroot
+ip_resolve = whatever
+keepcache = 0
+localpkg_gpgcheck = 0
+log_compress = 0
+log_rotate = 4
+log_size = 1048576
+logdir = /tmp/
+logfilelevel = 9
+max_downloads_per_mirror = 3
+max_parallel_downloads = 3
+metadata_expire = 172800
+metadata_timer_sync = 10800
+minrate = 1000
+module_obsoletes = 0
+module_platform_id = platform:el9
+module_stream_switch = 0
+multilib_policy = best
+obsoletes = 1
+password = 
+persistdir = /mnt/sysroot/var/lib/dnf
+pluginconfpath = /tmp/dnf.pluginconf
+pluginpath = /usr/lib/python3.9/site-packages/dnf-plugins
+plugins = 1
+protect_running_kernel = 1
+protected_packages = dnf, grub2-tools-minimal, scst, grub2-pc, grub2-efi-x64, setup, dnf, yum, sudo, systemd, systemd-udev, grub2-tools-minimal, scst, grub2-pc, grub2-efi-x64, setup, dnf, yum, sudo, systemd, systemd-udev
+proxy = 
+proxy_auth_method = any
+proxy_password = 
+proxy_sslcacert = 
+proxy_sslclientcert = 
+proxy_sslclientkey = 
+proxy_sslverify = 1
+proxy_username = 
+recent = 7
+repo_gpgcheck = 0
+reposdir = /etc/yum.repos.d, /etc/anaconda.repos.d
+reset_nice = 1
+retries = 10
+rpmverbosity = info
+showdupesfromrepos = 0
+skip_broken = 0
+skip_if_unavailable = 0
+sslcacert = 
+sslclientcert = 
+sslclientkey = 
+sslverify = 1
+sslverifystatus = 0
+strict = 1
+system_cachedir = /var/cache/dnf
+throttle = 0
+timeout = 30
+transformdb = 1
+tsflags = 
+upgrade_group_objects_upgrade = 1
+user_agent = libdnf (Acronis Cyber Infrastructure 9; generic; Linux.x86_64)
+username = 
+varsdir = /etc/yum/vars, /etc/dnf/vars
+zchunk = 1
+
+23:37:50,696 DBG localization: setting locale to: en_US.UTF-8
+23:37:50,702 DBG network: Initialization started.
+23:37:50,704 DBG network: Devices found: ['enp4s0', 'enp5s0f0', 'enp5s0f1']
+23:37:50,705 DBG network: Running task Apply kickstart
+23:37:50,707 DBG network: Apply kickstart result: []
+23:37:50,710 DBG network: Running task Dump missing config files
+23:37:51,716 DBG network: Dump missing config files result: ['enp4s0', 'enp5s0f0', 'enp5s0f1']
+23:37:51,717 DBG network: Creating network configurations.
+23:37:51,722 DBG network: Initialization finished.
+23:37:51,722 INF threading: Running Thread: AnaWaitForConnectingNMThread (140480502478400)
+23:37:51,722 DBG anaconda: setting display mode to GUI
+23:37:51,724 INF threading: Thread Done: AnaWaitForConnectingNMThread (140480502478400)
+23:37:51,725 WRN stdout: Not asking for VNC because we don't have a network
+23:37:51,725 INF anaconda: Display mode is set to 'interactive graphical mode'.
+23:37:51,725 INF isys: 131800236 kB (128711 MB) are available
+23:37:51,725 WRN misc: /usr/lib64/python3.9/subprocess.py:941: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  self.stdout = io.open(c2pread, 'rb', bufsize)
+
+23:37:51,729 INF startup_utils: check_memory(): total:128711, needed:320, graphical:410
+23:37:51,729 DBG core.util: Setting timeout 60 seconds for starting X.
+23:37:54,723 DBG core.util: X server has signalled a successful start.
+23:37:54,783 INF display: Started spice-vdagent.
+23:37:55,846 DBG ui.lib.addons: Loading spokes into module path for addon com_virtuozzo_eula
+23:37:55,846 DBG ui.lib.addons: Loading spokes into module path for addon com_vstorage
+23:37:55,913 DBG core.storage: LABEL=OEMDRV matches [] for devicetree=None and disks_only=True
+23:37:55,919 INF threading: Running Thread: AnaStorageThread (140480360740416)
+23:37:55,921 INF threading: Running Thread: AnaTimeInitThread (140480352347712)
+23:37:55,924 DBG payload.manager: Restarting payload thread
+23:37:55,925 INF threading: Running Thread: AnaPayloadRestartThread (140480343955008)
+23:37:55,925 INF geoloc: Geolocation is enabled.
+23:37:55,925 INF threading: Running Thread: AnaPayloadThread (140480153122368)
+23:37:55,926 ERR geoloc: Geolocation refresh failed - no connectivity
+23:37:55,926 DBG payload.manager: Updating payload thread state: STARTED
+23:37:55,926 INF threading: Thread Done: AnaPayloadRestartThread (140480343955008)
+23:37:55,926 DBG payload.manager: Updating payload thread state: WAITING_STORAGE
+23:37:55,993 WRN misc: /usr/lib64/python3.9/site-packages/pyanaconda/core/util.py:1218: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+
+23:37:56,367 DBG ui.gui: Detected primary monitor: 2560x1440 93dpix 93dpiy
+23:37:56,651 DBG ui.gui.spokes.network: network standalone spoke (init): completed: ['lo']
+23:37:56,656 INF lifecycle: Adding controller: SummaryHub
+23:37:56,820 INF threading: Running Thread: AnaAddLayoutsInitThread (140479916140096)
+23:37:56,845 DBG ui.gui.utils: Starting applying <bound method AddLayoutDialog._addLayout of <pyanaconda.ui.gui.spokes.keyboard.AddLayoutDialog object at 0x7fc4280c47c0>> on <list object at 0x7fc428060d00>
+23:37:56,845 INF threading: Running Thread: AnaGtkBatchPre1 (140480343955008)
+23:37:56,846 INF threading: Thread Done: AnaGtkBatchPre1 (140480343955008)
+23:37:56,855 INF threading: Running Thread: AnaKeyboardThread (140480343955008)
+23:37:56,936 INF threading: Running Thread: AnaDateTimeThread (140479907747392)
+23:37:56,950 DBG com_vstorage.gui.spokes.vstorage: Initialize buttons
+23:37:56,951 DBG com_vstorage.gui.spokes.vstorage: Initialize network boxes
+23:37:56,951 DBG com_vstorage.gui.spokes.vstorage: Initialize password entries
+23:37:56,951 DBG com_vstorage.gui.spokes.vstorage: Initialize storage settings
+23:37:56,981 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "1"
+23:37:56,981 INF com_vstorage.gui.spokes.vstorage: Error set to "Management node address required".
+23:37:56,982 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "Management node address required", selected_target: "1"
+23:37:56,982 INF com_vstorage.gui.spokes.vstorage: Error set to "Management node address required".
+23:37:56,982 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "Management node address required", selected_target: "1"
+23:37:56,982 INF com_vstorage.gui.spokes.vstorage: Error set to "Management node address required".
+23:37:56,986 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "Management node address required", selected_target: "1"
+23:37:56,986 INF com_vstorage.gui.spokes.vstorage: Error set to "Management node address required".
+23:37:56,987 DBG ui.gui.hubs: incomplete spokes: [VIPSpoke]
+23:37:57,931 INF threading: Thread Done: AnaStorageThread (140480360740416)
+23:37:57,931 DBG payload.manager: Updating payload thread state: WAITING_NETWORK
+23:37:58,016 INF threading: Running Thread: AnaSourceWatcher (140480360740416)
+23:37:58,017 DBG payload.manager: Updating payload thread state: DOWNLOADING_PKG_METADATA
+23:37:58,021 DBG modules.payloads.payload.dnf.dnf_manager: The DNF cache has been cleared.
+23:37:58,025 DBG ui.gui.hubs: incomplete spokes: [VIPSpoke, SourceSpoke]
+23:37:58,034 INF threading: Running Thread: AnaSoftwareWatcher (140479899354688)
+23:37:58,038 DBG ui.gui.hubs: incomplete spokes: [VIPSpoke, SourceSpoke, SoftwareSelectionSpoke]
+23:37:58,117 INF threading: Running Thread: AnaStorageWatcher (140479890961984)
+23:37:58,117 DBG ui.gui.hubs: incomplete spokes: [VIPSpoke, SourceSpoke, SoftwareSelectionSpoke, StorageSpoke]
+23:37:58,119 DBG ui.lib.storage: Selecting one or less disks by default: 
+23:37:58,120 INF lifecycle: Module initialized: StorageSpoke
+23:37:58,120 INF threading: Thread Done: AnaStorageWatcher (140479890961984)
+23:37:58,127 INF lifecycle: Module initialized: CustomPartitioningSpoke
+23:37:58,138 INF lifecycle: Module initialized: FilterSpoke
+23:37:58,144 DBG ui.gui.hubs: incomplete spokes: [VIPSpoke, SourceSpoke, SoftwareSelectionSpoke, StorageSpoke, EulaSpoke]
+23:37:58,154 DBG ui.gui.spokes.network: adding device configuration: NetworkDeviceConfiguration(connection_uuid='f3be53fe-3173-42a5-98d2-47d520452532', device_name='enp4s0', device_type=1)
+23:37:58,155 DBG ui.gui.spokes.network: adding device configuration: NetworkDeviceConfiguration(connection_uuid='d4ccde76-1195-417a-a7f4-7ed2fc01cc21', device_name='enp5s0f0', device_type=1)
+23:37:58,156 DBG ui.gui.spokes.network: adding device configuration: NetworkDeviceConfiguration(connection_uuid='03bfd0d1-5365-4735-9369-a68c7638cde4', device_name='enp5s0f1', device_type=1)
+23:37:58,157 INF lifecycle: Module initialized: NetworkSpoke
+23:37:58,164 INF lifecycle: Module initialized: PasswordSpoke
+23:37:58,165 DBG ui.gui.hubs: incomplete spokes: [VIPSpoke, SourceSpoke, SoftwareSelectionSpoke, StorageSpoke, EulaSpoke, PasswordSpoke]
+23:37:58,174 INF lifecycle: Module initialized: UserSpoke
+23:37:58,176 DBG ui.gui.hubs: incomplete spokes: [VIPSpoke, SourceSpoke, SoftwareSelectionSpoke, StorageSpoke, EulaSpoke, PasswordSpoke, UserSpoke]
+23:37:58,176 INF lifecycle: Initialization of all modules (10) has been started.
+23:37:58,177 DBG ui.gui.hubs: stepping by step to spoke EulaSpoke
+23:37:58,177 DBG ui.gui.hubs: Starting event loop for hub SummaryHub
+23:37:58,180 ERR ui.gui: Custom stylesheet /usr/share/anaconda/pixmaps/redhat.css failed to load:
+gtk-css-provider-error-quark: <broken file>:1:0Failed to import: Error opening file /usr/share/anaconda/pixmaps/redhat.css: No such file or directory (2)
+23:37:58,195 DBG ui.common: Entered hub: SummaryHub
+23:37:58,196 WRN misc: /usr/lib/python3.9/site-packages/gi/overrides/Gdk.py:329: DeprecationWarning: Gdk.Cursor.new is deprecated
+  return cls.new(*args, **kwds)
+
+23:37:58,275 DBG ui.gui.utils: Finished applying <bound method AddLayoutDialog._addLayout of <pyanaconda.ui.gui.spokes.keyboard.AddLayoutDialog object at 0x7fc4280c47c0>> on <list object at 0x7fc428060d00>
+23:37:58,275 INF threading: Thread Done: AnaAddLayoutsInitThread (140479916140096)
+23:37:58,275 INF lifecycle: Module initialized: KeyboardSpoke
+23:37:58,276 INF threading: Thread Done: AnaKeyboardThread (140480343955008)
+23:37:58,318 DBG ui.common: Entered spoke: EulaSpoke
+23:37:58,321 DBG ui.gui.hubs: spoke is not ready: KeyboardSpoke
+23:37:58,321 DBG ui.gui.hubs: setting KeyboardSpoke status to: Getting list of layouts...
+23:37:58,325 DBG ui.gui.hubs: spoke is not ready: SoftwareSelectionSpoke
+03:37:58,000 INF threading: Thread Done: AnaTimeInitThread (140480352347712)
+03:37:58,000 INF lifecycle: Module initialized: DatetimeSpoke
+03:37:58,000 INF threading: Thread Done: AnaDateTimeThread (140479907747392)
+03:37:58,002 DBG ui.gui.hubs: spoke is not ready: SourceSpoke
+03:37:58,003 DBG ui.gui.hubs: setting SourceSpoke status to: Setting up installation source...
+03:37:58,003 DBG ui.gui.hubs: setting SourceSpoke status to: Probing storage...
+03:37:58,003 DBG ui.gui.hubs: setting SourceSpoke status to: Downloading package metadata...
+03:37:58,003 DBG ui.gui.hubs: setting SoftwareSelectionSpoke status to: Downloading package metadata...
+03:37:58,003 DBG ui.gui.hubs: setting StorageSpoke status to: Probing storage...
+03:37:58,003 DBG ui.gui.hubs: setting StorageSpoke status to: Probing storage...
+03:37:58,006 DBG ui.gui.hubs: spoke is ready: StorageSpoke
+03:37:58,009 DBG ui.gui.hubs: spoke is ready: PasswordSpoke
+03:37:58,010 DBG ui.gui.hubs: spoke is ready: KeyboardSpoke
+03:37:58,010 DBG ui.gui.hubs: setting DatetimeSpoke status to: Restoring hardware time...
+03:37:58,012 DBG ui.gui.hubs: spoke is ready: DatetimeSpoke
+03:37:58,842 DBG payload.manager: Updating payload thread state: DOWNLOADING_GROUP_METADATA
+03:37:58,895 DBG ui.gui.hubs: setting SourceSpoke status to: Downloading group metadata...
+03:37:58,895 DBG ui.gui.hubs: setting SoftwareSelectionSpoke status to: Downloading group metadata...
+03:37:59,113 DBG payload.manager: Updating payload thread state: FINISHED
+03:37:59,113 INF threading: Thread Done: AnaPayloadThread (140480153122368)
+03:37:59,115 DBG ui.gui.spokes.software_selection: Setting new software selection: PackagesConfigurationData(broken_ignored=False, core_group_enabled=True, default_environment_enabled=False, docs_excluded=False, environment='hci', excluded_groups=[], excluded_packages=[], groups=[], groups_package_types={}, languages='all', missing_ignored=False, multilib_policy='best', packages=[], retries=-1, timeout=-1, weakdeps_excluded=False)
+03:37:59,116 INF threading: Running Thread: AnaCheckSoftwareThread (140480153122368)
+03:37:59,120 INF modules.payloads.payload.dnf.utils: selected environment: hci
+03:37:59,120 INF modules.payloads.payload.dnf.utils: selected group: core
+03:37:59,120 INF modules.payloads.payload.dnf.utils: kernel: selected kernel
+03:37:59,120 DBG modules.payloads.payload.dnf.requirements: Applying requirements: []
+03:37:59,120 DBG modules.payloads.payload.dnf.dnf_manager: Transaction include list:
+['@hci', '@core', 'kernel']
+03:37:59,120 DBG modules.payloads.payload.dnf.dnf_manager: Transaction exclude list:
+[]
+03:37:59,133 DBG ui.gui.spokes.installation_source: Clearing checks in source spoke
+03:37:59,138 DBG ui.gui.spokes.installation_source: Setting up repos: []
+03:37:59,263 DBG ui.gui.hubs: spoke is ready: SoftwareSelectionSpoke
+03:37:59,270 DBG ui.gui.hubs: spoke is ready: SourceSpoke
+03:37:59,276 DBG ui.gui.hubs: spoke is not ready: SoftwareSelectionSpoke
+03:37:59,283 DBG ui.gui.hubs: spoke is not ready: SourceSpoke
+03:37:59,283 DBG ui.gui.hubs: setting SoftwareSelectionSpoke status to: Checking software dependencies...
+03:37:59,302 DBG modules.payloads.payload.dnf.dnf_manager: Space required for packages: 9.04 GiB
+03:37:59,302 DBG modules.payloads.payload.dnf.dnf_manager: Space required for installed files: 1.06 GiB
+03:37:59,302 DBG modules.payloads.payload.dnf.dnf_manager: Total required size: 11.11 GiB
+03:37:59,308 DBG modules.payloads.payload.dnf.dnf_manager: Total download size: 5.76 GiB
+03:37:59,340 INF threading: Thread Done: AnaCheckSoftwareThread (140480153122368)
+03:37:59,340 INF lifecycle: Module initialized: SoftwareSelectionSpoke
+03:37:59,340 INF threading: Thread Done: AnaSoftwareWatcher (140479899354688)
+03:37:59,408 DBG ui.gui.hubs: incomplete spokes: [VIPSpoke, SourceSpoke, StorageSpoke, EulaSpoke, PasswordSpoke, UserSpoke]
+03:37:59,408 DBG ui.gui.hubs: spoke is ready: SoftwareSelectionSpoke
+03:37:59,415 DBG ui.gui.hubs: incomplete spokes: [VIPSpoke, StorageSpoke, EulaSpoke, PasswordSpoke, UserSpoke]
+03:37:59,416 DBG ui.gui.hubs: spoke is ready: SourceSpoke
+03:37:59,420 DBG ui.gui.hubs: spoke is ready: SoftwareSelectionSpoke
+03:38:00,134 INF lifecycle: Module initialized: SourceSpoke
+03:38:00,134 INF lifecycle: All modules have been initialized.
+03:38:00,134 INF threading: Thread Done: AnaSourceWatcher (140480360740416)
+03:38:00,210 DBG ui.gui.hubs: spoke is ready: SourceSpoke
+03:38:05,825 DBG ui.common: Left spoke: EulaSpoke
+03:38:05,829 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "Management node address required", selected_target: "1"
+03:38:05,829 INF com_vstorage.gui.spokes.vstorage: Error set to "Management node address required".
+03:38:05,830 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "Management node address required", selected_target: "1"
+03:38:05,830 INF com_vstorage.gui.spokes.vstorage: Error set to "Management node address required".
+03:38:05,830 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "Management node address required", selected_target: "1"
+03:38:05,831 INF com_vstorage.gui.spokes.vstorage: Error set to "Management node address required".
+03:38:05,832 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "Management node address required", selected_target: "1"
+03:38:05,832 INF com_vstorage.gui.spokes.vstorage: Error set to "Management node address required".
+03:38:05,846 DBG ui.gui.hubs: incomplete spokes: [VIPSpoke, StorageSpoke, PasswordSpoke, UserSpoke]
+03:38:05,854 DBG ui.gui.hubs: stepping by step to spoke NetworkSpoke
+03:38:05,863 DBG ui.common: Entered spoke: NetworkSpoke
+03:38:11,701 INF ui.gui.spokes.network: configuring connection f3be53fe-3173-42a5-98d2-47d520452532 device enp4s0 ssid b''
+03:38:11,710 WRN misc: /usr/lib/python3.9/site-packages/gi/overrides/GLib.py:801: PyGIDeprecationWarning: Calling child_watch_add without priority as first argument is deprecated
+  warnings.warn('Calling child_watch_add without priority as first argument is deprecated',
+
+03:39:05,104 DBG ui.gui.spokes.lib.network_secret_agent: SaveSecrets called for /org/freedesktop/NetworkManager/Settings/2
+03:39:05,124 DBG ui.gui.spokes.network: nm-c-e exited with status 0
+03:39:07,051 INF ui.gui.spokes.network: device enp4s0 switched on
+03:39:07,085 DBG ui.gui.hubs: setting NetworkSpoke status to: Connecting...
+03:39:07,185 DBG ui.gui.hubs: setting NetworkSpoke status to: Connected: enp4s0
+03:39:07,185 DBG ui.gui.hubs: setting NetworkSpoke status to: Connected: enp4s0
+03:39:07,185 DBG ui.gui.hubs: setting NetworkSpoke status to: Connected: enp4s0
+03:39:10,493 INF ui.gui.spokes.network: configuring connection d4ccde76-1195-417a-a7f4-7ed2fc01cc21 device enp5s0f0 ssid b''
+03:39:10,497 WRN misc: /usr/lib/python3.9/site-packages/gi/overrides/GLib.py:801: PyGIDeprecationWarning: Calling child_watch_add without priority as first argument is deprecated
+  warnings.warn('Calling child_watch_add without priority as first argument is deprecated',
+
+23:40:01,298 DBG ui.gui.spokes.lib.network_secret_agent: SaveSecrets called for /org/freedesktop/NetworkManager/Settings/3
+23:40:01,312 DBG ui.gui.spokes.network: nm-c-e exited with status 0
+23:40:06,857 INF ui.gui.spokes.network: device enp5s0f0 switched on
+23:40:09,412 DBG ui.gui.hubs: setting NetworkSpoke status to: Connected: enp5s0f0, enp4s0
+23:40:28,989 DBG ui.gui.spokes.network: network spoke (apply), network configuration changed - skipping restart of payload thread, payload does not need network
+23:40:28,989 DBG ui.common: Left spoke: NetworkSpoke
+23:40:28,995 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "Management node address required", selected_target: "1"
+23:40:28,995 INF com_vstorage.gui.spokes.vstorage: Error set to "Management node address required".
+23:40:28,996 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "Management node address required", selected_target: "1"
+23:40:28,996 INF com_vstorage.gui.spokes.vstorage: Error set to "Management node address required".
+23:40:28,996 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "Management node address required", selected_target: "1"
+23:40:28,996 INF com_vstorage.gui.spokes.vstorage: Error set to "Management node address required".
+23:40:28,997 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "Management node address required", selected_target: "1"
+23:40:28,997 INF com_vstorage.gui.spokes.vstorage: Error set to "Management node address required".
+23:40:29,020 DBG ui.gui.hubs: stepping by step to spoke DatetimeSpoke
+23:40:29,024 DBG ui.gui.hubs: Awaiting for NetworkSpoke spoke completeness
+23:40:29,024 DBG ui.gui.hubs: Awaiting for NetworkSpoke spoke completeness finished
+23:40:29,055 INF threading: Running Thread: AnaNTPserver1 (140479924532800)
+23:40:29,055 DBG ntp: Checking NTP server pool.ntp.org
+23:40:29,077 DBG ui.common: Entered spoke: DatetimeSpoke
+23:40:29,454 DBG ntp: NTP server pool.ntp.org appears to be working.
+23:40:29,454 INF threading: Thread Done: AnaNTPserver1 (140479924532800)
+06:40:34,000 INF isys: System time set to Thu Jul 10 03:40:34 2025 UTC
+06:40:34,424 DBG ui.common: Left spoke: DatetimeSpoke
+06:40:34,429 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "Management node address required", selected_target: "1"
+06:40:34,429 INF com_vstorage.gui.spokes.vstorage: Error set to "Management node address required".
+06:40:34,430 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "Management node address required", selected_target: "1"
+06:40:34,431 INF com_vstorage.gui.spokes.vstorage: Error set to "Management node address required".
+06:40:34,431 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "Management node address required", selected_target: "1"
+06:40:34,431 INF com_vstorage.gui.spokes.vstorage: Error set to "Management node address required".
+06:40:34,433 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "Management node address required", selected_target: "1"
+06:40:34,433 INF com_vstorage.gui.spokes.vstorage: Error set to "Management node address required".
+06:40:34,455 DBG ui.gui.hubs: stepping by step to spoke VIPSpoke
+06:40:34,459 DBG ui.gui.hubs: Awaiting for NetworkSpoke spoke completeness
+06:40:34,460 DBG ui.gui.hubs: Awaiting for NetworkSpoke spoke completeness finished
+06:40:34,463 DBG com_vstorage.gui.spokes.vstorage: Refresh spoke
+06:40:34,471 DBG ui.common: Entered spoke: VIPSpoke
+06:40:37,439 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:40:37,439 INF com_vstorage.gui.spokes.vstorage: Error set to "No interfaces available. Set up new interfaces first".
+06:40:37,439 DBG com_vstorage.gui.spokes.vstorage: on_back_cliked. selected_step: "1", selected_target: "2", self._error: "No interfaces available. Set up new interfaces first"
+06:40:37,439 DBG com_vstorage.gui.spokes.vstorage: Step to panel setup
+06:41:02,693 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:02,693 DBG com_vstorage.gui.spokes.vstorage: on_back_cliked. selected_step: "2", selected_target: "2", self._error: ""
+06:41:02,693 DBG com_vstorage.gui.spokes.vstorage: Create new cluster.
+06:41:02,693 DBG com_vstorage.gui.spokes.vstorage: Applying
+06:41:02,697 DBG ui.common: Left spoke: VIPSpoke
+06:41:02,701 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:02,702 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:02,702 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:02,703 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:02,703 DBG ui.gui.hubs: incomplete spokes: [StorageSpoke, PasswordSpoke, UserSpoke]
+06:41:02,725 DBG ui.gui.hubs: stepping by step to spoke StorageSpoke
+06:41:02,729 DBG ui.gui.hubs: Awaiting for NetworkSpoke spoke completeness
+06:41:02,730 DBG ui.gui.hubs: Awaiting for NetworkSpoke spoke completeness finished
+06:41:02,751 DBG ui.common: Entered spoke: StorageSpoke
+06:41:09,316 INF ui.gui.spokes.storage: Partitioning method has changed from AUTOMATIC to INTERACTIVE.
+06:41:09,316 INF ui.gui.spokes.storage: Rolling back planed storage configuration changes.
+06:41:09,325 DBG ui.gui.spokes.storage: Skipping the execute method for the INTERACTIVE partitioning method.
+06:41:09,325 DBG ui.common: Left spoke: StorageSpoke
+06:41:09,329 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:09,330 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:09,330 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:09,331 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:09,395 DBG ui.gui.spokes.custom_storage: Populating accordion for devices ['/LiveOS/rootfs.img', '/overlay (deleted)', '/run/install/repo/LiveOS/squashfs.img', 'live-base', 'live-rw', 'loop0', 'loop1', 'loop2', 'sda', 'sda1', 'sda2', 'sdd'] (unused ['sda1', 'sda2', 'sdd'], new []).
+06:41:09,411 DBG ui.gui.spokes.custom_storage: Showing mount point: New Acronis Cyber Infrastructure 6.3 Installation
+06:41:09,411 DBG ui.gui.spokes.custom_storage: Showing mount point: New Acronis Cyber Infrastructure 6.3 Installation
+06:41:09,417 DBG ui.common: Entered spoke: CustomPartitioningSpoke
+06:41:09,417 DBG ui.gui.hubs: Append spoke to back list: CustomPartitioningSpoke
+06:41:12,364 DBG ui.common: Left spoke: CustomPartitioningSpoke
+06:41:12,369 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:12,370 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:12,371 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:12,372 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:12,396 DBG ui.gui.hubs: stepping by step to spoke StorageSpoke
+06:41:12,400 DBG ui.gui.hubs: Do not wait for spoke completeness, switch back
+06:41:12,420 DBG ui.common: Entered spoke: StorageSpoke
+06:41:12,439 DBG ui.gui.hubs: spoke is ready: StorageSpoke
+06:41:20,116 INF ui.gui.spokes.storage: Disk selection has changed.
+06:41:20,116 INF ui.gui.spokes.storage: Rolling back planed storage configuration changes.
+06:41:20,124 DBG ui.gui.spokes.storage: Skipping the execute method for the INTERACTIVE partitioning method.
+06:41:20,124 DBG ui.common: Left spoke: StorageSpoke
+06:41:20,128 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:20,129 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:20,130 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:20,130 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:20,175 DBG ui.gui.spokes.custom_storage: Populating accordion for devices ['/LiveOS/rootfs.img', '/overlay (deleted)', '/run/install/repo/LiveOS/squashfs.img', 'live-base', 'live-rw', 'loop0', 'loop1', 'loop2', 'sdb', 'sdb1', 'sdb2', 'sdb3', 'sdb4', 'sdd'] (unused ['sdd'], new []).
+06:41:20,190 DBG ui.gui.spokes.custom_storage: Showing mount point: New Acronis Cyber Infrastructure 6.3 Installation
+06:41:20,190 DBG ui.gui.spokes.custom_storage: Showing mount point: New Acronis Cyber Infrastructure 6.3 Installation
+06:41:20,193 DBG ui.common: Entered spoke: CustomPartitioningSpoke
+06:41:20,193 DBG ui.gui.hubs: Append spoke to back list: CustomPartitioningSpoke
+06:41:22,516 DBG ui.common: Left spoke: CustomPartitioningSpoke
+06:41:22,522 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:22,523 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:22,524 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:22,524 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:22,546 DBG ui.gui.hubs: stepping by step to spoke StorageSpoke
+06:41:22,550 DBG ui.gui.hubs: Do not wait for spoke completeness, switch back
+06:41:22,569 DBG ui.common: Entered spoke: StorageSpoke
+06:41:22,611 DBG ui.gui.hubs: spoke is ready: StorageSpoke
+06:41:27,294 INF ui.gui.spokes.storage: Partitioning method has changed from INTERACTIVE to AUTOMATIC.
+06:41:27,294 INF ui.gui.spokes.storage: Rolling back planed storage configuration changes.
+06:41:27,401 DBG modules.payloads.payload.dnf.dnf_manager: Space required for packages: 9.04 GiB
+06:41:27,402 DBG modules.payloads.payload.dnf.dnf_manager: Space required for installed files: 1.06 GiB
+06:41:27,402 DBG modules.payloads.payload.dnf.dnf_manager: Total required size: 11.11 GiB
+06:41:27,407 DBG modules.payloads.payload.dnf.dnf_manager: Total download size: 5.76 GiB
+06:41:27,436 INF core.storage: Detected 125.69 GiB of memory
+06:41:27,436 INF core.storage: Swap attempt of 32 GiB
+06:41:27,436 DBG ui.gui.spokes.storage: disk free: 1.3 MiB  fs free: 907.3 GiB  sw needs: 16.87 GiB  auto swap: 32 GiB
+06:41:29,462 WRN misc: /usr/lib/python3.9/site-packages/gi/overrides/GObject.py:493: Warning: ../gobject/gsignal.c:2732: instance '0x5560d93273b0' has no handler with id '34791'
+  return func(*args, **kwargs)
+
+06:41:29,462 WRN misc: /usr/lib/python3.9/site-packages/gi/overrides/GObject.py:493: Warning: ../gobject/gsignal.c:2732: instance '0x5560d93273b0' has no handler with id '34792'
+  return func(*args, **kwargs)
+
+06:41:29,670 DBG modules.payloads.payload.dnf.dnf_manager: Space required for packages: 9.04 GiB
+06:41:29,670 DBG modules.payloads.payload.dnf.dnf_manager: Space required for installed files: 1.06 GiB
+06:41:29,670 DBG modules.payloads.payload.dnf.dnf_manager: Total required size: 11.11 GiB
+06:41:29,676 DBG modules.payloads.payload.dnf.dnf_manager: Total download size: 5.76 GiB
+06:41:32,512 DBG ui.gui.spokes.lib.resize: Remove sdb.
+06:41:32,522 WRN misc: /usr/lib/python3.9/site-packages/gi/overrides/GObject.py:493: Warning: ../gobject/gsignal.c:2732: instance '0x5560d93273b0' has no handler with id '35355'
+  return func(*args, **kwargs)
+
+06:41:32,522 WRN misc: /usr/lib/python3.9/site-packages/gi/overrides/GObject.py:493: Warning: ../gobject/gsignal.c:2732: instance '0x5560d93273b0' has no handler with id '35356'
+  return func(*args, **kwargs)
+
+06:41:32,528 DBG ui.gui.spokes.storage: Running the execute method for the AUTOMATIC partitioning method.
+06:41:32,529 INF threading: Running Thread: AnaExecuteStorageThread (140480360740416)
+06:41:32,529 DBG ui.common: Left spoke: StorageSpoke
+06:41:32,529 DBG ui.gui.spokes.storage: Saving storage configuration...
+06:41:32,533 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:32,534 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:32,535 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:32,535 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:32,558 DBG ui.gui.hubs: stepping by step to spoke PasswordSpoke
+06:41:32,563 DBG ui.gui.hubs: Awaiting for NetworkSpoke spoke completeness
+06:41:32,563 DBG ui.gui.hubs: Awaiting for NetworkSpoke spoke completeness finished
+06:41:32,564 DBG ui.gui.hubs: Awaiting for StorageSpoke spoke completeness
+06:41:33,546 DBG ui.gui.spokes.storage: Checking storage configuration...
+06:41:34,573 DBG ui.gui.spokes.storage: Partitioning has been applied: ValidationReport(error_messages=[], warning_messages=[])
+06:41:34,573 INF threading: Thread Done: AnaExecuteStorageThread (140480360740416)
+06:41:34,587 DBG ui.gui.hubs: Awaiting for StorageSpoke spoke completeness finished
+06:41:34,589 DBG ui.gui.hubs: incomplete spokes: [PasswordSpoke, UserSpoke]
+06:41:34,589 DBG ui.gui.hubs: spoke is not ready: StorageSpoke
+06:41:34,589 DBG ui.gui.hubs: setting StorageSpoke status to: Saving storage configuration...
+06:41:34,589 DBG ui.gui.hubs: setting StorageSpoke status to: Checking storage configuration...
+06:41:34,590 DBG ui.gui.hubs: spoke is ready: StorageSpoke
+06:41:34,619 DBG ui.common: Entered spoke: PasswordSpoke
+06:41:52,184 DBG ui.common: Left spoke: PasswordSpoke
+06:41:52,188 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:52,189 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:52,190 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:52,191 DBG com_vstorage.gui.spokes.vstorage: Checking values: error: "", selected_target: "2"
+06:41:52,212 DBG ui.gui.hubs: incomplete spokes: [UserSpoke]
+06:41:52,214 DBG ui.gui.hubs: incomplete spokes: []
+06:41:52,353 DBG modules.payloads.payload.dnf.dnf_manager: Space required for packages: 9.04 GiB
+06:41:52,353 DBG modules.payloads.payload.dnf.dnf_manager: Space required for installed files: 1.06 GiB
+06:41:52,353 DBG modules.payloads.payload.dnf.dnf_manager: Total required size: 11.11 GiB
+06:41:52,360 DBG modules.payloads.payload.dnf.dnf_manager: Total download size: 5.76 GiB
+06:41:52,371 INF ui.lib.space: fs space: 781.39 GiB  needed: 16.87 GiB
+06:41:52,508 DBG modules.payloads.payload.dnf.dnf_manager: Space required for packages: 9.04 GiB
+06:41:52,508 DBG modules.payloads.payload.dnf.dnf_manager: Space required for installed files: 1.06 GiB
+06:41:52,508 DBG modules.payloads.payload.dnf.dnf_manager: Total required size: 11.11 GiB
+06:41:52,514 DBG modules.payloads.payload.dnf.dnf_manager: Total download size: 5.76 GiB
+06:41:52,525 INF ui.lib.space: fs space: 781.39 GiB  needed: 16.87 GiB
+06:41:52,525 DBG ui.gui.hubs: spoke is ready: PasswordSpoke
+06:41:52,525 DBG ui.gui.hubs: automatically clicking continue button
+06:41:52,534 DBG ui.common: Left hub: SummaryHub
+06:41:52,535 INF threading: Running Thread: AnaInstallThread (140480360740416)
+06:41:52,535 DBG ui.gui.spokes.installation_progress: The installation has started.
+06:41:52,536 DBG ui.common: Entered spoke: ProgressSpoke
+06:41:52,576 INF installation: Top-level task queue: Complete installation queue
+Number of task queues: 16
+Number of tasks: 40
+Task & task group listing:
+ Task queue: Installation queue
+  Task: Save system time to HW clock
+  Task queue: Installation environment setup
+   Task: Configure VStorage.
+  Task queue: Early storage configuration
+   Task: Create storage layout
+   Task: Mount filesystems
+   Task: Write the storage configuration
+  Task queue: Pre-install scripts
+   Task: Run %pre-install scripts
+  Task queue: Pre install tasks
+   Task: Copy resolv.conf to sysroot
+   Task: Discover information about a realm
+   Task: Set up FIPS for the payload installation
+   Task: Find additional packages & run pre_install()
+  Task queue: Payload installation
+   Task: Install the payload
+  Task queue: Bootloader installation
+   Task: Configure bootloader
+   Task: Install bootloader
+  Task queue: Post-installation setup tasks
+   Task: Run post-installation setup tasks
+ Task queue: Configuration queue
+  Task queue: Installed system configuration
+   Task: Configure SELinux
+   Task: Configure fingerprint authentication
+   Task: Authselect configuration
+   Task: Authconfig configuration
+   Task: Configure time zone
+   Task: Configure NTP
+   Task: Configure Initial Setup
+   Task: Configure post-installation tools
+   Task: Configure services
+   Task: Configure systemd default target
+   Task: Configure default desktop
+   Task: Configure language
+   Task: Configure keyboard
+   Task: Configure firewall
+  Task queue: Network configuration
+   Task: Network configuration
+  Task queue: User creation
+   Task: Create groups
+   Task: Create users
+   Task: Configure root password
+   Task: Set SSH keys
+   Task: Configure optional root password SSH login
+  Task queue: Anaconda addon configuration
+   Task: Install VStorage
+  Task queue: Initramfs generation
+   Task: Generate initramfs
+  Task: Configure FIPS
+  Task: Join a realm
+  Task queue: Write configs and kickstarts
+   Task: Store kickstarts
+  Task queue: Post installation scripts
+   Task: Run post installation scripts
+06:41:52,576 INF installation: Queue started: Installation queue (1/16)
+06:41:52,576 INF installation: Task started: Save system time to HW clock (1/40)
+06:41:53,501 INF progress: Save system time to HW clock
+06:41:53,501 DBG installation: Task completed: Save system time to HW clock (1/40) (0.9 s)
+06:41:53,501 INF progress: Setting up the installation environment
+06:41:53,501 INF installation: Queue started: Installation environment setup (2/16)
+06:41:53,501 INF installation: Task started: Configure VStorage. (2/40)
+06:41:54,506 INF progress: Configure VStorage.
+06:41:54,506 DBG installation: Task completed: Configure VStorage. (2/40) (1.0 s)
+06:41:54,506 INF progress: Configuring storage
+06:41:54,506 INF installation: Queue started: Early storage configuration (3/16)
+06:41:54,506 INF installation: Task started: Create storage layout (3/40)
+06:41:55,158 INF progress: Creating disklabel on /dev/sdb
+06:41:55,513 INF progress: Creating swap on /dev/sdb3
+06:41:55,687 INF progress: Creating ext4 on /dev/sdb4
+06:42:17,057 INF progress: Creating ext4 on /dev/sdb2
+06:42:17,332 INF progress: Creating efi on /dev/sdb1
+06:42:17,549 INF progress: Create storage layout
+06:42:17,549 DBG installation: Task completed: Create storage layout (3/40) (23.0 s)
+06:42:17,549 INF installation: Task started: Mount filesystems (4/40)
+06:42:19,556 INF progress: Mount filesystems
+06:42:19,556 DBG installation: Task completed: Mount filesystems (4/40) (2.0 s)
+06:42:19,556 INF installation: Task started: Write the storage configuration (5/40)
+06:42:20,561 INF progress: Write the storage configuration
+06:42:20,561 DBG installation: Task completed: Write the storage configuration (5/40) (1.0 s)
+06:42:20,561 INF progress: Running pre-installation scripts
+06:42:20,561 INF installation: Queue started: Pre-install scripts (4/16)
+06:42:20,561 INF installation: Task started: Run %pre-install scripts (6/40)
+06:42:20,561 INF progress: Run %pre-install scripts
+06:42:20,561 DBG installation: Task completed: Run %pre-install scripts (6/40) (0.0 s)
+06:42:20,561 INF progress: Running pre-installation tasks
+06:42:20,561 INF installation: Queue started: Pre install tasks (5/16)
+06:42:20,561 INF installation: Task started: Copy resolv.conf to sysroot (7/40)
+06:42:20,562 INF progress: Copy resolv.conf to sysroot
+06:42:20,562 DBG installation: Task completed: Copy resolv.conf to sysroot (7/40) (0.0 s)
+06:42:20,562 INF installation: Task started: Discover information about a realm (8/40)
+06:42:20,563 INF progress: Discover information about a realm
+06:42:20,563 DBG installation: Task completed: Discover information about a realm (8/40) (0.0 s)
+06:42:20,563 INF installation: Task started: Set up FIPS for the payload installation (9/40)
+06:42:20,565 INF progress: Set up FIPS for the payload installation
+06:42:20,565 DBG installation: Task completed: Set up FIPS for the payload installation (9/40) (0.0 s)
+06:42:20,565 INF installation: Task started: Find additional packages & run pre_install() (10/40)
+06:42:20,574 WRN modules.payloads.payload.dnf.requirements: Selected locale 'en_US.UTF-8' does not match any available langpacks.
+06:42:20,593 INF progress: Find additional packages & run pre_install()
+06:42:20,593 DBG installation: Task completed: Find additional packages & run pre_install() (10/40) (0.0 s)
+06:42:20,593 INF progress: Installing.
+06:42:20,593 INF installation: Queue started: Payload installation (6/16)
+06:42:20,593 INF installation: Task started: Install the payload (11/40)
+06:42:20,593 INF progress: Starting package installation process
+06:42:20,594 DBG modules.payloads.payload.dnf.installation: Set '__dbi_htconfig' to 'hash nofsync %{__dbi_other} %{__dbi_perms}'.
+06:42:20,595 DBG modules.payloads.payload.dnf.installation: Set '__file_context_path' to '/etc/selinux/targeted/contexts/files/file_contexts'.
+06:42:20,597 INF modules.payloads.payload.dnf.utils: selected environment: hci
+06:42:20,597 INF modules.payloads.payload.dnf.utils: selected group: core
+06:42:20,597 INF modules.payloads.payload.dnf.utils: kernel: selected kernel
+06:42:20,597 DBG modules.payloads.payload.dnf.requirements: Applying requirements: [Requirement(name='e2fsprogs', reason='Required to manage storage devices.', type='package'), Requirement(name='dosfstools', reason='Required to manage storage devices.', type='package'), Requirement(name='grub2-efi-x64', reason='Necessary for the bootloader configuration.', type='package'), Requirement(name='shim-x64', reason='Necessary for the bootloader configuration.', type='package'), Requirement(name='efibootmgr', reason='Necessary for the bootloader configuration.', type='package'), Requirement(name='grub2-tools', reason='Necessary for the bootloader configuration.', type='package'), Requirement(name='authselect', reason='Needed by authselect kickstart command & for fingerprint authentication support.', type='package'), Requirement(name='chrony', reason='Needed to run NTP service.', type='package')]
+06:42:20,597 DBG modules.payloads.payload.dnf.requirements: Requirement 'e2fsprogs' is applied. Reason: Required to manage storage devices.
+06:42:20,597 DBG modules.payloads.payload.dnf.requirements: Requirement 'dosfstools' is applied. Reason: Required to manage storage devices.
+06:42:20,597 DBG modules.payloads.payload.dnf.requirements: Requirement 'grub2-efi-x64' is applied. Reason: Necessary for the bootloader configuration.
+06:42:20,597 DBG modules.payloads.payload.dnf.requirements: Requirement 'shim-x64' is applied. Reason: Necessary for the bootloader configuration.
+06:42:20,597 DBG modules.payloads.payload.dnf.requirements: Requirement 'efibootmgr' is applied. Reason: Necessary for the bootloader configuration.
+06:42:20,598 DBG modules.payloads.payload.dnf.requirements: Requirement 'grub2-tools' is applied. Reason: Necessary for the bootloader configuration.
+06:42:20,598 DBG modules.payloads.payload.dnf.requirements: Requirement 'authselect' is applied. Reason: Needed by authselect kickstart command & for fingerprint authentication support.
+06:42:20,598 DBG modules.payloads.payload.dnf.requirements: Requirement 'chrony' is applied. Reason: Needed to run NTP service.
+06:42:20,598 DBG modules.payloads.payload.dnf.dnf_manager: Transaction include list:
+['@hci', '@core', 'kernel', 'e2fsprogs', 'dosfstools', 'grub2-efi-x64', 'shim-x64', 'efibootmgr', 'grub2-tools', 'authselect', 'chrony']
+06:42:20,598 DBG modules.payloads.payload.dnf.dnf_manager: Transaction exclude list:
+[]
+06:42:20,799 DBG modules.payloads.payload.dnf.dnf_manager: Space required for packages: 9.06 GiB
+06:42:20,799 DBG modules.payloads.payload.dnf.dnf_manager: Space required for installed files: 1.06 GiB
+06:42:20,799 DBG modules.payloads.payload.dnf.dnf_manager: Total required size: 11.13 GiB
+06:42:20,805 DBG modules.payloads.payload.dnf.dnf_manager: Total download size: 5.76 GiB
+06:42:20,821 DBG modules.payloads.payload.dnf.dnf_manager: Total download size: 5.76 GiB
+06:42:20,889 DBG modules.payloads.payload.dnf.dnf_manager: Space required for packages: 9.06 GiB
+06:42:20,889 DBG modules.payloads.payload.dnf.dnf_manager: Space required for installed files: 1.06 GiB
+06:42:20,890 DBG modules.payloads.payload.dnf.dnf_manager: Total required size: 11.13 GiB
+06:43:14,710 INF progress: Preparing transaction from installation source
+06:48:14,051 INF progress: Install the payload
+06:48:14,051 DBG installation: Task completed: Install the payload (11/40) (353.5 s)
+06:48:14,051 INF progress: Installing boot loader
+06:48:14,051 INF installation: Queue started: Bootloader installation (7/16)
+06:48:14,051 INF installation: Task started: Configure bootloader (12/40)
+06:48:14,075 INF progress: Configure bootloader
+06:48:14,075 DBG installation: Task completed: Configure bootloader (12/40) (0.0 s)
+06:48:14,075 INF installation: Task started: Install bootloader (13/40)
+06:48:19,110 INF progress: Install bootloader
+06:48:19,110 DBG installation: Task completed: Install bootloader (13/40) (5.0 s)
+06:48:19,110 INF progress: Performing post-installation setup tasks
+06:48:19,110 INF installation: Queue started: Post-installation setup tasks (8/16)
+06:48:19,110 INF installation: Task started: Run post-installation setup tasks (14/40)
+06:48:19,133 DBG modules.payloads.payload.dnf.installation: No GPG keys to import.
+06:48:19,135 INF progress: Run post-installation setup tasks
+06:48:19,135 DBG installation: Task completed: Run post-installation setup tasks (14/40) (0.0 s)
+06:48:19,135 INF installation: Queue started: Configuration queue (9/16)
+06:48:19,135 INF progress: Configuring installed system
+06:48:19,135 INF installation: Queue started: Installed system configuration (10/16)
+06:48:19,136 INF installation: Task started: Configure SELinux (15/40)
+06:48:20,140 INF progress: Configure SELinux
+06:48:20,140 DBG installation: Task completed: Configure SELinux (15/40) (1.0 s)
+06:48:20,140 INF installation: Task started: Configure fingerprint authentication (16/40)
+06:48:20,142 INF progress: Configure fingerprint authentication
+06:48:20,142 DBG installation: Task completed: Configure fingerprint authentication (16/40) (0.0 s)
+06:48:20,142 INF installation: Task started: Authselect configuration (17/40)
+06:48:20,143 INF progress: Authselect configuration
+06:48:20,143 DBG installation: Task completed: Authselect configuration (17/40) (0.0 s)
+06:48:20,143 INF installation: Task started: Authconfig configuration (18/40)
+06:48:20,144 INF progress: Authconfig configuration
+06:48:20,144 DBG installation: Task completed: Authconfig configuration (18/40) (0.0 s)
+06:48:20,144 INF installation: Task started: Configure time zone (19/40)
+06:48:21,147 INF progress: Configure time zone
+06:48:21,147 DBG installation: Task completed: Configure time zone (19/40) (1.0 s)
+06:48:21,147 INF installation: Task started: Configure NTP (20/40)
+06:48:22,152 INF progress: Configure NTP
+06:48:22,152 DBG installation: Task completed: Configure NTP (20/40) (1.0 s)
+06:48:22,152 INF installation: Task started: Configure Initial Setup (21/40)
+06:48:22,154 INF progress: Configure Initial Setup
+06:48:22,154 DBG installation: Task completed: Configure Initial Setup (21/40) (0.0 s)
+06:48:22,154 INF installation: Task started: Configure post-installation tools (22/40)
+06:48:23,157 INF progress: Configure post-installation tools
+06:48:23,157 DBG installation: Task completed: Configure post-installation tools (22/40) (1.0 s)
+06:48:23,157 INF installation: Task started: Configure services (23/40)
+06:48:23,159 INF progress: Configure services
+06:48:23,159 DBG installation: Task completed: Configure services (23/40) (0.0 s)
+06:48:23,159 INF installation: Task started: Configure systemd default target (24/40)
+06:48:24,162 INF progress: Configure systemd default target
+06:48:24,162 DBG installation: Task completed: Configure systemd default target (24/40) (1.0 s)
+06:48:24,162 INF installation: Task started: Configure default desktop (25/40)
+06:48:24,163 INF progress: Configure default desktop
+06:48:24,163 DBG installation: Task completed: Configure default desktop (25/40) (0.0 s)
+06:48:24,163 INF installation: Task started: Configure language (26/40)
+06:48:25,168 INF progress: Configure language
+06:48:25,168 DBG installation: Task completed: Configure language (26/40) (1.0 s)
+06:48:25,168 INF installation: Task started: Configure keyboard (27/40)
+06:48:26,172 INF progress: Configure keyboard
+06:48:26,173 DBG installation: Task completed: Configure keyboard (27/40) (1.0 s)
+06:48:26,173 INF installation: Task started: Configure firewall (28/40)
+06:48:27,179 INF progress: Configure firewall
+06:48:27,179 DBG installation: Task completed: Configure firewall (28/40) (1.0 s)
+06:48:27,179 INF progress: Writing network configuration
+06:48:27,179 INF installation: Queue started: Network configuration (11/16)
+06:48:27,179 INF installation: Task started: Network configuration (29/40)
+06:48:28,241 INF progress: Network configuration
+06:48:28,241 DBG installation: Task completed: Network configuration (29/40) (1.1 s)
+06:48:28,241 INF progress: Creating users
+06:48:28,241 INF installation: Queue started: User creation (12/16)
+06:48:28,241 INF installation: Task started: Create groups (30/40)
+06:48:28,243 INF progress: Create groups
+06:48:28,243 DBG installation: Task completed: Create groups (30/40) (0.0 s)
+06:48:28,243 INF installation: Task started: Create users (31/40)
+06:48:28,243 INF progress: Create users
+06:48:28,244 DBG installation: Task completed: Create users (31/40) (0.0 s)
+06:48:28,244 INF installation: Task started: Configure root password (32/40)
+06:48:29,249 INF progress: Configure root password
+06:48:29,249 DBG installation: Task completed: Configure root password (32/40) (1.0 s)
+06:48:29,249 INF installation: Task started: Set SSH keys (33/40)
+06:48:29,251 INF progress: Set SSH keys
+06:48:29,251 DBG installation: Task completed: Set SSH keys (33/40) (0.0 s)
+06:48:29,251 INF installation: Task started: Configure optional root password SSH login (34/40)
+06:48:30,255 INF progress: Configure optional root password SSH login
+06:48:30,255 DBG installation: Task completed: Configure optional root password SSH login (34/40) (1.0 s)
+06:48:30,255 INF progress: Configuring addons
+06:48:30,255 INF installation: Queue started: Anaconda addon configuration (13/16)
+06:48:30,255 INF installation: Task started: Install VStorage (35/40)
+06:48:43,281 INF progress: Install VStorage
+06:48:43,281 DBG installation: Task completed: Install VStorage (35/40) (13.0 s)
+06:48:43,281 INF progress: Generating initramfs
+06:48:43,281 INF installation: Queue started: Initramfs generation (14/16)
+06:48:43,281 INF installation: Task started: Generate initramfs (36/40)
+06:48:57,338 INF progress: Generate initramfs
+06:48:57,338 DBG installation: Task completed: Generate initramfs (36/40) (14.1 s)
+06:48:57,338 INF installation: Task started: Configure FIPS (37/40)
+06:48:57,339 INF progress: Configure FIPS
+06:48:57,339 DBG installation: Task completed: Configure FIPS (37/40) (0.0 s)
+06:48:57,339 INF installation: Task started: Join a realm (38/40)
+06:48:57,340 INF progress: Join a realm
+06:48:57,340 DBG installation: Task completed: Join a realm (38/40) (0.0 s)
+06:48:57,340 INF progress: Storing configuration files and kickstarts
+06:48:57,340 INF installation: Queue started: Write configs and kickstarts (15/16)
+06:48:57,340 INF installation: Task started: Store kickstarts (39/40)
+06:48:57,360 INF progress: Store kickstarts
+06:48:57,361 DBG installation: Task completed: Store kickstarts (39/40) (0.0 s)
+06:48:57,361 INF progress: Running post-installation scripts
+06:48:57,361 INF installation: Queue started: Post installation scripts (16/16)
+06:48:57,361 INF installation: Task started: Run post installation scripts (40/40)
+06:48:57,361 INF kickstart.script: Running kickstart %%post script(s)
